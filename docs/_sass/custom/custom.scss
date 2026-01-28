@@ -1,1 +1,6 @@
 // Custom styles for the workshop site
+// Adjust sidebar width. The impact of this is the sidebar becomes sticky to the far left rather 
+// than floating with space to the left of it.
+.side-bar {
+  width: 200px; // Default is 264px
+}
