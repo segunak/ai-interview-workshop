@@ -17,13 +17,13 @@ This workshop teaches you how to use AI tools effectively in technical interview
 
 If AI can write code, then the [real skill isn't typing solutions from memory](https://terriblesoftware.org/2025/12/11/ai-can-write-your-code-it-cant-do-your-job/). It's driving the software development process end to end and shipping something correct. Companies like [Meta](https://www.wired.com/story/meta-ai-job-interview-coding/) and [Canva](https://www.canva.dev/blog/engineering/yes-you-can-use-ai-in-our-interviews/) are adapting interviews to this reality. This workshop trains that modern skill set.
 
-[Read the full philosophy](https://segunak.github.io/ai-interview-workshop/why-ai-interviews)
+[Read the full philosophy](https://segunakinyemi.com/ai-interview-workshop/why-ai-interviews)
 
 ## Quick Start
 
 1. Click the **Open in GitHub Codespaces** button above
 2. Wait for the environment to load (about 2 minutes)
-3. Open the [Workshop Instructions](https://segunak.github.io/ai-interview-workshop/) in a new tab
+3. Open the [Workshop Instructions](https://segunakinyemi.com/ai-interview-workshop/) in a new tab
 4. Start with Question 1 in the `question-1-two-sum/` folder
 
 ## The 5 Questions
@@ -61,7 +61,7 @@ This rule appears on every question. It's the core workflow for AI-assisted deve
 
 Visit the workshop website for detailed instructions on each question:
 
-**[segunak.github.io/ai-interview-workshop](https://segunak.github.io/ai-interview-workshop/)**
+**[segunakinyemi.com/ai-interview-workshop](https://segunakinyemi.com/ai-interview-workshop/)**
 
 ## Questions?
 
