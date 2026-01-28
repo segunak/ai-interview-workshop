@@ -11,7 +11,7 @@ Practice technical interviews using AI coding assistants as your pair programmin
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/segunak/ai-interview-workshop?quickstart=1)
 
 {: .blank-note }
-**Created by Segun Akinyemi** [Email](mailto:segun@segunakinyemi.com) • [LinkedIn](https://linkedin.com/in/segunakinyemi) • [GitHub](https://github.com/segunak) • [Website](https://segunakinyemi.com)
+**Created by Segun Akinyemi:** [Email](mailto:segun@segunakinyemi.com) • [LinkedIn](https://linkedin.com/in/segunakinyemi) • [GitHub](https://github.com/segunak) • [Website](https://segunakinyemi.com)
 
 ## What You'll Learn
 
