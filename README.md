@@ -26,9 +26,9 @@ This workshop teaches you how to use AI tools effectively in technical interview
 |---|------|-----------|--------|
 | 1 | Data Structures and Algorithms (Easy) | [Two Sum](https://leetcode.com/problems/two-sum) | [question-1-two-sum/](question-1-two-sum/) |
 | 2 | Data Structures and Algorithms (Hard) | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [question-2-minimum-window/](question-2-minimum-window/) |
-| 3 | Software Engineering | Log File Triage | [question-3-log-triage/](question-3-log-triage/) |
-| 4 | Software Engineering | Post to Live Feed | [question-4-live-feed/](question-4-live-feed/) |
-| 5 | Software Engineering | Runway Scheduler | [question-5-runway-scheduler/](question-5-runway-scheduler/) |
+| 3 | Practical Software Engineering | Log File Triage | [question-3-log-triage/](question-3-log-triage/) |
+| 4 | Practical Software Engineering | Post to Live Feed | [question-4-live-feed/](question-4-live-feed/) |
+| 5 | System Design | Runway Scheduler | [question-5-runway-scheduler/](question-5-runway-scheduler/) |
 
 ## The AI Rule
 

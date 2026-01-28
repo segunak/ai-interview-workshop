@@ -30,12 +30,12 @@ Every problem should follow this sequence:
 
 ## Workshop Problems
 
-| # | Problem | Type | Skills Tested |
+| Question Number | Problem | Type | Skills Tested |
 |---|---------|------|---------------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Algorithm | Hash maps, array traversal |
-| 2 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Algorithm | Sliding window, string manipulation |
-| 3 | Log Triage | Practical | File I/O, parsing, aggregation |
-| 4 | Live Feed POST | Practical | HTTP requests, API integration |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Data Structures and Algorithms | Hash maps, array traversal |
+| 2 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Data Structures and Algorithms | Sliding window, string manipulation |
+| 3 | Log Triage | Practical Software Engineering | File I/O, parsing, aggregation |
+| 4 | Live Feed POST | Practical Software Engineering | HTTP requests, API integration |
 | 5 | Runway Scheduler | System Design | Ambiguity handling, prioritization |
 
 ## Getting Started
