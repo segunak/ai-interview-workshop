@@ -8,13 +8,13 @@ You're the on-call engineer. A folder of `.log` files has been dumped on your de
 
 ## Log Format
 
-```
+```txt
 [YYYY-MM-DD HH:MM] LEVEL CODE: message
 ```
 
 Example entries:
 
-```
+```txt
 [2026-01-27 10:31] ERROR E1234: Payment failed user=42
 [2026-01-27 10:32] ERROR E1234: Payment failed user=99
 [2026-01-27 10:33] WARN W0001: Retry scheduled user=42

@@ -3,7 +3,7 @@ title: "Question 4: Live Feed"
 nav_order: 6
 ---
 
-# Question 4: Live Feed POST
+# Question 4: Live Feed POST + Verify
 
 ## Why This Problem?
 
@@ -18,7 +18,10 @@ Companies like Canva and Meta have started allowing AI in interviews because the
 
 ## Goal
 
-Make a POST request to a live API endpoint and see your message appear on a real-time feed that everyone in the workshop can see.
+1. Make a POST request to create a new post on the live feed
+2. **Programmatically verify** the post exists in the database using the returned ID
+
+A 200 OK response means nothing to stakeholders. Business users don't care about HTTP status codes. They care whether the data shows up. Your code must prove the post made it to the database, not just trust the API response.
 
 ## The Live Feed
 
@@ -26,9 +29,13 @@ Open this URL in your browser to see the live feed:
 
 **[https://live.segunakinyemi.com](https://live.segunakinyemi.com)**
 
-This page displays messages posted by workshop participants in real-time. Your goal is to make your message appear on this board.
+This page displays messages posted by workshop participants in real-time. Your goal is to make your message appear on this board AND verify it programmatically.
 
-## API Endpoint
+## API Endpoints
+
+### POST `/api/post`
+
+Creates a new post.
 
 **URL:** `https://live.segunakinyemi.com/api/post`
 
@@ -51,6 +58,92 @@ This page displays messages posted by workshop participants in real-time. Your g
 |-------|------|-------------|
 | `Tags` | string | Comma-separated tags for your post |
 
+**Success Response (200):**
+
+```json
+{
+  "success": true,
+  "message": "Posted successfully!",
+  "id": "recXXXXXXXXX"
+}
+```
+
+{: .important }
+Save the `id` from this response. You need it to verify your post exists.
+
+**Error Response (401):**
+
+```json
+{
+  "success": false,
+  "error": "Invalid or missing WorkshopKey"
+}
+```
+
+### GET `/api/posts`
+
+Retrieves posts for verification. Supports two query modes.
+
+**Mode 1: Verify a specific post by ID**
+
+Use the `id` returned from your POST request:
+
+```txt
+GET https://live.segunakinyemi.com/api/posts?id=recXXXXXXXXX&WorkshopKey=your-key
+```
+
+**Success Response (200):**
+
+```json
+{
+  "success": true,
+  "post": {
+    "id": "recXXXXXXXXX",
+    "name": "Ada Lovelace",
+    "message": "First programmer checking in!",
+    "workshop": "UNC Charlotte 2026",
+    "tags": ["python", "first-post"],
+    "createdAt": "2026-02-09T22:30:00.000Z"
+  }
+}
+```
+
+**Not Found Response (404):**
+
+```json
+{
+  "success": false,
+  "error": "Post not found",
+  "id": "recXXXXXXXXX"
+}
+```
+
+**Mode 2: List recent posts by workshop**
+
+```txt
+GET https://live.segunakinyemi.com/api/posts?workshop=UNC%20Charlotte%202026&WorkshopKey=your-key
+```
+
+**Success Response (200):**
+
+```json
+{
+  "success": true,
+  "count": 12,
+  "workshop": "UNC Charlotte 2026",
+  "posts": [
+    {
+      "id": "recXXXXXXXXX",
+      "name": "Ada Lovelace",
+      "message": "First programmer checking in!",
+      "workshop": "UNC Charlotte 2026",
+      "tags": ["python"],
+      "createdAt": "2026-02-09T22:30:00.000Z"
+    }
+  ]
+}
+```
+
 ## WorkshopKey
 
 <details>
@@ -60,9 +153,9 @@ The WorkshopKey value is `cinnamon-rolls-are-the-best-pastry-hands-down`
 
 </details>
 
-## Example Request
+## Example Request Flow
 
-Here's what a valid request looks like:
+**Step 1: POST to create your message**
 
 ```json
 {
@@ -73,12 +166,33 @@ Here's what a valid request looks like:
 }
 ```
 
+**Step 2: Save the ID from the response**
+
+```json
+{
+  "success": true,
+  "message": "Posted successfully!",
+  "id": "recABC123XYZ"
+}
+```
+
+**Step 3: GET to verify the post exists**
+
+```txt
+GET /api/posts?id=recABC123XYZ&WorkshopKey=your-workshop-key-here
+```
+
+**Step 4: Confirm the post data matches**
+
+Only print success after verification returns your post.
+
 ## Your Task
 
-1. Write a script or command that sends a POST request to the API
-2. Include your name, a message, the workshop name, and the correct WorkshopKey
-3. Check the live feed to see your message appear
-4. Handle the response (success or error)
+1. Write a script that sends a POST request to create a post
+2. Capture the `id` from the POST response
+3. Send a GET request to verify the post exists using that `id`
+4. Only print success confirmation after verification succeeds
+5. Handle errors gracefully
 
 ## Choose Your Tool
 
@@ -89,27 +203,29 @@ You can solve this using any tool you prefer:
 - **PowerShell** - Using `Invoke-RestMethod`
 
 {: .note }
-The live feed website has complete code examples for each language.
+Read the full API documentation above. The answer to most questions is already here.
 
 ## Workshop Workflow
 
 ### 1. Clarifying Questions
 
-- What format should the response be?
-- What happens if I send an invalid WorkshopKey?
-- What HTTP status codes should I expect?
-- Can I use any HTTP client?
+- What does the POST response contain that I need for verification?
+- How do I pass the WorkshopKey for GET requests vs POST requests?
+- What HTTP status code indicates the post was not found?
+- What happens if I verify before the post has propagated?
 
 ### 2. Plan Your Approach
 
-1. Choose your tool (Python, JavaScript, or PowerShell)
-2. Construct the JSON payload
-3. Make the POST request
-4. Handle the response
+1. Choose your language (Python, JavaScript, or PowerShell)
+2. Construct the POST request with JSON payload
+3. Parse the response and extract the `id`
+4. Construct the GET request with `id` and `WorkshopKey` as query params
+5. Check the verification response
+6. Print confirmed success or handle failure
 
 ### 3. Verify
 
-Check the live feed to confirm your message appeared!
+Your script should only claim success after the GET request confirms the post exists.
 
 ## Deliverables
 
@@ -121,36 +237,9 @@ Create a file in `question-4-live-feed/` with your solution:
 
 Your script should print:
 
-```
-Posted OK: "<message>" (name=<name>)
-Verified: visible on live feed
-```
-
-## Expected API Responses
-
-**Success (200):**
-```json
-{
-  "success": true,
-  "message": "Posted successfully!",
-  "id": "recXXXXXXXXX"
-}
-```
-
-**Error - Invalid WorkshopKey (401):**
-```json
-{
-  "success": false,
-  "error": "Invalid or missing WorkshopKey"
-}
-```
-
-**Error - Missing required field (400):**
-```json
-{
-  "success": false,
-  "error": "Name is required"
-}
+```txt
+Posted OK: "<message>" (name=<name>, id=<id>)
+Verified: post exists in database
 ```
 
 ## Extension Challenges
@@ -159,5 +248,5 @@ If you finish early:
 
 1. **Add Tags** - Include the `Tags` field with your school name or something fun
 2. **Make it interactive** - Prompt for name and message instead of hardcoding
-3. **Add error handling** - Handle network errors and non-200 responses gracefully
+3. **Add retry logic** - If verification fails, wait a moment and try again (real engineers think about propagation delays)
 4. **Try multiple tools** - Solve it in more than one language
