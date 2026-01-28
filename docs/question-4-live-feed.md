@@ -1,6 +1,5 @@
 ---
-title: "Q4: Live Feed"
-layout: default
+title: "Question 4: Live Feed"
 nav_order: 6
 ---
 

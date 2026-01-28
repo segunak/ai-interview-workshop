@@ -8,7 +8,7 @@ Given two strings `s` and `t`, return the minimum window substring of `s` such t
 
 ## Example
 
-```
+```txt
 Input: s = "ADOBECODEBANC", t = "ABC"
 Output: "BANC"
 Explanation: "BANC" is the smallest substring containing 'A', 'B', and 'C'

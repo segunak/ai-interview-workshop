@@ -45,10 +45,12 @@ Visit the website to see posts appear in real-time.
 
 1. Your post appears on the live feed website
 2. Your script prints confirmation:
-   ```
+
+   ```txt
    Posted OK: "<message>" (name=<name>)
    Verified: visible on live feed
    ```
+
 3. At least 2 tests (success case + failure case with wrong WorkshopKey)
 
 ## Optional Bonus

@@ -1,6 +1,5 @@
 ---
-title: "Q1: Two Sum"
-layout: default
+title: "Question 1: Two Sum"
 nav_order: 3
 ---
 

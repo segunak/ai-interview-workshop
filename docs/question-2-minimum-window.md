@@ -1,6 +1,5 @@
 ---
-title: "Q2: Minimum Window"
-layout: default
+title: "Question 2: Minimum Window"
 nav_order: 4
 ---
 

@@ -1,6 +1,5 @@
 ---
-title: "Q5: Runway Scheduler"
-layout: default
+title: "Question 5: Runway Scheduler"
 nav_order: 7
 ---
 

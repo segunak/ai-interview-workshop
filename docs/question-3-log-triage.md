@@ -1,6 +1,5 @@
 ---
-title: "Q3: Log Triage"
-layout: default
+title: "Question 3: Log Triage"
 nav_order: 5
 ---
 
