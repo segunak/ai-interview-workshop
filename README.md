@@ -13,6 +13,12 @@ This workshop teaches you how to use AI tools effectively in technical interview
 - Communicate clearly with AI assistants
 - Explain your approach to interviewers
 
+## Why AI-Assisted Interviews?
+
+If AI can write code, then the [real skill isn't typing solutions from memory](https://terriblesoftware.org/2025/12/11/ai-can-write-your-code-it-cant-do-your-job/). It's driving the software development process end to end and shipping something correct. Companies like [Meta](https://www.wired.com/story/meta-ai-job-interview-coding/) and [Canva](https://www.canva.dev/blog/engineering/yes-you-can-use-ai-in-our-interviews/) are adapting interviews to this reality. This workshop trains that modern skill set.
+
+[Read the full philosophy](https://segunak.github.io/ai-interview-workshop/why-ai-interviews)
+
 ## Quick Start
 
 1. Click the **Open in GitHub Codespaces** button above

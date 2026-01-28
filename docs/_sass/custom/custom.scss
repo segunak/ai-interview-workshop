@@ -5,12 +5,17 @@
 .side-bar {
   width: 200px; // Default is 264px
 }
+
+// Make site title in the upper left smaller to fit better in sidebar
+.site-title {
+  font-size: 14px !important;
+}
+
 // Restore solid colored backgrounds for callouts
 // Just the Docs v0.11.0 removed background-color for accessibility
 // See: https://github.com/just-the-docs/just-the-docs/pull/1748
 // The theme uses classes like p.note, blockquote.warning, etc. not a generic .callout class
 // Opacity 0.2 matches the old default
-
 $callout-opacity: 0.2;
 
 p.highlight, blockquote.highlight,
