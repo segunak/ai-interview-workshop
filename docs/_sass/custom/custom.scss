@@ -5,11 +5,3 @@
 .side-bar {
   width: 200px; // Default is 264px
 }
-
-// Restore opaque background for callouts
-// Just the Docs v0.10+ removed background-color for accessibility
-// PR: https://github.com/just-the-docs/just-the-docs/pull/1748
-// This brings back the solid colored backgrounds we prefer
-.callout {
-  background-color: var(--callout-color);
-}
