@@ -1,0 +1,47 @@
+[
+  {
+    "id": "UA123",
+    "kind": "landing",
+    "earliest_time": 0,
+    "fuel_minutes": 8
+  },
+  {
+    "id": "DL456",
+    "kind": "takeoff",
+    "earliest_time": 0
+  },
+  {
+    "id": "AA789",
+    "kind": "landing",
+    "earliest_time": 2,
+    "fuel_minutes": 25
+  },
+  {
+    "id": "SW101",
+    "kind": "takeoff",
+    "earliest_time": 5
+  },
+  {
+    "id": "UA999",
+    "kind": "landing",
+    "earliest_time": 3,
+    "fuel_minutes": 5
+  },
+  {
+    "id": "DL102",
+    "kind": "landing",
+    "earliest_time": 0,
+    "fuel_minutes": 10
+  },
+  {
+    "id": "AA103",
+    "kind": "takeoff",
+    "earliest_time": 8
+  },
+  {
+    "id": "SW104",
+    "kind": "landing",
+    "earliest_time": 10,
+    "fuel_minutes": 45
+  }
+]

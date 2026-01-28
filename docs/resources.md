@@ -1,0 +1,100 @@
+---
+title: Resources
+layout: default
+nav_order: 8
+---
+
+# Resources
+
+Curated resources for continuing your learning after the workshop.
+
+{: .highlight }
+**Start Here:** [AI Insights for Students](https://readwise.io/reader/view/2a197170-e112-4033-83b2-288bfbf75194) - A curated collection of articles on AI engineering, AI's impact of software development and entry level roles, and industry trends. This is a great resource for staying current!
+
+## Workshop Materials
+
+- **[This Workshop on GitHub](https://github.com/segunak/ai-interview-workshop)** - Full source code and documentation
+- **[Live Feed](https://live.segunakinyemi.com)** - The live message board from Question 4
+
+## AI Coding Tools
+
+These are AI-powered tools built specifically for developers to write, edit, and understand code. Many of these tools are becoming fully agentic, meaning developers "write code" by describing what they want in natural language prompts and then reviewing the generated output, rather than writing code by hand.
+
+- [GitHub Copilot](https://docs.github.com/en/copilot/get-started/what-is-github-copilot) - Microsoft's AI coding assistant, integrated into VS Code and other editors
+- [GitHub Copilot CLI](https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli) - AI assistance in the terminal for shell commands and git operations
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) - Anthropic's agentic coding tool for the terminal
+- [Cursor](https://cursor.sh/) - AI-first code editor built on VS Code
+- [OpenAI Codex CLI](https://github.com/openai/codex) - OpenAI's terminal-based coding agent
+- [Gemini CLI](https://github.com/google-gemini/gemini-cli) - Google's AI coding assistant for the terminal
+- [Google Antigravity](https://antigravity.google/) - Google's AI-powered IDE
+- [Amazon Q Developer](https://aws.amazon.com/q/developer/) - AWS's AI assistant for cloud development
+- [OpenCode](https://opencode.ai/) - Open source terminal-based AI coding agent
+
+{: .note }
+Cursor and Google Antigravity are both forks of Microsoft's open source [VS Code](https://code.visualstudio.com/). Given that VS Code is the most popular IDE and under constant AI-related development, we recommend students focus on learning AI-assisted coding with VS Code and GitHub Copilot. Explore the alternatives if you're curious, but VS Code is the foundation.
+
+### Vibe Coding Tools
+
+These tools let you build apps by describing what you want in natural language, with minimal or no manual coding.
+
+- [Lovable](https://lovable.dev/) - Build full-stack web apps from prompts
+- [Replit](https://replit.com/) - Cloud IDE with AI-powered app generation
+- [GitHub Spark](https://githubnext.com/projects/github-spark) - Create micro apps using natural language
+
+## Concepts to Explore
+
+As AI coding tools evolve, these are concepts worth understanding:
+
+- [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) - Open standard for connecting AI to external tools and data sources
+- [Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot) - Repository-level prompts that shape AI behavior
+- [AGENTS.md](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot#about-coding-agent-instructions) - Convention for giving AI agents context about your codebase
+- [Custom Agents](https://code.visualstudio.com/docs/copilot/customization/custom-agents) - Build your own specialized AI agents in VS Code
+- [Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills) - Extend Copilot with custom capabilities via MCP
+
+## Interview Preparation
+
+- [Tech Interview Handbook](https://www.techinterviewhandbook.org/) - Comprehensive guide to technical interviews
+- [Grind 75](https://www.techinterviewhandbook.org/grind75/) - Curated list of 75 essential LeetCode problems
+- [LeetCode](https://leetcode.com/) - Classic algorithm problems
+- [NeetCode 150](https://leetcode.com/problem-list/rab78cw1/) - Curated problem list for interview prep
+- [AlgoExpert](https://www.algoexpert.io/) - Video explanations
+- [System Design Primer](https://github.com/donnemartin/system-design-primer) - Comprehensive guide that everyone uses to prep for System Design questions in tech interivews
+- [ByteByteGo](https://bytebytego.com/) - Visual system design guides
+
+## AI-Assisted Interviews
+
+Some companies are starting to allow AI tools in technical interviews. Here are some examples.
+
+- [Canva: Yes, You Can Use AI in Our Interviews](https://www.canva.dev/blog/engineering/yes-you-can-use-ai-in-our-interviews/) - Canva's official blog post
+- [Wired: Meta AI Job Interview Coding](https://www.wired.com/story/meta-ai-job-interview-coding/) - How Meta is adapting
+- [How to Use AI in Meta's AI-Assisted Coding Interview](https://interviewing.io/blog/how-to-use-ai-in-meta-s-ai-assisted-coding-interview-with-real-prompts-and-examples) - Real prompts and examples
+
+And here are experiences from people who've specifically been through Canva's AI-Assisted coding interview.
+
+- [Reddit: Canva's AI-Assisted Coding Interview](https://www.reddit.com/r/cscareerquestionsOCE/comments/1mjos7d/canvas_ai_assisted_coding_interview/) - Discussion thread
+- [Reddit: Canva AI Interview Tips](https://www.reddit.com/r/cscareerquestionsOCE/comments/1lkt2ft/canva_ai_interview_what_to_expect_any_tips/) - What to expect
+
+## AI Engineering Resources
+
+- [The AI Engineer](https://www.latent.space/p/ai-engineer) - The essay that defined the emerging role of AI Engineer
+- [We’re Not Cooked: Your Tech Career Survival Guide in the Age of AI Engineering](https://segunakinyemi.com/blog/seo-techdevcon-2025/) - Blog post on how AI is changing software development and why there's still work to do
+- [AI Insights for Students](https://readwise.io/reader/view/2a197170-e112-4033-83b2-288bfbf75194) - Curated collection of articles on AI engineering, prompt techniques, and industry trends
+- [Who to Follow](https://segunakinyemi.com/blog/seo-techdevcon-2025/#who-to-follow) - People and organizations to follow for the latest in AI and software development
+
+## Free Resources for Students
+
+Take advantage of these programs while you have a .edu email address.
+
+- [GitHub Student Developer Pack](https://education.github.com/pack) - Free access to developer tools, cloud credits, domains, and professional resources from 100+ partners including GitHub Copilot Pro, JetBrains, Azure credits, and more
+- [GitHub Education for Students](https://github.com/education/students) - Free GitHub Pro account, Codespaces hours, and Actions minutes for verified students
+- [Microsoft Student Certifications](https://learn.microsoft.com/en-us/training/student-hub/certifications) - Discounted certification exams for Azure, AI, Security, Power Platform, and more. Includes free C# certification through freeCodeCamp partnership
+- [Microsoft Learn](https://learn.microsoft.com/en-us/training/) - Free courses on Azure, AI, data, security, and Microsoft technologies
+- [Google Skills](https://skills.google/) - Free courses on AI, cloud, and Google technologies with skill badges and certificates
+- [Grow with Google](https://grow.google/) - Free career certificates in data analytics, cybersecurity, IT support, project management, and more
+
+## Stay Connected
+
+Workshop created by [Segun Akinyemi](https://segunakinyemi.com) • [Email](mailto:segun@segunakinyemi.com) • [LinkedIn](https://linkedin.com/in/segunakinyemi) • [GitHub](https://github.com/segunak) • [Website](https://segunakinyemi.com)
+
+{: .highlight }
+Remember: AI is a tool that amplifies your abilities. The goal is to become a better engineer, not to outsource your thinking. Use AI to learn faster, explore more options, and handle tedious tasks, but always make sure you understand what you're building.

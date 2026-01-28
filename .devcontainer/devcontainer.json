@@ -1,0 +1,46 @@
+{
+  "name": "AI Interview Workshop",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/powershell:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ms-python.python",
+        "ms-vscode.powershell",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vsliveshare.vsliveshare",
+        "redhat.vscode-yaml",
+        "max-SS.Cyberpunk",
+        "Endormi.2077-theme"
+      ],
+      "settings": {
+        "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+        "editor.formatOnSave": true,
+        "editor.minimap.enabled": false,
+        "terminal.integrated.defaultProfile.linux": "pwsh",
+        "git.autofetch": true,
+        "workbench.colorTheme": "Cyberpunk"
+      }
+    }
+  },
+  "forwardPorts": [3000, 5000, 8080],
+  "postCreateCommand": "chmod +x .devcontainer/validate.sh && pip install requests && gh extension install github/gh-copilot || true",
+  "postAttachCommand": ".devcontainer/validate.sh",
+  "remoteUser": "codespace"
+}

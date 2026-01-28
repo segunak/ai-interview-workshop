@@ -1,0 +1,23 @@
+// This file makes the Just the Docs site wider.
+// It's referenced in _config.yml as color_scheme: wider
+// See: https://github.com/just-the-docs/just-the-docs/discussions/481
+
+@import "./color_schemes/light";
+
+:root {
+  --content-width: 1400px;
+}
+
+.main-content {
+  max-width: var(--content-width);
+}
+
+.side-bar {
+  min-width: 264px;
+}
+
+@media (min-width: 800px) {
+  .main {
+    max-width: calc(var(--content-width) + 264px);
+  }
+}
