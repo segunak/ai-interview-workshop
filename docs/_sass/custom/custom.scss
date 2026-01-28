@@ -5,3 +5,36 @@
 .side-bar {
   width: 200px; // Default is 264px
 }
+// Restore solid colored backgrounds for callouts
+// Just the Docs v0.11.0 removed background-color for accessibility
+// See: https://github.com/just-the-docs/just-the-docs/pull/1748
+// The theme uses classes like p.note, blockquote.warning, etc. not a generic .callout class
+// Opacity 0.2 matches the old default
+
+$callout-opacity: 0.2;
+
+p.highlight, blockquote.highlight,
+p.highlight-title, blockquote.highlight-title {
+  background: rgba($yellow-000, $callout-opacity);
+}
+
+p.important, blockquote.important,
+p.important-title, blockquote.important-title {
+  background: rgba($blue-000, $callout-opacity);
+}
+
+p.new, blockquote.new,
+p.new-title, blockquote.new-title {
+  background: rgba($green-000, $callout-opacity);
+}
+
+p.note, blockquote.note,
+p.note-title, blockquote.note-title,
+p.blank-note, blockquote.blank-note {
+  background: rgba($purple-000, $callout-opacity);
+}
+
+p.warning, blockquote.warning,
+p.warning-title, blockquote.warning-title {
+  background: rgba($red-000, $callout-opacity);
+}

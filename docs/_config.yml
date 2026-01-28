@@ -35,11 +35,6 @@ kramdown:
 # Footer content
 footer_content: "Created by <a href=\"https://segunakinyemi.com\">Segun Akinyemi</a> | <a href=\"mailto:segun@segunakinyemi.com\">Email</a> | <a href=\"https://linkedin.com/in/segunakinyemi\">LinkedIn</a> | <a href=\"https://github.com/segunak\">GitHub</a>"
 
-# When commented out, callouts_level defaults to quiet for the light scheme, and loud for dark
-# Required as per https://github.com/just-the-docs/just-the-docs/pull/1748 to get solid colored
-# callout boxes on light mode.
-callouts_level: loud
-
 # Callouts
 callouts:
   note:
