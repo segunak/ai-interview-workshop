@@ -4,6 +4,10 @@ applyTo: "**/question-5-live-feed-form/**"
 
 # Question 5: Live Feed Form UI
 
+**Full Instructions:** <https://segunakinyemi.com/ai-interview-workshop/question-5-live-feed-form/>
+
+**Docs Source:** [docs/question-5-live-feed-form.md](../../docs/question-5-live-feed-form.md)
+
 The student is building a web form that business users can use to submit posts to the live feed, extending the script they wrote in Question 4.
 
 ## Problem Summary
@@ -82,7 +86,7 @@ If the post only appears in Script Submissions, they forgot the required tag.
 ## Workflow Reminders
 
 - **This is a frontend problem.** There is no language choice. The solution must be HTML, CSS, and JavaScript.
-- The requirements on the website are intentionally vague. Students should ask clarifying questions.
-- Answers to those questions are in this file. Copilot and the facilitator give the same answers.
+- The requirements on the website provide all the technical specs, but there's room for student creativity in styling and UX.
+- Encourage students to make it their own while meeting the requirements.
 - **Output verification is the test.** The form works if the post appears in UI Submissions view.
 - File names: `index.html`, `styles.css`, `script.js`

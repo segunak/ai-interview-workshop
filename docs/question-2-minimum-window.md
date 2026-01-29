@@ -41,6 +41,15 @@ Explanation: Both 'a's from t must be included in the window.
 Since s only has one 'a', return empty string.
 ```
 
+**Example 4 (Duplicates in Both Strings):**
+
+```txt
+Input: s = "aa", t = "aa"
+Output: "aa"
+Explanation: The window must contain both 'a's from t.
+The entire string s is the minimum valid window.
+```
+
 ## Constraints
 
 - 1 <= s.length, t.length <= 10^5

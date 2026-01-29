@@ -41,6 +41,14 @@ Input: nums = [3, 3], target = 6
 Output: [0, 1]
 ```
 
+**Example 4 (Negative Numbers):**
+
+```txt
+Input: nums = [-1, -2, -3, -4, -5], target = -8
+Output: [2, 4]
+Explanation: nums[2] + nums[4] = -3 + -5 = -8
+```
+
 ## Constraints
 
 - 2 <= nums.length <= 10^4

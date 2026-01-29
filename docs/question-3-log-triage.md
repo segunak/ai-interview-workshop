@@ -15,24 +15,29 @@ Write a script that:
 
 1. Reads all `.log` files from the `question-3-log-triage/logs/` directory
 2. Extracts all error codes matching the pattern `E` followed by 4 digits (e.g., `E1234`, `E5678`)
-3. Counts occurrences of each error code across all files
-4. Prints a summary sorted by frequency (highest first)
+3. **Only counts ERROR level entries** (not WARN or INFO)
+4. Counts occurrences of each error code across all files
+5. Prints a summary sorted by frequency (highest first)
 
 ## Log Format
 
 Each log file contains entries in this format:
 
 ```txt
-YYYY-MM-DD HH:MM:SS [LEVEL] message text, sometimes with error code EXXXX
+[YYYY-MM-DD HH:MM] LEVEL CODE: message text
 ```
 
 Example lines:
 
 ```txt
-2025-01-15 02:34:56 [ERROR] Database connection failed, error code E1234
-2025-01-15 02:34:57 [WARN] Retry attempt 1 of 3
-2025-01-15 02:35:01 [ERROR] Authentication timeout, see E5678 for details
+[2025-01-15 02:34] ERROR E1234: Database connection failed
+[2025-01-15 02:34] WARN W0001: Retry attempt 1 of 3
+[2025-01-15 02:35] ERROR E5678: Authentication timeout, user=42
+[2025-01-15 02:36] INFO: Health check passed
 ```
+
+{: .important }
+Only count entries with level **ERROR**. Ignore WARN and INFO entries even if they contain error codes.
 
 ## Expected Output Format
 
@@ -47,6 +52,7 @@ Scanned: 3 files | Found: 12 errors | Time range: 10:15 - 11:02
 TOP ISSUE (5 hits, 42% of errors)
    E1234: Payment failed
    Last seen: 10:39 in app-server-1.log
+   Likely cause: Payment processor issues
 
 ALL ERRORS BY FREQUENCY
 --------------------------------------------------------------------------------
@@ -59,10 +65,16 @@ MOST RECENT ERRORS
 --------------------------------------------------------------------------------
    10:39  E1234  Payment failed user=201 reason=expired_card
    10:32  E5678  DB timeout query=update_session duration=31s
+
+ERRORS BY SOURCE
+--------------------------------------------------------------------------------
+   app-server-1.log: 6 errors
+   app-server-2.log: 4 errors
+   api-gateway.log:  2 errors
 ================================================================================
 ```
 
-The exact format can vary. Use your creativity and ask AI to help you make it scannable and clear.
+The exact format can vary. Use your creativity and ask AI to help you make it scannable and clear. The sections shown above (**TOP ISSUE**, **ALL ERRORS BY FREQUENCY**, **MOST RECENT ERRORS**, **ERRORS BY SOURCE**) are recommendations, not requirements.
 
 ## Sample Files
 

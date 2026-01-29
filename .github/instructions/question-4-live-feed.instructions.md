@@ -4,6 +4,10 @@ applyTo: "**/question-4-live-feed/**"
 
 # Question 4: Post to Live Feed
 
+**Full Instructions:** <https://segunakinyemi.com/ai-interview-workshop/question-4-live-feed/>
+
+**Docs Source:** [docs/question-4-live-feed.md](../../docs/question-4-live-feed.md)
+
 The student is working on an API integration problem: posting to a live feed website and verifying the post exists in the database.
 
 ## Problem Summary

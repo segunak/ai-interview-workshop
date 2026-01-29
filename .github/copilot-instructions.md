@@ -116,3 +116,17 @@ Run with: `node test_solution.js`
 - Offer to trace through an example input
 - Suggest looking at the problem from a different angle
 - Remind them that struggling is part of learning
+
+## Question URLs
+
+When a student asks about a question, direct them to the full instructions on the workshop website. All requirements are documented there.
+
+| Question | Full Instructions URL |
+|----------|----------------------|
+| Question 1: Two Sum | <https://segunakinyemi.com/ai-interview-workshop/question-1-two-sum/> |
+| Question 2: Minimum Window | <https://segunakinyemi.com/ai-interview-workshop/question-2-minimum-window/> |
+| Question 3: Log Triage | <https://segunakinyemi.com/ai-interview-workshop/question-3-log-triage/> |
+| Question 4: Live Feed | <https://segunakinyemi.com/ai-interview-workshop/question-4-live-feed/> |
+| Question 5: Live Feed Form | <https://segunakinyemi.com/ai-interview-workshop/question-5-live-feed-form/> |
+
+If a student asks a question that's already answered on the website, remind them: "Check the full instructions at [URL] — all the requirements are documented there."

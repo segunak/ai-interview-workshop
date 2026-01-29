@@ -4,6 +4,10 @@ applyTo: "**/question-3-log-triage/**"
 
 # Question 3: Log Triage
 
+**Full Instructions:** <https://segunakinyemi.com/ai-interview-workshop/question-3-log-triage/>
+
+**Docs Source:** [docs/question-3-log-triage.md](../../docs/question-3-log-triage.md)
+
 The student is working on a real-world engineering problem: parsing log files to triage errors.
 
 ## Problem Summary

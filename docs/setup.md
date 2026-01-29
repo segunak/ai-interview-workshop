@@ -5,9 +5,13 @@ nav_order: 2
 
 # Environment Setup
 
-Everything is pre-configured. Just launch your Codespace and you're ready to go.
+Choose your setup method. Both options give you the same tools and experience.
 
-## Launch Your Codespace
+## Option 1: GitHub Codespaces (Recommended)
+
+Codespaces gives you a complete development environment in your browser. No installation required.
+
+### Launch Your Codespace
 
 Click this button to create your environment:
 
@@ -22,17 +26,75 @@ The Codespace takes about 2-3 minutes to fully build. When it's ready, you'll se
 {: .note }
 If you see any red X marks in the terminal output, ask a workshop volunteer for help.
 
-## What's Pre-Installed
+## Option 2: Local Setup (Windows)
 
-Your Codespace comes ready with:
+Prefer to work on your own machine? Run the setup script to install everything you need.
+
+### Prerequisites
+
+- Windows 11
+- Administrator access
+- A GitHub account with [Copilot access](#github-copilot-for-students)
+
+### Step 1: Clone the Repository
+
+```powershell
+git clone https://github.com/segunak/ai-interview-workshop
+cd ai-interview-workshop
+```
+
+### Step 2: Run the Setup Script
+
+1. Open PowerShell **as Administrator** (right-click -> Run as Administrator)
+2. Navigate to the repo folder
+3. Run the setup script:
+
+```powershell
+.\scripts\setup-windows.ps1
+```
+
+4. Follow the prompts (a browser window will open for GitHub login)
+
+### Step 3: Open in VS Code
+
+1. Close and reopen PowerShell (to refresh PATH)
+2. Open VS Code
+3. Sign in with your GitHub account (click the person icon in the bottom left)
+4. Open the `ai-interview-workshop` folder
+5. You're ready to start!
+
+### What Gets Installed
+
+| Tool | Purpose |
+|------|---------|
+| Git | Version control |
+| Python | Algorithm solutions |
+| Node.js | JavaScript solutions |
+| VS Code | IDE with Copilot extensions |
+| GitHub CLI | Authentication |
+| GitHub Copilot CLI | AI coding agent in terminal |
+| Python `requests` | HTTP requests for Question 4 |
+
+## GitHub Copilot for Students
+
+{: .highlight }
+**Students get GitHub Copilot Pro for FREE!** If you're a student, verify your status to unlock unlimited Copilot access with premium models.
+
+1. **[Apply for GitHub Education](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student)** - Verify your student status
+2. **[Get free Copilot Pro](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro)** - Claim your free access
+
+This gives you unlimited completions, premium AI models, and all the features you need for this workshop and beyond.
+
+## What's Included
+
+Your environment (Codespace or local) comes ready with:
 
 - **Python** - For algorithm solutions
 - **Node.js** - For JavaScript solutions
 - **PowerShell** - Cross-platform scripting
-- **GitHub CLI** - For GitHub operations
-- **GitHub Copilot CLI** - AI coding agent in your terminal (like Claude Code)
-- **GitHub Copilot** - Chat and code completion enabled
-- **Cyberpunk theme** - Because why not
+- **GitHub CLI** - For GitHub authentication
+- **GitHub Copilot CLI** - AI coding agent in your terminal
+- **GitHub Copilot** - Chat and code completion in VS Code
 
 ## Folder Structure
 

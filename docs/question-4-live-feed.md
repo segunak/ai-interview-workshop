@@ -72,7 +72,7 @@ Creates a new post.
 {: .important }
 Save the `id` from this response. You need it to verify your post exists.
 
-**Error Response (401):**
+**Error Response (401 - Invalid Key):**
 
 ```json
 {
@@ -80,6 +80,17 @@ Save the `id` from this response. You need it to verify your post exists.
   "error": "Invalid or missing WorkshopKey"
 }
 ```
+
+**Error Response (400 - Missing Fields):**
+
+```json
+{
+  "success": false,
+  "error": "Name is required"
+}
+```
+
+Other missing field errors: `"Message is required"`, `"Workshop is required"`
 
 ### GET `/api/posts`
 
@@ -222,6 +233,9 @@ Read the full API documentation above. The answer to most questions is already h
 - How do I pass the WorkshopKey for GET requests vs POST requests?
 - What HTTP status code indicates the post was not found?
 - What happens if I verify before the post has propagated?
+
+{: .note }
+**Propagation Delay:** In real distributed systems, writes may not be immediately visible to reads. If your GET verification fails immediately after POST, consider adding a short delay or retry logic.
 
 ### 2. Plan Your Approach
 

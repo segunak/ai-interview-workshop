@@ -4,6 +4,10 @@ applyTo: "**/question-1-two-sum/**"
 
 # Question 1: Two Sum
 
+**Full Instructions:** <https://segunakinyemi.com/ai-interview-workshop/question-1-two-sum/>
+
+**Docs Source:** [docs/question-1-two-sum.md](../../docs/question-1-two-sum.md)
+
 The student is working on the classic [Two Sum](https://leetcode.com/problems/two-sum/) LeetCode problem.
 
 ## Problem Summary

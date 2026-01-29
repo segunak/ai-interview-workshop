@@ -86,6 +86,8 @@ Take advantage of these programs while you have a .edu email address.
 
 - [GitHub Student Developer Pack](https://education.github.com/pack) - Free access to developer tools, cloud credits, domains, and professional resources from 100+ partners including GitHub Copilot Pro, JetBrains, Azure credits, and more
 - [GitHub Education for Students](https://github.com/education/students) - Free GitHub Pro account, Codespaces hours, and Actions minutes for verified students
+- [GitHub Copilot Pro for Students](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) - Free Copilot Pro access for verified students, teachers, and open source maintainers
+- [Apply for GitHub Education](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student) - How to verify your student status and unlock free benefits
 - [Microsoft Student Certifications](https://learn.microsoft.com/en-us/training/student-hub/certifications) - Discounted certification exams for Azure, AI, Security, Power Platform, and more. Includes free C# certification through freeCodeCamp partnership
 - [Microsoft Learn](https://learn.microsoft.com/en-us/training/) - Free courses on Azure, AI, data, security, and Microsoft technologies
 - [Google Skills](https://skills.google/) - Free courses on AI, cloud, and Google technologies with skill badges and certificates

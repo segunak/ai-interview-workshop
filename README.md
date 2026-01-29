@@ -21,10 +21,23 @@ If AI can write code, then the [real skill isn't typing solutions from memory](h
 
 ## Quick Start
 
+### Option 1: GitHub Codespaces (Recommended)
+
 1. Click the **Open in GitHub Codespaces** button above
 2. Wait for the environment to load (about 2 minutes)
 3. Open the [Workshop Instructions](https://segunakinyemi.com/ai-interview-workshop/) in a new tab
 4. Start with Question 1 in the `question-1-two-sum/` folder
+
+### Option 2: Local Setup (Windows)
+
+1. Clone this repo: `git clone https://github.com/segunak/ai-interview-workshop`
+2. Open PowerShell **as Administrator**
+3. Run: `.\scripts\setup-windows.ps1`
+4. Open the folder in VS Code and sign in with your GitHub account
+
+> **Students:** Get [GitHub Copilot Pro for free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) by [verifying your student status](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student)!
+
+> **💡 Two Windows:** Work with VS Code (in Codespaces or locally) on one side and the [Workshop Website](https://segunakinyemi.com/ai-interview-workshop/) on the other. The README files in each question folder are just starting points. The **full instructions** for each question are on the website.
 
 ## The 5 Questions
 
@@ -34,7 +47,7 @@ If AI can write code, then the [real skill isn't typing solutions from memory](h
 | 2 | Data Structures and Algorithms (Hard) | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [question-2-minimum-window/](question-2-minimum-window/) |
 | 3 | Practical Software Engineering | Log File Triage | [question-3-log-triage/](question-3-log-triage/) |
 | 4 | Practical Software Engineering | Post to Live Feed | [question-4-live-feed/](question-4-live-feed/) |
-| 5 | System Design | Runway Scheduler | [question-5-runway-scheduler/](question-5-runway-scheduler/) |
+| 5 | Frontend Development | Live Feed Form UI | [question-5-live-feed-form/](question-5-live-feed-form/) |
 
 ## The AI Rule
 

@@ -31,14 +31,41 @@ Build a form that:
 - Shows success/error feedback
 - Links to the live feed so they can see their post
 
-**Additional requirements:**
+### Field Specifications
 
-- Business users shouldn't be able to break anything
-- Invalid submissions should be rejected with helpful messages
-- The form should be intuitive for non-technical users
+| Field | Required | Constraints |
+|-------|----------|-------------|
+| Name | Yes | Max 100 characters |
+| Message | Yes | Max 1000 characters |
+| Workshop | Yes | Pre-fill with "AI Interview Workshop" |
+| Tags | Yes | See tag requirements below |
+
+### Tag Requirements
+
+Tags have specific rules:
+
+- **No spaces allowed** in tag names. Use dashes instead (e.g., `workshop-fun`, not `workshop fun`)
+- The tag `ui-submission` **must always be included** and cannot be removed by the user
+- Show tags as clickable chips/badges, not a comma-separated text field
+- Users can click suggested tags to add them, or type custom tags
+- Selected tags should be removable (except `ui-submission`)
+
+**Suggested tags to offer:** charlotte, hornets, panthers, naruto, attack-on-titan, legend-of-the-galactic-heroes, steinsgate, treasure-planet, computer-science, software-engineering, unc-charlotte, workshop-fun
 
 {: .important }
-Requirements are intentionally vague. Ask your workshop facilitator clarifying questions, **just like you would ask an interviewer or product manager**.
+The `ui-submission` tag is how form submissions are identified. Posts with this tag appear in the **UI Submissions** section of the live feed. Posts without it appear in **Script Submissions**. Your form MUST always include this tag.
+
+### UX Requirements
+
+- **Loading state:** Show "Submitting..." and disable the submit button while waiting
+- **Success state:** Show a success message with a link to the live feed (opens in new tab)
+- **Error messages:** Be specific: "Name is required", "Message is too long (max 1000 characters)", "Tags cannot contain spaces"
+- **Validation:** Validate client-side before submitting
+
+### Creativity Welcome
+
+{: .note }
+These requirements provide the technical specifications, but there's room for your own creativity in styling, layout, colors, and UX details. Make it your own while meeting the requirements!
 
 ## API Reference
 
@@ -68,14 +95,9 @@ You're using the same API from Question 4.
 
 ## Workshop Workflow
 
-### 1. Clarify Requirements
+### 1. Review Requirements
 
-Before building anything, ask your facilitator:
-
-- What are the character limits?
-- How should tags work?
-- What validation is required?
-- What should happen after a successful submission?
+Read through the requirements above carefully. All technical specifications are provided.
 
 ### 2. Plan Your Approach
 
@@ -101,7 +123,9 @@ Submit a post using your form and verify:
 
 1. The form validates correctly
 2. The POST succeeds
-3. Your post appears on the live feed
+3. Your post appears in the **UI Submissions** section of the live feed (not Script Submissions)
+
+If your post only appears in Script Submissions, you forgot the required `ui-submission` tag.
 
 ## Deliverables
 

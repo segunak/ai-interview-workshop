@@ -51,6 +51,9 @@ Every problem should follow this sequence:
 3. Open the **Setup** page to verify your tools are ready
 4. Pick a problem and start practicing!
 
+{: .note }
+**Prefer to work locally?** See the [Setup](setup) page for Windows installation instructions. Students can also get [GitHub Copilot Pro for free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) by [verifying their student status](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student)!
+
 ## Tools at Your Disposal
 
 - **GitHub Copilot Chat** - Your AI pair programmer (Agent Mode enabled)

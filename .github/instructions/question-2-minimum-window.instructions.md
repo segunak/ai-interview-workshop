@@ -4,6 +4,10 @@ applyTo: "**/question-2-minimum-window/**"
 
 # Question 2: Minimum Window Substring
 
+**Full Instructions:** <https://segunakinyemi.com/ai-interview-workshop/question-2-minimum-window/>
+
+**Docs Source:** [docs/question-2-minimum-window.md](../../docs/question-2-minimum-window.md)
+
 The student is working on the [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) LeetCode problem. This is a hard sliding window problem.
 
 ## Problem Summary
