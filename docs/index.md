@@ -46,15 +46,12 @@ Every problem should follow this sequence:
 
 ## Getting Started
 
-1. Click the **Open in GitHub Codespaces** button above
-2. Wait for your environment to build (about 2-3 minutes)
-3. Open the **Setup** page to verify your tools are ready
-4. Pick a problem and start practicing!
+Head to the **[Setup](setup)** page to configure your environment, then go to [Question 1](question-1-two-sum) and start practicing!
 
 {: .note }
-**Prefer to work locally?** See the [Setup](setup) page for Windows installation instructions. Students can also get [GitHub Copilot Pro for free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) by [verifying their student status](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student)!
+**Students:** Get [GitHub Copilot Pro for free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) by [verifying your student status](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student)!
 
-## Tools at Your Disposal
+## Tools Used in This Workshop
 
 - **GitHub Copilot Chat** - Your AI pair programmer (Agent Mode enabled)
 - **Python** - Primary language for algorithm problems
