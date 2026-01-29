@@ -1,35 +1,13 @@
 # Question 1: Two Sum
 
-This folder is for your Two Sum solution.
+This folder is for your solution files.
 
-## Problem
+## Instructions
 
-Given an array of integers `nums` and an integer `target`, return the indices of the two numbers that add up to `target`.
+**Website:** <https://segunakinyemi.com/ai-interview-workshop/question-1-two-sum/>
 
-**Constraints:**
+**Local:** [docs/question-1-two-sum.md](../docs/question-1-two-sum.md)
 
-- Exactly one solution exists
-- You cannot use the same element twice
-- Return the indices, not the values
+## The AI Rule
 
-## Example
-
-```txt
-Input: nums = [2, 7, 11, 15], target = 9
-Output: [0, 1]
-Explanation: nums[0] + nums[1] = 2 + 7 = 9
-```
-
-## Deliverables
-
-1. Working code with your solution
-2. Tests that prove it works
-3. Be ready to explain your approach
-
-## AI Rule
-
-> **Plan first. Then code and prove it with tests.**
-
-## Getting Started
-
-Open GitHub Copilot Chat and describe the problem. Ask it to help you plan an approach before writing code.
+You can use AI for everything, but you must be able to explain everything your AI produces. Plan first, then prove it with tests. **[Your job is to deliver code you have proven to work](https://simonwillison.net/2025/Dec/18/code-proven-to-work/)**.

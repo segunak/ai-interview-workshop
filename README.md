@@ -38,7 +38,7 @@ If AI can write code, then the [real skill isn't typing solutions from memory](h
 
 ## The AI Rule
 
-> **Plan first. Then code and prove it with tests.**
+You can use AI for everything, but you must be able to explain everything your AI produces. Plan first, then prove it with tests. **[Your job is to deliver code you have proven to work](https://simonwillison.net/2025/Dec/18/code-proven-to-work/)**.
 
 This rule appears on every question. It's the core workflow for AI-assisted development:
 

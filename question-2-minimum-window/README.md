@@ -1,36 +1,13 @@
 # Question 2: Minimum Window Substring
 
-This folder is for your Minimum Window Substring solution.
+This folder is for your solution files.
 
-## Problem
+## Instructions
 
-Given two strings `s` and `t`, return the minimum window substring of `s` such that every character in `t` (including duplicates) is included in the window. If no such substring exists, return an empty string.
+**Website:** <https://segunakinyemi.com/ai-interview-workshop/question-2-minimum-window/>
 
-## Example
+**Local:** [docs/question-2-minimum-window.md](../docs/question-2-minimum-window.md)
 
-```txt
-Input: s = "ADOBECODEBANC", t = "ABC"
-Output: "BANC"
-Explanation: "BANC" is the smallest substring containing 'A', 'B', and 'C'
-```
+## The AI Rule
 
-## Deliverables
-
-1. Working code with your solution
-2. Tests that prove it works
-3. Be ready to explain your approach
-
-## Reflection
-
-After solving this problem, consider:
-
-- Could you have solved this without AI assistance?
-- In real work, does it matter if you "knew the trick" or that you shipped a correct, tested solution?
-
-## AI Rule
-
-> **Plan first. Then code and prove it with tests.**
-
-## Getting Started
-
-This is a hard problem. It's okay to lean on AI heavily here. Focus on understanding the solution and being able to explain it.
+You can use AI for everything, but you must be able to explain everything your AI produces. Plan first, then prove it with tests. **[Your job is to deliver code you have proven to work](https://simonwillison.net/2025/Dec/18/code-proven-to-work/)**.

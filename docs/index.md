@@ -22,7 +22,7 @@ If AI can write code, then the [real skill isn't typing solutions from memory](h
 
 This workshop teaches you how to effectively use AI coding assistants during technical interviews. You'll practice a structured workflow that demonstrates thoughtful problem-solving rather than just generating code.
 
-**The AI Rule:** You can use AI for everything, but you must be able to explain everything your AI produces. **[Your job is to deliver code you have proven to work](https://simonwillison.net/2025/Dec/18/code-proven-to-work/)**.
+**The AI Rule:** You can use AI for everything, but you must be able to explain everything your AI produces. Plan first, then prove it with tests. **[Your job is to deliver code you have proven to work](https://simonwillison.net/2025/Dec/18/code-proven-to-work/)**.
 
 ## The Workflow
 
@@ -41,7 +41,7 @@ Every problem should follow this sequence:
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Data Structures and Algorithms | Hash maps, array traversal |
 | 2 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Data Structures and Algorithms | Sliding window, string manipulation |
 | 3 | Log Triage | Practical Software Engineering | File I/O, parsing, aggregation |
-| 4 | Live Feed POST | Practical Software Engineering | HTTP requests, API integration |
+| 4 | Live Feed POST + Verify | Practical Software Engineering | HTTP requests, API integration, verification |
 | 5 | Runway Scheduler | System Design | Ambiguity handling, prioritization |
 
 ## Getting Started

@@ -34,7 +34,7 @@ Each question has its own folder. Create all code files inside the appropriate q
 - `question-1-two-sum/` - Two Sum problem
 - `question-2-minimum-window/` - Minimum Window Substring problem
 - `question-3-log-triage/` - Log file parsing (sample logs are in `question-3-log-triage/logs/`)
-- `question-4-live-feed/` - POST to live feed API
+- `question-4-live-feed/` - POST to live feed API and verify the post exists
 - `question-5-runway-scheduler/` - Runway scheduling (sample input is in `question-5-runway-scheduler/sample-input.json`)
 
 If the student hasn't specified which question they're working on, ask them.
