@@ -33,7 +33,7 @@ kramdown:
   syntax_highlighter: rouge
 
 # Footer content
-footer_content: "Created by <a href=\"https://segunakinyemi.com\">Segun Akinyemi</a> | <a href=\"mailto:segun@segunakinyemi.com\">Email</a> | <a href=\"https://linkedin.com/in/segunakinyemi\">LinkedIn</a> | <a href=\"https://github.com/segunak\">GitHub</a>"
+footer_content: "Created by <a href=\"https://segunakinyemi.com\">Segun Akinyemi</a> | <a href=\"https://linkedin.com/in/segunakinyemi\">LinkedIn</a> | <a href=\"mailto:segun@segunakinyemi.com\">Email</a> | <a href=\"https://github.com/segunak\">GitHub</a>"
 
 # Callouts
 callouts:

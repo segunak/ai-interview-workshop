@@ -93,7 +93,7 @@ Take advantage of these programs while you have a .edu email address.
 
 ## Stay Connected
 
-Workshop created by [Segun Akinyemi](https://segunakinyemi.com) • [Email](mailto:segun@segunakinyemi.com) • [LinkedIn](https://linkedin.com/in/segunakinyemi) • [GitHub](https://github.com/segunak) • [Website](https://segunakinyemi.com)
+Workshop created by **Segun Akinyemi:** [LinkedIn](https://linkedin.com/in/segunakinyemi) • [GitHub](https://github.com/segunak) • [Website](https://segunakinyemi.com) • [Email](mailto:segun@segunakinyemi.com)
 
 {: .highlight }
 Remember: AI is a tool that amplifies your abilities. The goal is to become a better engineer, not to outsource your thinking. Use AI to learn faster, explore more options, and handle tedious tasks, but always make sure you understand what you're building.

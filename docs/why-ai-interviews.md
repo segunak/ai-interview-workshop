@@ -8,7 +8,7 @@ nav_order: 9
 Everything that follows is optional reading. But if you're curious why I'm teaching students to interview with AI tools, or if you've encountered skeptics who think this is "cheating," read on.
 
 {: .blank-note }
-**Written by Segun Akinyemi:** [Email](mailto:segun@segunakinyemi.com) • [LinkedIn](https://linkedin.com/in/segunakinyemi) • [GitHub](https://github.com/segunak) • [Website](https://segunakinyemi.com)
+**Written by Segun Akinyemi:** [LinkedIn](https://linkedin.com/in/segunakinyemi) • [GitHub](https://github.com/segunak) • [Website](https://segunakinyemi.com) • [Email](mailto:segun@segunakinyemi.com)
 
 ## The Game Has Changed
 
@@ -176,5 +176,3 @@ The industry is still figuring things out, but the direction is clear. Coding as
 Finally, I really think students should read [Latent Space's AI Engineer article](https://www.latent.space/p/ai-engineer). If you're even a little bit technical and know how to tinker and put things together, you cna do amazing things quickly with AI, even if you're no good at LeetCode.
 
 Don't fight AI. You won't win. Adapt or die.
-
-_If you read this far, we should chat. I write more [on my blog](https://segunakinyemi.com/) and I'm always down to talk about AI, software engineering, or whatever's on your mind. [Email me](mailto:segun@segunakinyemi.com) or find me on [LinkedIn](https://linkedin.com/in/segunakinyemi)._
