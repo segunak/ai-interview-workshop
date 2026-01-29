@@ -14,16 +14,14 @@ Practice technical interviews using AI coding assistants as your pair programmin
 
 ## Table of Contents
 
-| Page |
-|------|
-| [Setup](setup) |
-| [Question 1: Two Sum](question-1-two-sum) |
-| [Question 2: Minimum Window Substring](question-2-minimum-window) |
-| [Question 3: Log Triage](question-3-log-triage) |
-| [Question 4: Live Feed POST + Verify](question-4-live-feed) |
-| [Question 5: Live Feed Form UI](question-5-live-feed-form) |
-| [Resources](resources) |
-| [Why AI Interviews?](why-ai-interviews) |
+- [Setup](setup)
+- [Question 1: Two Sum](question-1-two-sum)
+- [Question 2: Minimum Window Substring](question-2-minimum-window)
+- [Question 3: Log Triage](question-3-log-triage)
+- [Question 4: Live Feed POST + Verify](question-4-live-feed)
+- [Question 5: Live Feed Form UI](question-5-live-feed-form)
+- [Resources](resources)
+- [Why AI Interviews?](why-ai-interviews)
 
 ## Why AI-Assisted Interviews?
 
