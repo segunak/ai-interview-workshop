@@ -43,12 +43,7 @@ cd ai-interview-workshop
 
 1. Open PowerShell **as Administrator** (right-click -> Run as Administrator)
 2. Navigate to the repo folder
-3. Run the setup script:
-
-```powershell
-.\scripts\setup-windows.ps1
-```
-
+3. Run the setup script: `.\scripts\setup-windows.ps1`
 4. Follow the prompts (a browser window will open for GitHub login)
 
 ### Step 3: Open in VS Code
@@ -58,18 +53,6 @@ cd ai-interview-workshop
 3. Sign in with your GitHub account (click the person icon in the bottom left)
 4. Open the `ai-interview-workshop` folder
 5. You're ready to start!
-
-### What Gets Installed
-
-| Tool | Purpose |
-|------|---------|
-| Git | Version control |
-| Python | Algorithm solutions |
-| Node.js | JavaScript solutions |
-| VS Code | IDE with Copilot extensions |
-| GitHub CLI | Authentication |
-| GitHub Copilot CLI | AI coding agent in terminal |
-| Python `requests` | HTTP requests for Question 4 |
 
 ## GitHub Copilot for Students
 
@@ -89,8 +72,8 @@ Your environment (Codespace or local) comes ready with:
 - **Node.js** - For JavaScript solutions
 - **PowerShell** - Cross-platform scripting
 - **GitHub CLI** - For GitHub authentication
-- **GitHub Copilot CLI** - AI coding agent in your terminal
 - **GitHub Copilot** - Chat and code completion in VS Code
+- **GitHub Copilot CLI** - AI coding agent in your terminal
 
 ## Folder Structure
 
@@ -111,7 +94,7 @@ Each question folder contains a README with the problem statement. Create your s
 
 ## Ready to Practice
 
-Pick a problem and start:
+Click on Question 1 below to get started. Remember, you're encouraged to use GitHub Copilot the whole way through!
 
 - [Question 1: Two Sum](question-1-two-sum) - Classic algorithm warmup
 - [Question 2: Minimum Window Substring](question-2-minimum-window) - Sliding window challenge
