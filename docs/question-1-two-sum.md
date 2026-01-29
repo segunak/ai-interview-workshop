@@ -83,10 +83,12 @@ Be ready to articulate:
 
 ## Deliverables
 
-Create these files in the `question-1-two-sum/` folder:
+Create a solution file in `question-1-two-sum/` using your preferred language:
 
-1. **solution.py** (or your preferred language) - Your implementation
-2. **test_solution.py** - Test cases proving your solution works
+- **Python:** `solution.py` and `test_solution.py`
+- **JavaScript:** `solution.js` and `test_solution.js`
+
+Your solution must include tests proving it works.
 
 ## Hints
 

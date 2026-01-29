@@ -38,7 +38,7 @@ Example lines:
 
 Your script should output something immediately useful for someone at 2 AM trying to figure out what's broken. Example:
 
-```
+```txt
 ================================================================================
                               LOG TRIAGE REPORT
 ================================================================================
@@ -105,10 +105,13 @@ Run your script and verify:
 
 ## Deliverables
 
-Create these files in the `question-3-log-triage/` folder:
+Create a solution file in `question-3-log-triage/` using your preferred language:
 
-1. **triage.py** (or .js, .ps1, .sh) - Your parsing script
-2. Run your script and verify the output makes sense
+- **Python:** `triage.py`
+- **JavaScript:** `triage.js`
+- **PowerShell:** `triage.ps1`
+
+Run your script and verify the output makes sense. **Output verification is the test for this problem.** Unit tests are optional.
 
 ## Extension Challenges
 

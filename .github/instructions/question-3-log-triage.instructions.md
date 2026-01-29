@@ -81,9 +81,11 @@ The exact format can vary. The goal is to make it scannable and immediately usef
 
 ## Workflow Reminders
 
+- Ask which language the student prefers before showing code
+  - **Python** (default), **JavaScript**, or **PowerShell**
 - Guide the student through clarifying questions before coding
 - Help them break the problem into steps (find files, read lines, extract codes, aggregate, display)
-- Encourage writing tests to verify the solution
 - Encourage them to make the output visually clear and scannable
-- Suggest Python or PowerShell based on student preference
 - The logs folder has real sample data to test against
+- **Output verification is the test.** Run against sample logs, verify output is correct. Unit tests are optional extra credit.
+- File names: `triage.py`, `triage.js`, or `triage.ps1`

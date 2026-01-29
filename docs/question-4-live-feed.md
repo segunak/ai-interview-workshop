@@ -7,7 +7,7 @@ nav_order: 6
 
 ## Why This Problem?
 
-This is a practical API integration problem. It reflects a growing trend in technical interviews: companies are letting candidates use AI tools, but they want to see you solve real-world problems, not just algorithm puzzles. Making API calls, handling authentication, and debugging HTTP requests are everyday engineering tasks.
+This is a practical API integration problem. It reflects a growing trend in technical interviews. Companies are letting candidates use AI tools, but they want to see you solve real-world problems, not just algorithm puzzles. Making API calls, handling authentication, and debugging HTTP requests are everyday engineering tasks.
 
 Companies like Canva and Meta have started allowing AI in interviews because they recognize that AI is part of modern software development. What matters is whether you can actually build things and explain your work.
 
@@ -15,19 +15,20 @@ Companies like Canva and Meta have started allowing AI in interviews because the
 
 - [Canva: Yes, You Can Use AI in Our Interviews](https://www.canva.dev/blog/engineering/yes-you-can-use-ai-in-our-interviews/)
 - [Wired: Meta AI Job Interview Coding](https://www.wired.com/story/meta-ai-job-interview-coding/)
+- [Reddit: Canva's AI-Assisted Coding Interview](https://www.reddit.com/r/cscareerquestionsOCE/comments/1mjos7d/canvas_ai_assisted_coding_interview/)
 
 ## Goal
 
 1. Make a POST request to create a new post on the live feed
 2. **Programmatically verify** the post exists in the database using the returned ID
 
-A 200 OK response means nothing to stakeholders. Business users don't care about HTTP status codes. They care whether the data shows up. Your code must prove the post made it to the database, not just trust the API response.
+A [200 OK response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status) means nothing to stakeholders in the real world. Business users don't care about HTTP status codes. They care whether the data shows up. Your code must prove the post made it to the database, not just trust the API response. Welcome to real world software engineering!
 
 ## The Live Feed
 
 Open this URL in your browser to see the live feed:
 
-**[https://live.segunakinyemi.com](https://live.segunakinyemi.com)**
+**<https://live.segunakinyemi.com>**
 
 This page displays messages posted by workshop participants in real-time. Your goal is to make your message appear on this board AND verify it programmatically.
 
@@ -37,7 +38,7 @@ This page displays messages posted by workshop participants in real-time. Your g
 
 Creates a new post.
 
-**URL:** `https://live.segunakinyemi.com/api/post`
+**URL:** <https://live.segunakinyemi.com/api/post>
 
 **Method:** `POST`
 
@@ -49,7 +50,7 @@ Creates a new post.
 |-------|------|-------------|
 | `Name` | string | Your name or alias |
 | `Message` | string | What you want to say |
-| `Workshop` | string | Workshop name (e.g., "UNC Charlotte 2026") |
+| `Workshop` | string | Workshop name (e.g., "AI Interview Workshop") |
 | `WorkshopKey` | string | Secret key (see below) |
 
 **Optional Fields:**
@@ -99,9 +100,9 @@ GET https://live.segunakinyemi.com/api/posts?id=recXXXXXXXXX&WorkshopKey=your-ke
   "success": true,
   "post": {
     "id": "recXXXXXXXXX",
-    "name": "Ada Lovelace",
+    "name": "Qorin Halfhand",
     "message": "First programmer checking in!",
-    "workshop": "UNC Charlotte 2026",
+    "workshop": "AI Interview Workshop",
     "tags": ["python", "first-post"],
     "createdAt": "2026-02-09T22:30:00.000Z"
   }
@@ -121,7 +122,7 @@ GET https://live.segunakinyemi.com/api/posts?id=recXXXXXXXXX&WorkshopKey=your-ke
 **Mode 2: List recent posts by workshop**
 
 ```txt
-GET https://live.segunakinyemi.com/api/posts?workshop=UNC%20Charlotte%202026&WorkshopKey=your-key
+GET https://live.segunakinyemi.com/api/posts?workshop=AI%20Interview%20Workshop&WorkshopKey=your-key
 ```
 
 **Success Response (200):**
@@ -130,13 +131,13 @@ GET https://live.segunakinyemi.com/api/posts?workshop=UNC%20Charlotte%202026&Wor
 {
   "success": true,
   "count": 12,
-  "workshop": "UNC Charlotte 2026",
+  "workshop": "AI Interview Workshop",
   "posts": [
     {
       "id": "recXXXXXXXXX",
-      "name": "Ada Lovelace",
+      "name": "Qorin Halfhand",
       "message": "First programmer checking in!",
-      "workshop": "UNC Charlotte 2026",
+      "workshop": "AI Interview Workshop",
       "tags": ["python"],
       "createdAt": "2026-02-09T22:30:00.000Z"
     }
@@ -144,12 +145,20 @@ GET https://live.segunakinyemi.com/api/posts?workshop=UNC%20Charlotte%202026&Wor
 }
 ```
 
+**Mode 3: List recent posts by tag**
+
+```txt
+GET https://live.segunakinyemi.com/api/posts?tag=python&WorkshopKey=your-key
+```
+
+**Response:** `{ success: true, count: 5, tag: "python", posts: [...] }`
+
 ## WorkshopKey
 
 <details>
 <summary>Click to reveal the WorkshopKey</summary>
 
-The WorkshopKey value is `cinnamon-rolls-are-the-best-pastry-hands-down`
+The WorkshopKey value is `cinnamon-rolls-are-the-best-pastry-hands-down`. Your code will need to pass this key for things to work!
 
 </details>
 
@@ -159,9 +168,9 @@ The WorkshopKey value is `cinnamon-rolls-are-the-best-pastry-hands-down`
 
 ```json
 {
-  "Name": "Ada Lovelace",
+  "Name": "Qorin Halfhand",
   "Message": "First programmer checking in!",
-  "Workshop": "UNC Charlotte 2026",
+  "Workshop": "AI Interview Workshop",
   "WorkshopKey": "your-workshop-key-here"
 }
 ```
@@ -229,11 +238,11 @@ Your script should only claim success after the GET request confirms the post ex
 
 ## Deliverables
 
-Create a file in `question-4-live-feed/` with your solution:
+Create a solution file in `question-4-live-feed/` using your preferred language:
 
-- `post.py` - Python solution
-- `post.js` - JavaScript solution
-- `post.ps1` - PowerShell solution
+- **Python:** `post.py`
+- **JavaScript:** `post.js`
+- **PowerShell:** `post.ps1`
 
 Your script should print:
 
@@ -241,6 +250,8 @@ Your script should print:
 Posted OK: "<message>" (name=<name>, id=<id>)
 Verified: post exists in database
 ```
+
+**The GET verification step is your test.** If your script prints "Verified: post exists in database", you've proven it works.
 
 ## Extension Challenges
 

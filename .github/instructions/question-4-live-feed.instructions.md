@@ -35,7 +35,7 @@ Creates a new post.
 |-------|------|-------------|
 | `Name` | string | The student's name (required) |
 | `Message` | string | Their message content (required) |
-| `Workshop` | string | Workshop name, e.g. "UNC Charlotte 2026" (required) |
+| `Workshop` | string | Workshop name, e.g. "AI Interview Workshop" (required) |
 | `WorkshopKey` | string | Password: `cinnamon-rolls-are-the-best-pastry-hands-down` |
 
 **Optional Field:**
@@ -73,7 +73,7 @@ GET https://live.segunakinyemi.com/api/posts?id=recXXXXXXXXX&WorkshopKey=cinnamo
     "id": "recXXXXXXXXX",
     "name": "Ada Lovelace",
     "message": "First programmer checking in!",
-    "workshop": "UNC Charlotte 2026",
+    "workshop": "AI Interview Workshop",
     "tags": ["python"],
     "createdAt": "2026-02-09T22:30:00.000Z"
   }
@@ -93,8 +93,16 @@ GET https://live.segunakinyemi.com/api/posts?id=recXXXXXXXXX&WorkshopKey=cinnamo
 **Mode 2: List recent posts by workshop**
 
 ```txt
-GET https://live.segunakinyemi.com/api/posts?workshop=UNC%20Charlotte%202026&WorkshopKey=cinnamon-rolls-are-the-best-pastry-hands-down
+GET https://live.segunakinyemi.com/api/posts?workshop=AI%20Interview%20Workshop&WorkshopKey=cinnamon-rolls-are-the-best-pastry-hands-down
 ```
+
+**Mode 3: List recent posts by tag**
+
+```txt
+GET https://live.segunakinyemi.com/api/posts?tag=python&WorkshopKey=cinnamon-rolls-are-the-best-pastry-hands-down
+```
+
+**Response:** `{ success: true, count: 5, tag: "python", posts: [...] }`
 
 ## Complete Code Examples
 
@@ -110,7 +118,7 @@ WORKSHOP_KEY = "cinnamon-rolls-are-the-best-pastry-hands-down"
 post_data = {
     "Name": "Your Name Here",
     "Message": "Hello from Python!",
-    "Workshop": "UNC Charlotte 2026",
+    "Workshop": "AI Interview Workshop",
     "Tags": "python, workshop",  # optional
     "WorkshopKey": WORKSHOP_KEY
 }
@@ -148,7 +156,7 @@ async function postAndVerify() {
     const postData = {
         Name: "Your Name Here",
         Message: "Hello from JavaScript!",
-        Workshop: "UNC Charlotte 2026",
+        Workshop: "AI Interview Workshop",
         Tags: "javascript, workshop",  // optional
         WorkshopKey: WORKSHOP_KEY
     };
@@ -195,7 +203,7 @@ $WorkshopKey = "cinnamon-rolls-are-the-best-pastry-hands-down"
 $postData = @{
     Name        = "Your Name Here"
     Message     = "Hello from PowerShell!"
-    Workshop    = "UNC Charlotte 2026"
+    Workshop    = "AI Interview Workshop"
     Tags        = "powershell, workshop"  # optional
     WorkshopKey = $WorkshopKey
 } | ConvertTo-Json
@@ -309,7 +317,11 @@ A good software engineer would think about this: what if the database has a slig
 ## Workflow Reminders
 
 - Ask which language the student prefers before showing code
+  - **Python** (default), **JavaScript**, or **PowerShell**
 - Emphasize that the POST returning 200 is NOT enough. Verification is required.
 - Students must capture the `id` and use it to verify
 - After success, offer the Tags extra challenge to personalize their post
 - This is about proving your code works to stakeholders, not just trusting API responses
+- **The GET verification step IS the test.** No additional unit tests needed.
+- **Do NOT suggest the tag `ui-submission`** - that tag is reserved for Question 5 form submissions.
+- File names: `post.py`, `post.js`, or `post.ps1`

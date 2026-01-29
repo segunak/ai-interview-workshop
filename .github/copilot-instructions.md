@@ -21,9 +21,9 @@ Every problem should follow this sequence:
 
 4. **Code with Understanding** - When writing code, add comments explaining the logic. Don't just produce code silently.
 
-5. **Write Tests** - After implementation, always suggest: "Should I write tests to verify this works?" Aim for at least 2-3 test cases including edge cases. Students should get into the habit of testing their code.
+5. **Write Tests (Questions 1-2) or Verify Output (Questions 3-5)** - For Questions 1-2 (LeetCode problems), write unit tests with 2-3 test cases including edge cases. For Questions 3-5, output verification is the test. Run the script and verify the output is correct.
 
-6. **Prove It Works** - Run the tests. Don't just write them. The goal is a working, verified solution.
+6. **Prove It Works** - Run the tests or verify the output. Don't just write code. The goal is a working, verified solution.
 
 7. **Explain** - Be ready to help the student explain the solution: time complexity, space complexity, tradeoffs. Assume a very basic level of understanding from the student, explain concepts clearly and simply.
 
@@ -35,7 +35,7 @@ Each question has its own folder. Create all code files inside the appropriate q
 - `question-2-minimum-window/` - Minimum Window Substring problem
 - `question-3-log-triage/` - Log file parsing (sample logs are in `question-3-log-triage/logs/`)
 - `question-4-live-feed/` - POST to live feed API and verify the post exists
-- `question-5-runway-scheduler/` - Runway scheduling (sample input is in `question-5-runway-scheduler/sample-input.json`)
+- `question-5-live-feed-form/` - Build a form UI for the live feed (extends Question 4)
 
 If the student hasn't specified which question they're working on, ask them.
 
@@ -57,6 +57,49 @@ Use these prompts naturally during the conversation:
 - For Question 4 (live feed), support Python, JavaScript, or PowerShell based on student preference
 - Always use explicit, readable code over clever one-liners
 - Include type hints in Python when helpful
+
+## Testing Guidelines
+
+Use built-in testing only. Do NOT install pytest, jest, vitest, Pester, or any external testing framework.
+
+**Questions 1-2 (LeetCode problems):** Unit tests are required. Create a separate test file.
+
+**Questions 3-5 (Practical problems):** Output verification is the test. Run the script and verify the output. Unit tests are optional extra credit.
+
+### Python Test Pattern
+
+```python
+from solution import two_sum
+
+assert two_sum([2, 7, 11, 15], 9) == [0, 1], "Basic case failed"
+assert two_sum([3, 2, 4], 6) == [1, 2], "Non-adjacent failed"
+print("All tests passed!")
+```
+
+Run with: `python test_solution.py`
+
+### JavaScript Test Pattern
+
+```javascript
+const assert = require('assert');
+const { twoSum } = require('./solution');
+
+assert.deepStrictEqual(twoSum([2, 7, 11, 15], 9), [0, 1]);
+assert.deepStrictEqual(twoSum([3, 2, 4], 6), [1, 2]);
+console.log('All tests passed!');
+```
+
+Run with: `node test_solution.js`
+
+## File Naming Conventions
+
+| Question | Languages | Solution Files | Test Files |
+|----------|-----------|---------------|------------|
+| Q1 Two Sum | Python, JavaScript | `solution.py` / `solution.js` | `test_solution.py` / `test_solution.js` |
+| Q2 Minimum Window | Python, JavaScript | `solution.py` / `solution.js` | `test_solution.py` / `test_solution.js` |
+| Q3 Log Triage | Python, JavaScript, PowerShell | `triage.py` / `triage.js` / `triage.ps1` | None (output verification) |
+| Q4 Live Feed | Python, JavaScript, PowerShell | `post.py` / `post.js` / `post.ps1` | None (GET verification is test) |
+| Q5 Live Feed Form | HTML, CSS, JavaScript | `index.html`, `styles.css`, `script.js` | None (visual verification) |
 
 ## What NOT To Do
 

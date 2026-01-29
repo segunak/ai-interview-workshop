@@ -83,10 +83,12 @@ After completing your solution, reflect on these questions:
 
 ## Deliverables
 
-Create these files in the `question-2-minimum-window/` folder:
+Create a solution file in `question-2-minimum-window/` using your preferred language:
 
-1. **solution.py** - Your implementation
-2. **test_solution.py** - Test cases
+- **Python:** `solution.py` and `test_solution.py`
+- **JavaScript:** `solution.js` and `test_solution.js`
+
+Your solution must include tests proving it works.
 
 ## Hints
 

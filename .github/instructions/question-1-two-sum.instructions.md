@@ -33,7 +33,10 @@ Use a hash map to store complements. O(n) time, O(n) space.
 
 ## Workflow Reminders
 
+- Ask which language the student prefers before showing code
+  - **Python** (default) or **JavaScript**
 - Guide the student through clarifying questions before coding
 - Help them plan the approach before writing code
 - Suggest both brute force O(n²) and optimal O(n) solutions
-- Encourage writing tests to verify the solution
+- **Unit tests are required.** Use simple assert statements, no pytest or jest.
+- File names: `solution.py` + `test_solution.py` or `solution.js` + `test_solution.js`
