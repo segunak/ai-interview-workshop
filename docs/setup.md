@@ -17,11 +17,7 @@ Click this button to create your environment:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/segunak/ai-interview-workshop?quickstart=1)
 
-The Codespace takes about 2-3 minutes to fully build. When it's ready, you'll see:
-
-1. VS Code in your browser with the file explorer on the left
-2. A terminal that automatically runs a validation script
-3. Green checkmarks confirming all tools are installed
+The Codespace takes about 2-3 minutes to fully build. When it's ready, you'll see VS Code in your browser with the file explorer on the left.
 
 {: .note }
 If you see any red X marks in the terminal output, ask a workshop volunteer for help.
