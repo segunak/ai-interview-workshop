@@ -12,6 +12,19 @@ Practice technical interviews using AI coding assistants as your pair programmin
 {: .blank-note }
 **Created by Segun Akinyemi:** [LinkedIn](https://linkedin.com/in/segunakinyemi) • [GitHub](https://github.com/segunak) • [Website](https://segunakinyemi.com) • [Email](mailto:segun@segunakinyemi.com)
 
+## Table of Contents
+
+| Page |
+|------|
+| [Setup](setup) |
+| [Question 1: Two Sum](question-1-two-sum) |
+| [Question 2: Minimum Window Substring](question-2-minimum-window) |
+| [Question 3: Log Triage](question-3-log-triage) |
+| [Question 4: Live Feed POST + Verify](question-4-live-feed) |
+| [Question 5: Live Feed Form UI](question-5-live-feed-form) |
+| [Resources](resources) |
+| [Why AI Interviews?](why-ai-interviews) |
+
 ## Why AI-Assisted Interviews?
 
 If AI can write code, then the [real skill isn't typing solutions from memory](https://terriblesoftware.org/2025/12/11/ai-can-write-your-code-it-cant-do-your-job/). It's driving the software development process end to end and shipping something correct. Companies like [Meta](https://www.wired.com/story/meta-ai-job-interview-coding/) and [Canva](https://www.canva.dev/blog/engineering/yes-you-can-use-ai-in-our-interviews/) are adapting interviews to this reality. This workshop trains that modern skill set.
