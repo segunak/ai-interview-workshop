@@ -26,10 +26,11 @@ If you see any red X marks in the terminal output, ask a workshop volunteer for 
 
 Your Codespace comes ready with:
 
-- **Python 3** - For algorithm solutions
-- **Node.js 22** - For JavaScript solutions
-- **PowerShell 7** - Cross-platform scripting
-- **GitHub CLI** - With Copilot CLI extension
+- **Python** - For algorithm solutions
+- **Node.js** - For JavaScript solutions
+- **PowerShell** - Cross-platform scripting
+- **GitHub CLI** - For GitHub operations
+- **GitHub Copilot CLI** - AI coding agent in your terminal (like Claude Code)
 - **GitHub Copilot** - Chat and code completion enabled
 - **Cyberpunk theme** - Because why not
 
@@ -44,7 +45,7 @@ ai-interview-workshop/
 ├── question-3-log-triage/        # Log parsing (includes sample logs)
 │   └── logs/                     # Sample log files
 ├── question-4-live-feed/         # HTTP POST to live feed
-├── question-5-runway-scheduler/  # Runway scheduling (includes sample input)
+├── question-5-live-feed-form/    # Form UI for live feed
 └── docs/                         # This documentation site
 ```
 
@@ -58,7 +59,7 @@ Pick a problem and start:
 - [Question 2: Minimum Window Substring](question-2-minimum-window) - Sliding window challenge
 - [Question 3: Log Triage](question-3-log-triage) - Real-world file parsing
 - [Question 4: Live Feed POST](question-4-live-feed) - API integration
-- [Question 5: Runway Scheduler](question-5-runway-scheduler) - System design with ambiguity
+- [Question 5: Live Feed Form UI](question-5-live-feed-form) - Frontend form building
 
 {: .important }
 Do the questions in order.

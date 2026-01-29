@@ -45,17 +45,11 @@ else
     FAILED=1
 fi
 
-# Check GitHub Copilot CLI extension
-if gh extension list 2>/dev/null | grep -q "gh-copilot"; then
-    echo "✅ GitHub Copilot CLI extension installed"
+# Check GitHub Copilot CLI
+if command -v copilot &> /dev/null; then
+    echo "✅ GitHub Copilot CLI installed"
 else
-    echo "⏳ Installing GitHub Copilot CLI extension..."
-    gh extension install github/gh-copilot 2>/dev/null
-    if [ $? -eq 0 ]; then
-        echo "✅ GitHub Copilot CLI extension installed"
-    else
-        echo "⚠️  GitHub Copilot CLI extension may need manual install: gh extension install github/gh-copilot"
-    fi
+    echo "⚠️  GitHub Copilot CLI not found. Install with: npm install -g @github/copilot"
 fi
 
 echo ""

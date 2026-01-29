@@ -54,10 +54,10 @@ Every problem should follow this sequence:
 ## Tools at Your Disposal
 
 - **GitHub Copilot Chat** - Your AI pair programmer (Agent Mode enabled)
-- **Python 3** - Primary language for algorithm problems
-- **Node.js 22** - For JavaScript solutions
+- **Python** - Primary language for algorithm problems
+- **Node.js** - For JavaScript solutions
 - **PowerShell** - For scripting and API calls
-- **[GitHub Copilot CLI](https://docs.github.com/en/copilot/github-copilot-in-the-cli)** - AI in your terminal (Microsoft's answer to Claude Code)
+- **[GitHub Copilot CLI](https://github.com/github/copilot-cli)** - AI in your terminal (Microsoft's answer to Claude Code)
 
 {: .note }
 GitHub Copilot in this repo has been configured to guide you through the workflow. It will prompt you to ask clarifying questions, plan before coding, and write tests. Pay attention to its suggestions!

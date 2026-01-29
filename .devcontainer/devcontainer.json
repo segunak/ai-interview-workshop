@@ -2,18 +2,7 @@
   "name": "AI Interview Workshop",
   "image": "mcr.microsoft.com/devcontainers/universal:latest",
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "22"
-    },
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/github-cli:1": {
-      "version": "latest"
-    },
-    "ghcr.io/devcontainers/features/powershell:1": {
-      "version": "latest"
-    }
+    "ghcr.io/devcontainers/features/powershell:1": {}
   },
   "customizations": {
     "vscode": {
@@ -40,7 +29,7 @@
     }
   },
   "forwardPorts": [3000, 5000, 8080],
-  "postCreateCommand": "chmod +x .devcontainer/validate.sh && pip install requests && gh extension install github/gh-copilot || true",
+  "postCreateCommand": "chmod +x .devcontainer/validate.sh && pip install requests && npm install -g @github/copilot || true",
   "postAttachCommand": ".devcontainer/validate.sh",
   "remoteUser": "codespace"
 }
