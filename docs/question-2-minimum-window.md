@@ -5,6 +5,9 @@ nav_order: 4
 
 # Question 2: Minimum Window Substring
 
+{: .note }
+This problem is based on [LeetCode #76: Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/).
+
 ## Problem Statement
 
 This is a classic algorithm problem. Given two strings `s` and `t`, return the minimum window substring of `s` such that every character in `t` (including duplicates) is included in the window.

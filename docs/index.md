@@ -38,11 +38,11 @@ Every problem should follow this sequence:
 
 | Question Number | Problem | Type | Skills Tested |
 |---|---------|------|---------------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Data Structures and Algorithms | Hash maps, array traversal |
-| 2 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | Data Structures and Algorithms | Sliding window, string manipulation |
-| 3 | Log Triage | Practical Software Engineering | File I/O, parsing, aggregation |
-| 4 | Live Feed POST + Verify | Practical Software Engineering | HTTP requests, API integration, verification |
-| 5 | Live Feed Form UI | Practical Software Engineering | Frontend, forms, validation, UX |
+| 1 | [Two Sum](question-1-two-sum) | Data Structures and Algorithms | Hash maps, array traversal |
+| 2 | [Minimum Window Substring](question-2-minimum-window) | Data Structures and Algorithms | Sliding window, string manipulation |
+| 3 | [Log Triage](question-3-log-triage) | Practical Software Engineering | File I/O, parsing, aggregation |
+| 4 | [Live Feed POST + Verify](question-4-live-feed) | Practical Software Engineering | HTTP requests, API integration, verification |
+| 5 | [Live Feed Form UI](question-5-live-feed-form) | Practical Software Engineering | Frontend, forms, validation, UX |
 
 ## Getting Started
 

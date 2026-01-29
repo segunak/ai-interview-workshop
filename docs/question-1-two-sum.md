@@ -5,6 +5,9 @@ nav_order: 3
 
 # Question 1: Two Sum
 
+{: .note }
+This problem is based on [LeetCode #1: Two Sum](https://leetcode.com/problems/two-sum/).
+
 ## Problem Statement
 
 This is a classic algorithm problem. Given an array of integers `nums` and an integer `target`, return the indices of the two numbers that add up to `target`.
