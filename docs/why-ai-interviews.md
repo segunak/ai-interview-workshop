@@ -103,6 +103,31 @@ This section's title is a direct pull from a great article I think you should re
 
 I'll summarize. If you skip the hard work of actually understanding how code works, you will hit a wall. AI can generate code, but you need a technical foundation to debug it, extend it, and fix it when things break. And things always break. **Always**.
 
+This isn't just opinion. Anthropic, the company behind Claude, published research confirming this. In [How AI Assistance Impacts the Formation of Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills), they found that developers using AI assistance scored 17% lower on comprehension tests than those who coded by hand. The largest gap was in debugging skills, the very skill you need most when AI-generated code breaks. This [Reddit discussion](https://www.reddit.com/r/programming/comments/1qqxvlw/anthropic_ai_assisted_coding_doesnt_show/) about the research is worth reading too.
+
+Here's some insightful comments from that thread:
+
+> I'm not gonna lie, using AI is like a performance-enhancing drug for the brain. But it also helps me realize when I should independently spike and research, because it's constantly making up sh*t that SHOULD work but just ain't so. Human + AI is best, but juniors probably shouldn't be using it, in much the same way that teenagers should not be drinking alcohol. Many will still be using occasionally, but not having good boundaries around it means you're one big AWS outage away from having half your brain ripped out.
+>
+> — [u/Boxy310 on Reddit](https://www.reddit.com/r/programming/comments/1qqxvlw/comment/o2lbipm/)
+---
+
+> There's an important caveat here: "However, some in the AI group still scored highly [on the comprehension test] while using AI assistance. When we looked at the ways they completed the task, we saw they asked conceptual and clarifying questions to understand the code they were working with—rather than delegating or relying on AI." As usual, it all depends on you. Use AI if you wish, but be mindful about it.
+>
+> — [u/ZenDragon on Reddit](https://www.reddit.com/r/programming/comments/1qqxvlw/comment/o2kig4j/)
+
+---
+
+> The article is weird. It seems to say that in general across all professions, there are significant productivity gains. But for software development specifically, the gains don't really materialize because developers who rely entirely on AI don't actually learn the concepts - and as a result, productivity gains in the actual writing of the code are all lost by reduced productivity in debugging, code reading, and understanding the actual code. Which, honestly, aligns perfectly with my own real life perception. There are definitely times where AI saves me hours of work. There are also times where it definitely costs me hours in other aspects of the project.
+>
+> — [u/\_BreakingGood\_ on Reddit](https://www.reddit.com/r/programming/comments/1qqxvlw/comment/o2k6pub/)
+
+So, **you still need to learn how to code alongside computer science fundamentals**. Pick a language (I'd suggest [Python](https://www.tiobe.com/tiobe-index/)) and invest time in understanding how computers, code, and software actually work.
+
+If you want a great resource for building that foundation, check out [From Nand to Tetris](https://www.nand2tetris.org/), which is [also on Coursera](https://www.coursera.org/learn/build-a-computer). It's a project that teaches you how a general-purpose computer system and its software function from the ground up. AI can't accelerate you in real-world software engineering if you're useless without it. Build the foundation first.
+
+## A Historical Perspective
+
 Here's a historical perspective that I find grounding. [Stephan Schwab](https://linkedin.com/in/stephanschwab) wrote [Why We've Tried to Replace Developers Every Decade Since 1969](https://caimito.net/2025/02/09/the-recurring-dream-of-replacing-developers.html), which does an excellent job showing how long before AI coding became hot in 2022, people have been trying to get rid of developers.
 
 Did you know that [COBOL](https://en.wikipedia.org/wiki/COBOL) was thought of by business people as a tool that'd allow them to fire all their software developers? COBOL! It stands for Common Business-Oriented Language. They thought it would let business people vaguely describe what they want and thus maintain production-grade software in a for-profit company. How'd that turn out?
