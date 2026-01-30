@@ -110,6 +110,7 @@ Here's some insightful comments from that thread:
 > I'm not gonna lie, using AI is like a performance-enhancing drug for the brain. But it also helps me realize when I should independently spike and research, because it's constantly making up sh*t that SHOULD work but just ain't so. Human + AI is best, but juniors probably shouldn't be using it, in much the same way that teenagers should not be drinking alcohol. Many will still be using occasionally, but not having good boundaries around it means you're one big AWS outage away from having half your brain ripped out.
 >
 > — [u/Boxy310 on Reddit](https://www.reddit.com/r/programming/comments/1qqxvlw/comment/o2lbipm/)
+
 ---
 
 > There's an important caveat here: "However, some in the AI group still scored highly [on the comprehension test] while using AI assistance. When we looked at the ways they completed the task, we saw they asked conceptual and clarifying questions to understand the code they were working with—rather than delegating or relying on AI." As usual, it all depends on you. Use AI if you wish, but be mindful about it.
