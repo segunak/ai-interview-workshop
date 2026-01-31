@@ -30,7 +30,7 @@ These are AI-powered tools built specifically for developers to write, edit, and
 - [OpenCode](https://opencode.ai/) - Open source terminal-based AI coding agent
 
 {: .note }
-Cursor and Google Antigravity are both forks of Microsoft's open source [VS Code](https://code.visualstudio.com/). Given that VS Code is the most popular IDE and under constant AI-related development, we recommend students focus on learning AI-assisted coding with VS Code and GitHub Copilot. Explore the alternatives if you're curious, but VS Code is the foundation.
+Cursor and Google Antigravity are both forks of Microsoft's open source [VS Code](https://code.visualstudio.com/). Given that VS Code is the most popular IDE and under constant AI-related development, I recommend students focus on learning AI-assisted coding with VS Code and GitHub Copilot. Explore the alternatives if you're curious, but VS Code is the foundation.
 
 ### Vibe Coding Tools
 
