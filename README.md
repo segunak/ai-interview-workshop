@@ -35,9 +35,9 @@ If AI can write code, then the [real skill isn't typing solutions from memory](h
 3. Run: `.\scripts\setup-windows.ps1`
 4. Open the folder in VS Code and sign in with your GitHub account
 
-> **Students:** Get [GitHub Copilot Pro for free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) by [verifying your student status](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student)!
+**Students:** Get [GitHub Copilot Pro for free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) by [verifying your student status](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student)!
 
-> **💡 Two Windows:** Work with VS Code (in Codespaces or locally) on one side and the [Workshop Website](https://segunakinyemi.com/ai-interview-workshop/) on the other. The README files in each question folder are just starting points. The **full instructions** for each question are on the website.
+**Two Windows:** Work with VS Code (in Codespaces or locally) on one side and the [Workshop Website](https://segunakinyemi.com/ai-interview-workshop/) on the other. The README files in each question folder are just starting points. The **full instructions** for each question are on the website.
 
 ## The 5 Questions
 
