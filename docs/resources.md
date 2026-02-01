@@ -26,7 +26,7 @@ These are AI-powered tools built specifically for developers to write, edit, and
 {: .note }
 Cursor and Google Antigravity are both forks of Microsoft's open source [VS Code](https://code.visualstudio.com/). Given that VS Code is the most popular IDE and under constant AI-related development, I recommend students focus on learning AI-assisted coding with VS Code and GitHub Copilot. Explore the alternatives if you're curious, but VS Code is the foundation.
 
-### Vibe Coding Tools
+## Vibe Coding Tools
 
 These tools let you build apps by describing what you want in natural language, with minimal or no manual coding.
 
