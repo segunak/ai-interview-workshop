@@ -26,7 +26,6 @@ These are AI-powered tools built specifically for developers to write, edit, and
 - [OpenAI Codex CLI](https://github.com/openai/codex) - OpenAI's terminal-based coding agent
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) - Google's AI coding assistant for the terminal
 - [Google Antigravity](https://antigravity.google/) - Google's AI-powered IDE
-- [Amazon Q Developer](https://aws.amazon.com/q/developer/) - AWS's AI assistant for cloud development
 - [OpenCode](https://opencode.ai/) - Open source terminal-based AI coding agent
 
 {: .note }
