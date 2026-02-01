@@ -10,11 +10,6 @@ Curated resources for continuing your learning after the workshop.
 {: .highlight }
 **Start Here:** [AI Insights for Students](https://readwise.io/reader/view/2a197170-e112-4033-83b2-288bfbf75194) - A curated collection of articles on AI engineering, AI's impact of software development and entry level roles, and industry trends. This is a great resource for staying current!
 
-## Workshop Materials
-
-- **[This Workshop on GitHub](https://github.com/segunak/ai-interview-workshop)** - Full source code and documentation
-- **[Live Feed](https://live.segunakinyemi.com)** - The live message board from Question 4
-
 ## AI Coding Tools
 
 These are AI-powered tools built specifically for developers to write, edit, and understand code. Many of these tools are becoming fully agentic, meaning developers "write code" by describing what they want in natural language prompts and then reviewing the generated output, rather than writing code by hand.
