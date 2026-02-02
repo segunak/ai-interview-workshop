@@ -5,7 +5,7 @@ nav_order: 1
 
 # AI Interview Workshop
 
-Practice technical interviews using AI coding assistants as your pair programming partner.
+Practice technical interviews using AI coding assistants as your pair programming partner. You may find the accompanying slide deck to this workshop at: [PowerPoint Deck - Times Are Changing: The Rise of AI-Assisted Coding Interviews](https://1drv.ms/p/c/750d396c5cadcebd/IQBsRMeY3HSzRIBxRgHkaxD1AWZG14z_B3al7wfnPaezf4g?e=CjHD76).
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/segunak/ai-interview-workshop?quickstart=1)
 
