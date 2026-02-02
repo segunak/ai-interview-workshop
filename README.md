@@ -4,6 +4,11 @@
 
 Practice technical interviews the way they actually happen in the age of AI, with coding assistants as your partner.
 
+**Quick Links:**
+
+- **Workshop:** <https://aka.ms/aiw>
+- **Live Feed:** <https://aka.ms/aiw/live-feed>
+
 ## What Is This?
 
 This workshop teaches you how to use AI tools effectively in technical interviews. You'll work through 5 progressively challenging problems, learning to:
@@ -15,9 +20,9 @@ This workshop teaches you how to use AI tools effectively in technical interview
 
 ## Why AI-Assisted Interviews?
 
-If AI can write code, then the [real skill isn't typing solutions from memory](https://terriblesoftware.org/2025/12/11/ai-can-write-your-code-it-cant-do-your-job/). It's driving the software development process end to end and shipping something correct. Companies like [Meta](https://www.wired.com/story/meta-ai-job-interview-coding/) and [Canva](https://www.canva.dev/blog/engineering/yes-you-can-use-ai-in-our-interviews/) are adapting interviews to this reality. This workshop trains that modern skill set.
+If AI can write code, then the [real skill isn't typing solutions from memory](https://terriblesoftware.org/2025/12/11/ai-can-write-your-code-it-cant-do-your-job/). It's driving the software development process end to end and shipping something correct. Companies like [Meta](https://www.wired.com/story/meta-ai-job-interview-coding/) and [Canva](https://www.canva.dev/blog/engineering/yes-you-can-use-ai-in-our-interviews/) are adapting interviews to this reality. This workshop trains that skill set.
 
-[Read the full philosophy](https://segunakinyemi.com/ai-interview-workshop/why-ai-interviews)
+[Read the full philosophy](https://segunakinyemi.com/blog/coding-is-dead-software-engineering-isnt/)
 
 ## Quick Start
 
@@ -43,11 +48,11 @@ If AI can write code, then the [real skill isn't typing solutions from memory](h
 
 | # | Type | Challenge | Folder |
 |---|------|-----------|--------|
-| 1 | Data Structures and Algorithms (Easy) | [Two Sum](https://leetcode.com/problems/two-sum) | [question-1-two-sum/](question-1-two-sum/) |
-| 2 | Data Structures and Algorithms (Hard) | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | [question-2-minimum-window/](question-2-minimum-window/) |
-| 3 | Practical Software Engineering | Log File Triage | [question-3-log-triage/](question-3-log-triage/) |
-| 4 | Practical Software Engineering | Post to Live Feed | [question-4-live-feed/](question-4-live-feed/) |
-| 5 | Frontend Development | Live Feed Form UI | [question-5-live-feed-form/](question-5-live-feed-form/) |
+| 1 | Data Structures and Algorithms (Easy) | [Two Sum](https://segunakinyemi.com/ai-interview-workshop/question-1-two-sum/) | [question-1-two-sum/](question-1-two-sum/) |
+| 2 | Data Structures and Algorithms (Hard) | [Minimum Window Substring](https://segunakinyemi.com/ai-interview-workshop/question-2-minimum-window/) | [question-2-minimum-window/](question-2-minimum-window/) |
+| 3 | Practical Software Engineering | [Log File Triage](https://segunakinyemi.com/ai-interview-workshop/question-3-log-triage/) | [question-3-log-triage/](question-3-log-triage/) |
+| 4 | Practical Software Engineering | [Post to Live Feed](https://segunakinyemi.com/ai-interview-workshop/question-4-live-feed/) | [question-4-live-feed/](question-4-live-feed/) |
+| 5 | Frontend Development | [Live Feed Form UI](https://segunakinyemi.com/ai-interview-workshop/question-5-live-feed-form/) | [question-5-live-feed-form/](question-5-live-feed-form/) |
 
 ## The AI Rule
 
@@ -69,13 +74,3 @@ This rule appears on every question. It's the core workflow for AI-assisted deve
 - [GitHub Copilot CLI](https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli)
 
 **Not allowed for this workshop:** Browser-based chat tools (ChatGPT web, Claude web, etc.). Practice using AI inside your development environment.
-
-## Full Instructions
-
-Visit the workshop website for detailed instructions on each question:
-
-**[segunakinyemi.com/ai-interview-workshop](https://segunakinyemi.com/ai-interview-workshop/)**
-
-## Questions?
-
-Find the volunteers in your breakout group. They're here to help!
