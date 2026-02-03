@@ -6,8 +6,9 @@ Practice technical interviews the way they actually happen in the age of AI, wit
 
 **Quick Links:**
 
-- **Workshop:** <https://aka.ms/aiw>
-- **Live Feed:** <https://aka.ms/aiw/live-feed>
+- **Workshop Website:** <https://aka.ms/aiw>
+- **Workshop Live Feed:** <https://aka.ms/aiw/live-feed>
+- **Workshop PowerPoint Deck:** [The Link](https://1drv.ms/p/c/750d396c5cadcebd/IQBsRMeY3HSzRIBxRgHkaxD1AWZG14z_B3al7wfnPaezf4g?e=CjHD76)
 
 ## What Is This?
 
