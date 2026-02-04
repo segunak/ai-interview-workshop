@@ -13,6 +13,9 @@ Curated resources for continuing your learning after the workshop.
 {: .important }
 **Who to Follow:** The most respected technical voices rarely post on TikTok, Instagram, or Snapchat. They're found on blogs, LinkedIn, Hacker News, Reddit, and Tech Twitter (still active despite the platform's drama). Stop listening to influencers. Follow the experts! Check out [Who to Follow](https://segunakinyemi.com/blog/seo-techdevcon-2025/#who-to-follow) from a related workshop for a curated list of people and platforms worth your attention.
 
+{: .note }
+**UNC Charlotte Workshop (February 9, 2026):** If you attended the technical interview workshop at UNC Charlotte, connect with the Microsoft employee volunteers on LinkedIn: [Alexandra Jones](https://www.linkedin.com/in/alexandra-jones-ncsu/), [Rosey Anim](https://www.linkedin.com/in/rose-anim/), [Sachin Kumar](https://www.linkedin.com/in/sachin-kumar-/), [Bhavesh Rana](https://www.linkedin.com/in/imbhaveshrana/), [Kelechi Nwosu](https://www.linkedin.com/in/kc-nwosu/), [Dinesh Kalla](https://www.linkedin.com/in/dinesh-kalla-ph-d-4a644525/), [Segun Akinyemi](https://www.linkedin.com/in/segunakinyemi/).
+
 ## AI Coding Tools
 
 These are AI-powered tools built specifically for developers to write, edit, and understand code. Many of these tools are becoming fully agentic, meaning developers "write code" by describing what they want in natural language prompts and then reviewing the generated output, rather than writing code by hand.
