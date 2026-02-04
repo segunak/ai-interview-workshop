@@ -8,7 +8,10 @@ nav_order: 8
 Curated resources for continuing your learning after the workshop.
 
 {: .highlight }
-**Start Here:** [AI Insights for Students](https://readwise.io/reader/view/2a197170-e112-4033-83b2-288bfbf75194) - A curated collection of articles on AI engineering, AI's impact of software development and entry level roles, and industry trends. This is a great resource for staying current!
+**What to Read:** Check out [AI Insights for Students](https://readwise.io/reader/view/2a197170-e112-4033-83b2-288bfbf75194), a curated collection of articles on AI engineering, AI's impact of software development and entry level roles, and industry trends. This is a great resource for staying current!
+
+{: .important }
+**Who to Follow:** The most respected technical voices rarely post on TikTok, Instagram, or Snapchat. They're found on blogs, LinkedIn, Hacker News, Reddit, and Tech Twitter (still active despite the platform's drama). Stop listening to influencers. Follow the experts! Check out [Who to Follow](https://segunakinyemi.com/blog/seo-techdevcon-2025/#who-to-follow) from a related workshop for a curated list of people and platforms worth your attention.
 
 ## AI Coding Tools
 
