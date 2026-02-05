@@ -31,8 +31,8 @@ If AI can write code, then the [real skill isn't typing solutions from memory](h
 
 1. Click the **Open in GitHub Codespaces** button above
 2. Wait for the environment to load (about 2 minutes)
-3. Open the [Workshop Instructions](https://segunakinyemi.com/ai-interview-workshop/) in a new tab
-4. Start with Question 1 in the `question-1-two-sum/` folder
+3. Open the [Workshop Website](https://segunakinyemi.com/ai-interview-workshop/) in a new tab
+4. Open `QUESTION-1-START-HERE.md` in the `question-1-two-sum/` folder and keep it open while you work
 
 ### Option 2: Local Setup (Windows)
 
@@ -43,7 +43,7 @@ If AI can write code, then the [real skill isn't typing solutions from memory](h
 
 **Students:** Get [GitHub Copilot Pro for free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) by [verifying your student status](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student)!
 
-**Two Windows:** Work with VS Code (in Codespaces or locally) on one side and the [Workshop Website](https://segunakinyemi.com/ai-interview-workshop/) on the other. The README files in each question folder are just starting points. The **full instructions** for each question are on the website.
+**Important:** When working on a question, keep the `QUESTION-X-START-HERE.md` file open in your editor. This loads the AI context GitHub Copilot needs to help you effectively.
 
 ## The 5 Questions
 

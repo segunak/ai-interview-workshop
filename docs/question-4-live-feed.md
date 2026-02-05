@@ -5,6 +5,9 @@ nav_order: 6
 
 # Question 4: Live Feed POST + Verify
 
+{: .important }
+**Before you start:** Open `QUESTION-4-START-HERE.md` in the `question-4-live-feed/` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+
 ## Why This Problem?
 
 This is a practical API integration problem. It reflects a growing trend in technical interviews. Companies are letting candidates use AI tools, but they want to see you solve real-world problems, not just algorithm puzzles. Making API calls, handling authentication, and debugging HTTP requests are everyday engineering tasks.

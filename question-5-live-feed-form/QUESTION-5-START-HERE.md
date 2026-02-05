@@ -1,12 +1,10 @@
-# Question 4: Post to Live Feed
+# Question 5: Live Feed Form UI
 
-This folder is for your solution files.
+**Keep this file open while working on Question 5.** It loads the AI context GitHub Copilot needs to help you effectively.
 
-## Instructions
+## Full Instructions
 
-**Website:** <https://segunakinyemi.com/ai-interview-workshop/question-4-live-feed/>
-
-**Local:** [docs/question-4-live-feed.md](../docs/question-4-live-feed.md)
+<https://segunakinyemi.com/ai-interview-workshop/question-5-live-feed-form/>
 
 ## The AI Rule
 

@@ -1,12 +1,10 @@
-# Question 1: Two Sum
+# Question 4: Post to Live Feed
 
-This folder is for your solution files.
+**Keep this file open while working on Question 4.** It loads the AI context GitHub Copilot needs to help you effectively.
 
-## Instructions
+## Full Instructions
 
-**Website:** <https://segunakinyemi.com/ai-interview-workshop/question-1-two-sum/>
-
-**Local:** [docs/question-1-two-sum.md](../docs/question-1-two-sum.md)
+<https://segunakinyemi.com/ai-interview-workshop/question-4-live-feed/>
 
 ## The AI Rule
 

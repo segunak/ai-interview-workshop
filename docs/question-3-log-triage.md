@@ -5,6 +5,9 @@ nav_order: 5
 
 # Question 3: Log Triage
 
+{: .important }
+**Before you start:** Open `QUESTION-3-START-HERE.md` in the `question-3-log-triage/` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+
 ## Scenario
 
 This is a practical file processing problem. You're an on-call engineer at 2 AM. The alerting system shows elevated error rates. Your task is to quickly parse the logs and identify which error codes are occurring most frequently so you can prioritize your investigation.

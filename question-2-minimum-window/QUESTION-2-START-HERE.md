@@ -1,12 +1,10 @@
 # Question 2: Minimum Window Substring
 
-This folder is for your solution files.
+**Keep this file open while working on Question 2.** It loads the AI context GitHub Copilot needs to help you effectively.
 
-## Instructions
+## Full Instructions
 
-**Website:** <https://segunakinyemi.com/ai-interview-workshop/question-2-minimum-window/>
-
-**Local:** [docs/question-2-minimum-window.md](../docs/question-2-minimum-window.md)
+<https://segunakinyemi.com/ai-interview-workshop/question-2-minimum-window/>
 
 ## The AI Rule
 

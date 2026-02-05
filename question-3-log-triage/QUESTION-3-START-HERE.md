@@ -1,14 +1,12 @@
 # Question 3: Log Triage
 
-This folder is for your solution files.
+**Keep this file open while working on Question 3.** It loads the AI context GitHub Copilot needs to help you effectively.
 
 The `logs/` subfolder contains sample log files for you to parse.
 
-## Instructions
+## Full Instructions
 
-**Website:** <https://segunakinyemi.com/ai-interview-workshop/question-3-log-triage/>
-
-**Local:** [docs/question-3-log-triage.md](../docs/question-3-log-triage.md)
+<https://segunakinyemi.com/ai-interview-workshop/question-3-log-triage/>
 
 ## The AI Rule
 

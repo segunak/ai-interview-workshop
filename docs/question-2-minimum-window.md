@@ -5,6 +5,9 @@ nav_order: 4
 
 # Question 2: Minimum Window Substring
 
+{: .important }
+**Before you start:** Open `QUESTION-2-START-HERE.md` in the `question-2-minimum-window/` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+
 {: .note }
 This problem is based on [LeetCode #76: Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/).
 

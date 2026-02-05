@@ -5,6 +5,9 @@ nav_order: 7
 
 # Question 5: Live Feed Form UI
 
+{: .important }
+**Before you start:** Open `QUESTION-5-START-HERE.md` in the `question-5-live-feed-form/` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+
 ## Why This Problem?
 
 This problem teaches a critical real-world lesson: **Developers build scripts. Real value comes from making those scripts accessible to everyone.**
