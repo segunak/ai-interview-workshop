@@ -6,7 +6,7 @@ nav_order: 4
 # Question 2: Minimum Window Substring
 
 {: .important }
-**Before you start:** Open `QUESTION-2-START-HERE.md` in the `question-2-minimum-window/` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+**Before you start:** Open [`QUESTION-2-START-HERE.md`](../question-2-minimum-window/QUESTION-2-START-HERE.md) in the [`question-2-minimum-window/`](../question-2-minimum-window/) folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
 
 {: .note }
 This problem is based on [LeetCode #76: Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/).
@@ -79,7 +79,7 @@ This is a classic sliding window problem. Discuss with Copilot:
 
 ### 3. Implement and Test
 
-Create your solution in `question-2-minimum-window/`. Test with:
+Create your solution in [`question-2-minimum-window/`](../question-2-minimum-window/). Test with:
 
 - The provided examples
 - Edge cases (single character, no valid window, entire string is the answer)
@@ -98,12 +98,12 @@ After completing your solution, reflect on these questions:
 
 ## Deliverables
 
-Create a solution file in `question-2-minimum-window/` using your preferred language:
+Create your solution in the [`question-2-minimum-window/`](../question-2-minimum-window/) folder. Starter files are already there:
 
-- **Python:** `solution.py` and `test_solution.py`
-- **JavaScript:** `solution.js` and `test_solution.js`
+- [`solution.py`](../question-2-minimum-window/solution.py) - Write your solution here
+- [`test_solution.py`](../question-2-minimum-window/test_solution.py) - Tests are pre-written, they'll pass when your solution works
 
-Your solution must include tests proving it works.
+Run tests with: `python test_solution.py`
 
 ## Hints
 

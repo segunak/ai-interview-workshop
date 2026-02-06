@@ -4,6 +4,12 @@
 
 The `logs/` subfolder contains sample log files for you to parse.
 
+## Starter Files
+
+- `triage.ps1` — Write your solution here (`$LogsDir` is already set to point at the `logs/` folder)
+
+Run with: `./triage.ps1`
+
 ## Full Instructions
 
 <https://segunakinyemi.com/ai-interview-workshop/question-3-log-triage/>

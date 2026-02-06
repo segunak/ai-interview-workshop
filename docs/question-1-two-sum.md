@@ -6,7 +6,7 @@ nav_order: 3
 # Question 1: Two Sum
 
 {: .important }
-**Before you start:** Open `QUESTION-1-START-HERE.md` in the `question-1-two-sum/` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+**Before you start:** Open [`QUESTION-1-START-HERE.md`](../question-1-two-sum/QUESTION-1-START-HERE.md) in the [`question-1-two-sum/`](../question-1-two-sum/) folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
 
 {: .note }
 This problem is based on [LeetCode #1: Two Sum](https://leetcode.com/problems/two-sum/).
@@ -82,7 +82,7 @@ Discuss your strategy with Copilot before writing code. Consider:
 
 ### 3. Implement and Test
 
-Create your solution in the `question-1-two-sum/` folder. Include tests for:
+Create your solution in the [`question-1-two-sum/`](../question-1-two-sum/) folder. Include tests for:
 
 - The provided examples
 - Edge cases (duplicates, negative numbers, large arrays)
@@ -97,12 +97,12 @@ Be ready to articulate:
 
 ## Deliverables
 
-Create a solution file in `question-1-two-sum/` using your preferred language:
+Create your solution in the [`question-1-two-sum/`](../question-1-two-sum/) folder. Starter files are already there:
 
-- **Python:** `solution.py` and `test_solution.py`
-- **JavaScript:** `solution.js` and `test_solution.js`
+- [`solution.py`](../question-1-two-sum/solution.py) - Write your solution here
+- [`test_solution.py`](../question-1-two-sum/test_solution.py) - Tests are pre-written, they'll pass when your solution works
 
-Your solution must include tests proving it works.
+Run tests with: `python test_solution.py`
 
 ## Hints
 

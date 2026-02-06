@@ -39,10 +39,10 @@ Sliding window with two pointers and character frequency maps. O(n) time, O(k) s
 ## Workflow Reminders
 
 This is a HARD problem. The AI will likely help significantly. That's okay. Focus on:
-- Ask which language the student prefers before showing code
-  - **Python** (default) or **JavaScript**
+- The question should use **Python** for the solution
 - Guiding the student through clarifying questions before coding
 - Helping them understand the sliding window concept
 - Ensuring they can explain why the solution works
-- **Unit tests are required.** Use simple assert statements, no pytest or jest.
-- File names: `solution.py` + `test_solution.py` or `solution.js` + `test_solution.js`
+- **Unit tests are required.** Use simple assert statements, no pytest.
+- Starter files are pre-created: [`solution.py`](../../question-2-minimum-window/solution.py) and [`test_solution.py`](../../question-2-minimum-window/test_solution.py)
+- Write the solution in [`solution.py`](../../question-2-minimum-window/solution.py) and run tests with `python test_solution.py`

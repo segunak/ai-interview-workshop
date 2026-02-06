@@ -2,6 +2,16 @@
 
 **Keep this file open while working on Question 5.** It loads the AI context GitHub Copilot needs to help you effectively.
 
+## Starter Files
+
+- `index.html` — Build your form here
+- `styles.css` — Add your styles here
+- `script.js` — Add your JavaScript here
+
+## Building on Question 4
+
+Your `fetch` logic from [`question-4-live-feed/post.js`](../question-4-live-feed/post.js) is the foundation for this problem. Reuse that API call code in `script.js` instead of writing it from scratch.
+
 ## Full Instructions
 
 <https://segunakinyemi.com/ai-interview-workshop/question-5-live-feed-form/>

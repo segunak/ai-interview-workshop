@@ -6,7 +6,7 @@ nav_order: 5
 # Question 3: Log Triage
 
 {: .important }
-**Before you start:** Open `QUESTION-3-START-HERE.md` in the `question-3-log-triage/` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+**Before you start:** Open [`QUESTION-3-START-HERE.md`](../question-3-log-triage/QUESTION-3-START-HERE.md) in the [`question-3-log-triage/`](../question-3-log-triage/) folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
 
 ## Scenario
 
@@ -16,7 +16,7 @@ This is a practical file processing problem. You're an on-call engineer at 2 AM.
 
 Write a script that:
 
-1. Reads all `.log` files from the `question-3-log-triage/logs/` directory
+1. Reads all `.log` files from the [`question-3-log-triage/logs/`](../question-3-log-triage/logs/) directory
 2. Extracts all error codes matching the pattern `E` followed by 4 digits (e.g., `E1234`, `E5678`)
 3. **Only counts ERROR level entries** (not WARN or INFO)
 4. Counts occurrences of each error code across all files
@@ -81,11 +81,11 @@ The exact format can vary. Use your creativity and ask AI to help you make it sc
 
 ## Sample Files
 
-The `question-3-log-triage/logs/` directory contains sample log files:
+The [`question-3-log-triage/logs/`](../question-3-log-triage/logs/) directory contains sample log files:
 
-- `app-server-1.log` - Application server logs
-- `app-server-2.log` - Second application server
-- `api-gateway.log` - API gateway logs
+- [`app-server-1.log`](../question-3-log-triage/logs/app-server-1.log) - Application server logs
+- [`app-server-2.log`](../question-3-log-triage/logs/app-server-2.log) - Second application server
+- [`api-gateway.log`](../question-3-log-triage/logs/api-gateway.log) - API gateway logs
 
 These files simulate a real incident with overlapping error codes across services.
 
@@ -120,11 +120,9 @@ Run your script and verify:
 
 ## Deliverables
 
-Create a solution file in `question-3-log-triage/` using your preferred language:
+Write your solution in [`question-3-log-triage/triage.ps1`](../question-3-log-triage/triage.ps1). A starter file is already there with `$LogsDir` pointing to the logs folder.
 
-- **Python:** `triage.py`
-- **JavaScript:** `triage.js`
-- **PowerShell:** `triage.ps1`
+Run with: `./triage.ps1`
 
 Run your script and verify the output makes sense. **Output verification is the test for this problem.** Unit tests are optional.
 
@@ -144,21 +142,20 @@ Only look at hints if you're stuck!
 <details>
 <summary>Hint 1: Regex Pattern</summary>
 
-In Python, the pattern `E\d{4}` matches E followed by exactly 4 digits. Use `re.findall()` to get all matches in a line.
+In PowerShell, use the `-match` operator with the pattern `E\d{4}` to match E followed by exactly 4 digits. The `$Matches` automatic variable captures the result.
 
 </details>
 
 <details>
 <summary>Hint 2: Reading Files</summary>
 
-```python
-from pathlib import Path
-
-logs_dir = Path("logs")
-for log_file in logs_dir.glob("*.log"):
-    with open(log_file) as f:
-        for line in f:
-            # process line
+```powershell
+$LogsDir = Join-Path $PSScriptRoot "logs"
+Get-ChildItem -Path $LogsDir -Filter "*.log" | ForEach-Object {
+    Get-Content $_.FullName | ForEach-Object {
+        # process each line
+    }
+}
 ```
 
 </details>
@@ -166,13 +163,12 @@ for log_file in logs_dir.glob("*.log"):
 <details>
 <summary>Hint 3: Counting</summary>
 
-Use `collections.Counter` for easy counting and sorting:
+Use a hashtable to count occurrences, then sort:
 
-```python
-from collections import Counter
-counts = Counter()
-counts["E1234"] += 1
-# Get sorted: counts.most_common()
+```powershell
+$counts = @{}
+$counts["E1234"] += 1
+# Sort: $counts.GetEnumerator() | Sort-Object Value -Descending
 ```
 
 </details>

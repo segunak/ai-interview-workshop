@@ -12,7 +12,7 @@ The student is working on a real-world engineering problem: parsing log files to
 
 ## Problem Summary
 
-Parse `.log` files in the `logs/` subfolder and produce an executive summary suitable for pasting into Teams/Slack.
+Parse `.log` files in the [`logs/`](../../question-3-log-triage/logs/) subfolder and produce an executive summary suitable for pasting into Teams/Slack.
 
 ## Log Format
 
@@ -27,10 +27,10 @@ Example:
 
 ## Sample Logs Location
 
-The log files are at: `question-3-log-triage/logs/`
-- app-server-1.log
-- app-server-2.log  
-- api-gateway.log
+The log files are at: [`question-3-log-triage/logs/`](../../question-3-log-triage/logs/)
+- [`app-server-1.log`](../../question-3-log-triage/logs/app-server-1.log)
+- [`app-server-2.log`](../../question-3-log-triage/logs/app-server-2.log)
+- [`api-gateway.log`](../../question-3-log-triage/logs/api-gateway.log)
 
 ## Expected Output Format
 
@@ -85,11 +85,11 @@ The exact format can vary. The goal is to make it scannable and immediately usef
 
 ## Workflow Reminders
 
-- Ask which language the student prefers before showing code
-  - **Python** (default), **JavaScript**, or **PowerShell**
+- Question 3 uses **PowerShell**. Log triage is a natural scripting use case and PowerShell is built for it.
 - Guide the student through clarifying questions before coding
 - Help them break the problem into steps (find files, read lines, extract codes, aggregate, display)
 - Encourage them to make the output visually clear and scannable
 - The logs folder has real sample data to test against
 - **Output verification is the test.** Run against sample logs, verify output is correct. Unit tests are optional extra credit.
-- File names: `triage.py`, `triage.js`, or `triage.ps1`
+- A starter file is pre-created: [`triage.ps1`](../../question-3-log-triage/triage.ps1) (already has `$LogsDir` pointing to the `logs/` folder)
+- Run with `./triage.ps1`

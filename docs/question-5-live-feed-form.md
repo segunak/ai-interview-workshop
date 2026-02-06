@@ -6,7 +6,7 @@ nav_order: 7
 # Question 5: Live Feed Form UI
 
 {: .important }
-**Before you start:** Open `QUESTION-5-START-HERE.md` in the `question-5-live-feed-form/` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+**Before you start:** Open [`QUESTION-5-START-HERE.md`](../question-5-live-feed-form/QUESTION-5-START-HERE.md) in the [`question-5-live-feed-form/`](../question-5-live-feed-form/) folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
 
 ## Why This Problem?
 
@@ -113,7 +113,7 @@ Think through:
 
 ### 3. Build
 
-Create your solution in `question-5-live-feed-form/`. The form should:
+Create your solution in [`question-5-live-feed-form/`](../question-5-live-feed-form/). The form should:
 
 - Look professional (doesn't need to be fancy, just clean)
 - Validate input before submitting
@@ -132,11 +132,11 @@ If your post only appears in Script Submissions, you forgot the required `ui-sub
 
 ## Deliverables
 
-Create solution files in `question-5-live-feed-form/`:
+Create solution files in [`question-5-live-feed-form/`](../question-5-live-feed-form/):
 
-- `index.html` - The form structure
-- `styles.css` - Styling
-- `script.js` - Form logic and API calls
+- [`index.html`](../question-5-live-feed-form/index.html) - The form structure
+- [`styles.css`](../question-5-live-feed-form/styles.css) - Styling
+- [`script.js`](../question-5-live-feed-form/script.js) - Form logic and API calls
 
 **Visual verification is the test for this problem.** Your form works if you can submit a post and see it appear on the live feed.
 

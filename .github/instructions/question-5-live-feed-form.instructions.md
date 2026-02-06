@@ -18,7 +18,14 @@ This teaches: **Developers build scripts. Real value comes from making those scr
 
 ## The Setup
 
-The student already has a working POST script from Question 4. Now they're wrapping it in a user-friendly UI.
+The student already has a working POST script from Question 4 at [`question-4-live-feed/post.js`](../../question-4-live-feed/post.js). That file contains the `fetch` logic for calling the live feed API, including the `BASE_URL`, `WORKSHOP_KEY`, JSON payload structure, and the POST + GET verification flow.
+
+**When helping the student start Question 5, reference their Q4 code directly.** The `fetch` call in [`post.js`](../../question-4-live-feed/post.js) is the foundation for [`script.js`](../../question-5-live-feed-form/script.js) in Question 5. Copy or adapt the Q4 `fetch` logic into the form's submit handler rather than writing it from scratch. The main differences are:
+
+1. Input values come from form fields instead of hardcoded strings
+2. The `ui-submission` tag must always be included in Tags
+3. Success/error feedback is shown in the UI instead of `console.log`
+4. The submit button should be disabled while the request is in flight
 
 ## What the Student Must Build
 
@@ -89,4 +96,4 @@ If the post only appears in Script Submissions, they forgot the required tag.
 - The requirements on the website provide all the technical specs, but there's room for student creativity in styling and UX.
 - Encourage students to make it their own while meeting the requirements.
 - **Output verification is the test.** The form works if the post appears in UI Submissions view.
-- File names: `index.html`, `styles.css`, `script.js`
+- File names: [`index.html`](../../question-5-live-feed-form/index.html), [`styles.css`](../../question-5-live-feed-form/styles.css), [`script.js`](../../question-5-live-feed-form/script.js)

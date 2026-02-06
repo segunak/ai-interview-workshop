@@ -108,50 +108,11 @@ GET https://live.segunakinyemi.com/api/posts?tag=python&WorkshopKey=cinnamon-rol
 
 **Response:** `{ success: true, count: 5, tag: "python", posts: [...] }`
 
-## Complete Code Examples
+## Complete Code Example
 
-### Python (requests library)
-
-```python
-import requests
-
-BASE_URL = "https://live.segunakinyemi.com"
-WORKSHOP_KEY = "cinnamon-rolls-are-the-best-pastry-hands-down"
-
-# Step 1: POST to create the message
-post_data = {
-    "Name": "Your Name Here",
-    "Message": "Hello from Python!",
-    "Workshop": "AI Interview Workshop",
-    "Tags": "python, workshop",  # optional
-    "WorkshopKey": WORKSHOP_KEY
-}
-
-response = requests.post(f"{BASE_URL}/api/post", json=post_data)
-
-if response.status_code != 200 or not response.json().get("success"):
-    print(f"POST failed: {response.json()}")
-    exit(1)
-
-post_id = response.json()["id"]
-print(f"Posted OK: \"{post_data['Message']}\" (name={post_data['Name']}, id={post_id})")
-
-# Step 2: GET to verify the post exists
-verify_url = f"{BASE_URL}/api/posts?id={post_id}&WorkshopKey={WORKSHOP_KEY}"
-verify_response = requests.get(verify_url)
-
-if verify_response.status_code == 200 and verify_response.json().get("success"):
-    print("Verified: post exists in database")
-else:
-    print(f"Verification failed: {verify_response.json()}")
-    exit(1)
-```
-
-### JavaScript (fetch API)
+### JavaScript (fetch API — built into Node.js 18+, no install needed)
 
 ```javascript
-// Works in Node.js 18+ or browser
-
 const BASE_URL = "https://live.segunakinyemi.com";
 const WORKSHOP_KEY = "cinnamon-rolls-are-the-best-pastry-hands-down";
 
@@ -172,7 +133,7 @@ async function postAndVerify() {
     });
 
     const postResult = await postResponse.json();
-    
+
     if (!postResult.success) {
         console.log("POST failed:", postResult.error);
         process.exit(1);
@@ -195,55 +156,6 @@ async function postAndVerify() {
 }
 
 postAndVerify().catch(err => console.error("Request failed:", err));
-```
-
-### PowerShell (Invoke-RestMethod)
-
-```powershell
-$BaseUrl = "https://live.segunakinyemi.com"
-$WorkshopKey = "cinnamon-rolls-are-the-best-pastry-hands-down"
-
-# Step 1: POST to create the message
-$postData = @{
-    Name        = "Your Name Here"
-    Message     = "Hello from PowerShell!"
-    Workshop    = "AI Interview Workshop"
-    Tags        = "powershell, workshop"  # optional
-    WorkshopKey = $WorkshopKey
-} | ConvertTo-Json
-
-try {
-    $postResponse = Invoke-RestMethod -Uri "$BaseUrl/api/post" -Method Post -Body $postData -ContentType "application/json"
-    
-    if ($postResponse.success) {
-        $postId = $postResponse.id
-        Write-Host "Posted OK: `"$($postData | ConvertFrom-Json | Select -ExpandProperty Message)`" (name=$($postData | ConvertFrom-Json | Select -ExpandProperty Name), id=$postId)" -ForegroundColor Green
-    } else {
-        Write-Host "POST failed: $($postResponse.error)" -ForegroundColor Red
-        exit 1
-    }
-}
-catch {
-    Write-Host "POST error: $($_.Exception.Message)" -ForegroundColor Red
-    exit 1
-}
-
-# Step 2: GET to verify the post exists
-try {
-    $verifyUrl = "$BaseUrl/api/posts?id=$postId&WorkshopKey=$WorkshopKey"
-    $verifyResponse = Invoke-RestMethod -Uri $verifyUrl -Method Get
-    
-    if ($verifyResponse.success) {
-        Write-Host "Verified: post exists in database" -ForegroundColor Green
-    } else {
-        Write-Host "Verification failed: $($verifyResponse.error)" -ForegroundColor Red
-        exit 1
-    }
-}
-catch {
-    Write-Host "Verification error: $($_.Exception.Message)" -ForegroundColor Red
-    exit 1
-}
 ```
 
 ## Expected Output
@@ -320,12 +232,12 @@ A good software engineer would think about this: what if the database has a slig
 
 ## Workflow Reminders
 
-- Ask which language the student prefers before showing code
-  - **Python** (default), **JavaScript**, or **PowerShell**
+- Question 4 uses **JavaScript** with the `fetch` API (built into Node.js 18+, no install needed). This sets students up for Question 5 (frontend form) which also uses `fetch`.
 - Emphasize that the POST returning 200 is NOT enough. Verification is required.
 - Students must capture the `id` and use it to verify
 - After success, offer the Tags extra challenge to personalize their post
 - This is about proving your code works to stakeholders, not just trusting API responses
 - **The GET verification step IS the test.** No additional unit tests needed.
 - **Do NOT suggest the tag `ui-submission`** - that tag is reserved for Question 5 form submissions.
-- File names: `post.py`, `post.js`, or `post.ps1`
+- A starter file is pre-created: [`post.js`](../../question-4-live-feed/post.js) (already has `BASE_URL`, `WORKSHOP_KEY` constants, and a `postMessage()` skeleton)
+- Run with `node post.js`

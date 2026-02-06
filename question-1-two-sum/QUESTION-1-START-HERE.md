@@ -2,6 +2,11 @@
 
 **Keep this file open while working on Question 1.** It loads the AI context GitHub Copilot needs to help you effectively.
 
+## Starter Files
+
+- `solution.py` — Write your solution here
+- `test_solution.py` — Tests are pre-written, run with `python test_solution.py`
+
 ## Full Instructions
 
 <https://segunakinyemi.com/ai-interview-workshop/question-1-two-sum/>

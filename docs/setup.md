@@ -68,9 +68,9 @@ This gives you unlimited completions, premium AI models, and all the features yo
 
 Your environment (Codespace or local) comes ready with:
 
-- **Python** - For algorithm solutions
-- **Node.js** - For JavaScript solutions
-- **PowerShell** - Cross-platform scripting
+- **Python** - For algorithm solutions (Questions 1-2)
+- **PowerShell** - For log triage scripting (Question 3)
+- **Node.js** - For JavaScript solutions (Questions 4-5)
 - **GitHub CLI** - For GitHub authentication
 - **GitHub Copilot** - Chat and code completion in VS Code
 - **GitHub Copilot CLI** - AI coding agent in your terminal
@@ -90,7 +90,7 @@ ai-interview-workshop/
 └── docs/                         # This documentation site
 ```
 
-Each question folder contains a README with the problem statement. Create your solution files inside the appropriate folder.
+Each question folder contains a `QUESTION-X-START-HERE.md` file plus starter code files. Open the start file and write your solution in the pre-created code files.
 
 ## Ready to Practice
 

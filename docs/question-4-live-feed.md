@@ -6,7 +6,7 @@ nav_order: 6
 # Question 4: Live Feed POST + Verify
 
 {: .important }
-**Before you start:** Open `QUESTION-4-START-HERE.md` in the `question-4-live-feed/` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+**Before you start:** Open [`QUESTION-4-START-HERE.md`](../question-4-live-feed/QUESTION-4-START-HERE.md) in the [`question-4-live-feed/`](../question-4-live-feed/) folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
 
 ## Why This Problem?
 
@@ -219,11 +219,7 @@ Only print success after verification returns your post.
 
 ## Choose Your Tool
 
-You can solve this using any tool you prefer:
-
-- **Python** - Using `requests` library
-- **JavaScript/Node.js** - Using `fetch`
-- **PowerShell** - Using `Invoke-RestMethod`
+This problem uses **JavaScript** with the `fetch` API (built into Node.js 18+, no install needed). Using JavaScript here sets you up for Question 5, where you'll build a frontend form that reuses the same `fetch` logic.
 
 {: .note }
 Read the full API documentation above. The answer to most questions is already here.
@@ -242,8 +238,8 @@ Read the full API documentation above. The answer to most questions is already h
 
 ### 2. Plan Your Approach
 
-1. Choose your language (Python, JavaScript, or PowerShell)
-2. Construct the POST request with JSON payload
+1. Open [`post.js`](../question-4-live-feed/post.js) (starter file is pre-created with constants and a function skeleton)
+2. Construct the POST request with JSON payload using `fetch`
 3. Parse the response and extract the `id`
 4. Construct the GET request with `id` and `WorkshopKey` as query params
 5. Check the verification response
@@ -255,11 +251,9 @@ Your script should only claim success after the GET request confirms the post ex
 
 ## Deliverables
 
-Create a solution file in `question-4-live-feed/` using your preferred language:
+Write your solution in [`question-4-live-feed/post.js`](../question-4-live-feed/post.js). A starter file is already there with `BASE_URL` and `WORKSHOP_KEY` constants and a `postMessage()` function skeleton.
 
-- **Python:** `post.py`
-- **JavaScript:** `post.js`
-- **PowerShell:** `post.ps1`
+Run with: `node post.js`
 
 Your script should print:
 
@@ -277,4 +271,4 @@ If you finish early:
 1. **Add Tags** - Include the `Tags` field with your school name or something fun
 2. **Make it interactive** - Prompt for name and message instead of hardcoding
 3. **Add retry logic** - If verification fails, wait a moment and try again (real engineers think about propagation delays)
-4. **Try multiple tools** - Solve it in more than one language
+4. **Add error handling** - Handle network failures, timeouts, and unexpected API responses gracefully

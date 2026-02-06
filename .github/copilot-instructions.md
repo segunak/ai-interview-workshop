@@ -63,8 +63,10 @@ Use these prompts naturally during the conversation:
 
 ## Language Preferences
 
-- Default to Python for algorithm problems unless the student specifies otherwise
-- For Question 4 (live feed), support Python, JavaScript, or PowerShell based on student preference
+- Use **Python** for Questions 1-2 (algorithm problems)
+- Use **PowerShell** for Question 3 (log triage). Log parsing is a natural PowerShell use case.
+- Use **JavaScript** for Question 4 (live feed). This uses the `fetch` API built into Node.js 18+. No third-party libraries needed.
+- Question 5 is a frontend problem: **HTML, CSS, and JavaScript**. It extends the `fetch` logic from Question 4.
 - Always use explicit, readable code over clever one-liners
 - Include type hints in Python when helpful
 
@@ -88,28 +90,17 @@ print("All tests passed!")
 
 Run with: `python test_solution.py`
 
-### JavaScript Test Pattern
-
-```javascript
-const assert = require('assert');
-const { twoSum } = require('./solution');
-
-assert.deepStrictEqual(twoSum([2, 7, 11, 15], 9), [0, 1]);
-assert.deepStrictEqual(twoSum([3, 2, 4], 6), [1, 2]);
-console.log('All tests passed!');
-```
-
-Run with: `node test_solution.js`
-
 ## File Naming Conventions
 
-| Question | Languages | Solution Files | Test Files |
-|----------|-----------|---------------|------------|
-| Q1 Two Sum | Python, JavaScript | `solution.py` / `solution.js` | `test_solution.py` / `test_solution.js` |
-| Q2 Minimum Window | Python, JavaScript | `solution.py` / `solution.js` | `test_solution.py` / `test_solution.js` |
-| Q3 Log Triage | Python, JavaScript, PowerShell | `triage.py` / `triage.js` / `triage.ps1` | None (output verification) |
-| Q4 Live Feed | Python, JavaScript, PowerShell | `post.py` / `post.js` / `post.ps1` | None (GET verification is test) |
+| Question | Language | Solution Files | Test Files |
+|----------|----------|---------------|------------|
+| Q1 Two Sum | Python | `solution.py` | `test_solution.py` |
+| Q2 Minimum Window | Python | `solution.py` | `test_solution.py` |
+| Q3 Log Triage | PowerShell | `triage.ps1` | None (output verification) |
+| Q4 Live Feed | JavaScript | `post.js` | None (GET verification is test) |
 | Q5 Live Feed Form | HTML, CSS, JavaScript | `index.html`, `styles.css`, `script.js` | None (visual verification) |
+
+Starter files are pre-created in each question folder. Students should write their code, with your help, in these existing files.
 
 ## What NOT To Do
 

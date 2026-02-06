@@ -65,9 +65,9 @@ Head to the **[Setup](setup)** page to configure your environment, then go to [Q
 ## Tools Used in This Workshop
 
 - **GitHub Copilot Chat** - Your AI pair programmer (Agent Mode enabled)
-- **Python** - Primary language for algorithm problems
-- **Node.js** - For JavaScript solutions
-- **PowerShell** - For scripting and API calls
+- **Python** - For algorithm solutions (Questions 1-2)
+- **PowerShell** - For log triage scripting (Question 3)
+- **HTML/CSS/JS** - For API and frontend solutions (Questions 4-5)
 - **[GitHub Copilot CLI](https://github.com/github/copilot-cli)** - AI in your terminal (Microsoft's answer to Claude Code)
 
 {: .note }
