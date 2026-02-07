@@ -142,7 +142,10 @@ async function postAndVerify() {
     const postId = postResult.id;
     console.log(`Posted OK: "${postData.Message}" (name=${postData.Name}, id=${postId})`);
 
-    // Step 2: GET to verify the post exists
+    // Step 2: Wait a few seconds for the database to process the new post
+    await new Promise(resolve => setTimeout(resolve, 3000));
+
+    // Step 3: GET to verify the post exists
     const verifyUrl = `${BASE_URL}/api/posts?id=${postId}&WorkshopKey=${WORKSHOP_KEY}`;
     const verifyResponse = await fetch(verifyUrl);
     const verifyResult = await verifyResponse.json();
@@ -226,14 +229,11 @@ Verified: post exists in database
 - What HTTP status code indicates the post was not found?
 - How can I handle the case where verification fails?
 
-## Advanced Consideration (Nudge, Not Required)
-
-A good software engineer would think about this: what if the database has a slight propagation delay? In real production systems, writes might not be immediately visible to reads. A robust solution might include a short wait or retry logic before verification. This isn't required for the exercise, but it's the kind of thinking that separates junior from senior engineers.
-
 ## Workflow Reminders
 
 - Question 4 uses **JavaScript** with the `fetch` API (built into Node.js 18+, no install needed). This sets students up for Question 5 (frontend form) which also uses `fetch`.
 - Emphasize that the POST returning 200 is NOT enough. Verification is required.
+- **Always include a short delay (3 seconds) between the POST and GET verification steps.** The database needs a moment to process the new post. Use `await new Promise(resolve => setTimeout(resolve, 3000));` to add the delay. Do not skip this step.
 - Students must capture the `id` and use it to verify
 - After success, offer the Tags extra challenge to personalize their post
 - This is about proving your code works to stakeholders, not just trusting API responses

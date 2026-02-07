@@ -23,8 +23,9 @@ async function postMessage(name, message, workshop = "AI Interview Workshop", ta
     // TODO: Implement your solution here
     // Step 1: POST to create the message using fetch
     // Step 2: Parse the response and extract the post ID
-    // Step 3: GET to verify the post exists using the ID
-    // Step 4: Only print success after verification confirms the post is in the database
+    // Step 3: Wait a few seconds for the database to process
+    // Step 4: GET to verify the post exists using the ID
+    // Step 5: Only print success after verification confirms the post is in the database
 }
 
 postMessage("Your Name Here", "Hello from JavaScript!");

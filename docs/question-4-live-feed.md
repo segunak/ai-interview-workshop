@@ -231,10 +231,6 @@ Read the full API documentation above. The answer to most questions is already h
 - What does the POST response contain that I need for verification?
 - How do I pass the WorkshopKey for GET requests vs POST requests?
 - What HTTP status code indicates the post was not found?
-- What happens if I verify before the post has propagated?
-
-{: .note }
-**Propagation Delay:** In real distributed systems, writes may not be immediately visible to reads. If your GET verification fails immediately after POST, consider adding a short delay or retry logic.
 
 ### 2. Plan Your Approach
 
@@ -270,5 +266,4 @@ If you finish early:
 
 1. **Add Tags** - Include the `Tags` field with your school name or something fun
 2. **Make it interactive** - Prompt for name and message instead of hardcoding
-3. **Add retry logic** - If verification fails, wait a moment and try again (real engineers think about propagation delays)
-4. **Add error handling** - Handle network failures, timeouts, and unexpected API responses gracefully
+3. **Add error handling** - Handle network failures, timeouts, and unexpected API responses gracefully
