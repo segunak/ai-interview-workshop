@@ -23,7 +23,7 @@ This workshop teaches you how to use AI tools effectively in technical interview
 
 If AI can write code, then the [real skill isn't typing solutions from memory](https://terriblesoftware.org/2025/12/11/ai-can-write-your-code-it-cant-do-your-job/). It's driving the software development process end to end and shipping something correct. Companies like [Meta](https://www.wired.com/story/meta-ai-job-interview-coding/) and [Canva](https://www.canva.dev/blog/engineering/yes-you-can-use-ai-in-our-interviews/) are adapting interviews to this reality. This workshop trains that skill set.
 
-[Read the full philosophy](https://segunakinyemi.com/blog/coding-is-dead-software-engineering-isnt/)
+If you think this approach is cheating, or that students should focus solely on LeetCode, [here's why I built the workshop this way](https://segunakinyemi.com/ai-interview-workshop/why-ai-interviews/). For the full philosophy, [read the accompanying article](https://segunakinyemi.com/blog/coding-is-dead-software-engineering-isnt/).
 
 ## Quick Start
 
