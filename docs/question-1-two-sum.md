@@ -6,7 +6,7 @@ nav_order: 3
 # Question 1: Two Sum
 
 {: .important }
-**Before you start:** Open [`QUESTION-1-START-HERE.md`](../question-1-two-sum/QUESTION-1-START-HERE.md) in the [`question-1-two-sum/`](../question-1-two-sum/) folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+**Before you start:** In your VS Code window, Open `QUESTION-1-START-HERE.md` in the `question-1-two-sum` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
 
 {: .note }
 This problem is based on [LeetCode #1: Two Sum](https://leetcode.com/problems/two-sum/).

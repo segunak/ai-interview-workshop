@@ -6,7 +6,7 @@ nav_order: 6
 # Question 4: Live Feed POST + Verify
 
 {: .important }
-**Before you start:** Open [`QUESTION-4-START-HERE.md`](../question-4-live-feed/QUESTION-4-START-HERE.md) in the [`question-4-live-feed/`](../question-4-live-feed/) folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+**Before you start:** In your VS Code window, Open `QUESTION-4-START-HERE.md` in the `question-4-live-feed` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
 
 ## Why This Problem?
 
