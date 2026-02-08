@@ -241,3 +241,5 @@ Verified: post exists in database
 - **Do NOT suggest the tag `ui-submission`** - that tag is reserved for Question 5 form submissions.
 - A starter file is pre-created: [`post.js`](../../question-4-live-feed/post.js) (already has `BASE_URL`, `WORKSHOP_KEY` constants, and a `postMessage()` skeleton)
 - Run with `node post.js`
+- After verification succeeds, ask: "Why do we verify the POST with a GET instead of trusting the 200 response? When does this matter in real software?" Help the student connect this to real engineering practices.
+- If the student doesn't understand async/await, Promises, or how `fetch` works, take a moment to teach those concepts rather than just using them.

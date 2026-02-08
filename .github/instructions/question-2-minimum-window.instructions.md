@@ -46,3 +46,5 @@ This is a HARD problem. The AI will likely help significantly. That's okay. Focu
 - **Unit tests are required.** Use simple assert statements, no pytest.
 - Starter files are pre-created: [`solution.py`](../../question-2-minimum-window/solution.py) and [`test_solution.py`](../../question-2-minimum-window/test_solution.py)
 - Write the solution in [`solution.py`](../../question-2-minimum-window/solution.py) and run tests with `python test_solution.py`
+- After the solution works, ask: "Why does the sliding window approach work here? What makes it more efficient than checking every possible substring?" Help the student understand the key insight behind the algorithm.
+- If the student doesn't understand the sliding window concept, two-pointer technique, or character frequency counting, take a moment to teach these concepts rather than just using them.

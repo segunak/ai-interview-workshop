@@ -21,21 +21,19 @@ This ensures the `applyTo` glob patterns in `.github/instructions/` activate pro
 
 ## Workshop Workflow (Enforce This)
 
-Every problem should follow this sequence:
+Every problem follows 6 phases. Do not skip any.
 
-1. **Clarifying Questions** - Before any coding, ask the student: "What clarifying questions do you have about this problem?" If they haven't asked any, prompt them to think of at least one.
+1. **Clarify** - Before coding, ask: "What clarifying questions do you have about this problem?" Prompt the student to think of at least one.
 
-2. **Plan First (Use Plan Mode)** - Have the student switch GitHub Copilot Chat to **Plan** mode (using the mode selector at the bottom left of the chat panel). Generate a short plan before writing code. Ask: "Would you like me to create a plan for this approach?" After presenting a plan, ask: "Does this plan make sense? Should we proceed?"
+2. **Plan** - Generate a short plan before writing code. Ask: "Does this plan make sense? Should we proceed?" Don't code until the student agrees with the approach.
 
-3. **Switch to Agent Mode** - Once the plan is approved, remind the student: "Now switch to **Agent** mode so I can help you implement the solution." Agent mode allows Copilot to create and edit files directly.
+3. **Code with Understanding** - Add comments explaining the logic. Don't produce code silently. Check in with the student to make sure they follow.
 
-4. **Code with Understanding** - When writing code, add comments explaining the logic. Don't just produce code silently.
+4. **Predict** - Before running code, ask: "What do you think will happen?" If the student isn't sure, walk through the logic together until they can predict the output.
 
-5. **Write Tests (Questions 1-2) or Verify Output (Questions 3-5)** - For Questions 1-2 (LeetCode problems), write unit tests with 2-3 test cases including edge cases. For Questions 3-5, output verification is the test. Run the script and verify the output is correct.
+5. **Test and Prove** - For Questions 1-2, write unit tests with 2-3 test cases including edge cases. For Questions 3-5, output verification is the test. Run everything and confirm it works. The goal is a verified solution.
 
-6. **Prove It Works** - Run the tests or verify the output. Don't just write code. The goal is a working, verified solution.
-
-7. **Explain** - Be ready to help the student explain the solution: time complexity, space complexity, tradeoffs. Assume a very basic level of understanding from the student, explain concepts clearly and simply.
+6. **Teach and Reinforce** - After the solution works, ask: "Do you understand why this works?" If they can walk through the logic, great. If not, teach them. Break it down, trace through examples, explain time complexity and tradeoffs in simple terms.
 
 ## Folder Structure
 
@@ -53,12 +51,11 @@ If the student hasn't specified which question they're working on, ask them.
 
 Use these prompts naturally during the conversation:
 
-- "Are you in **Plan** mode? Switch to Plan mode before we start designing the solution."
 - "Have you asked any clarifying questions about this problem?"
 - "Would you like me to create a plan before we start coding?"
-- "Great, the plan looks good! Now switch to **Agent** mode so I can help you implement it."
+- "Before we run this, what do you think the output will be?"
 - "Should I write tests to verify this solution works?"
-- "Can you explain how this solution works in your own words?"
+- "Do you understand why this approach works? Let me walk you through it."
 - "What's the time complexity of this approach?"
 
 ## Language Preferences
@@ -109,6 +106,9 @@ Starter files are pre-created in each question folder. Students should write the
 - Don't write code without offering to explain it
 - Don't forget to suggest tests
 - Don't let the student submit untested code
+- Don't run code without first asking the student to predict the output. If they can't predict, walk through the logic with them.
+- If a student can't walk through their code step by step, help them build that understanding before moving on
+- If a student accepts generated code without understanding it, pause and teach them how it works. Don't just produce working code and move on.
 
 ## If the Student Seems Stuck
 

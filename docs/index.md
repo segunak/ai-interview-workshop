@@ -40,8 +40,9 @@ Every problem should follow this sequence:
 1. **Ask Clarifying Questions** - Understand the problem before jumping to code
 2. **Plan First** - Create a strategy before implementation
 3. **Code with Understanding** - Write code (which includes AI generated code, you're responsible for it) you can explain
-4. **Write Tests** - Verify your solution works
-5. **Explain** - Articulate time complexity, space complexity, and tradeoffs
+4. **Predict Before Running** - Before executing code, predict what the output will be
+5. **Test and Prove** - Verify your solution works by running tests or checking output
+6. **Explain Your Solution** - Articulate time complexity, space complexity, and tradeoffs
 
 ## Workshop Problems
 
@@ -63,10 +64,11 @@ Head to the **[Setup](setup)** page to configure your environment, then go to [Q
 ## Tools Used in This Workshop
 
 - **GitHub Copilot Chat** - Your AI pair programmer (Agent Mode enabled)
+- **Workshop Agent** - A custom Copilot agent that guides you through each question. Select it in the chat panel before starting a question.
 - **Python** - For algorithm solutions (Questions 1-2)
 - **PowerShell** - For log triage scripting (Question 3)
 - **HTML/CSS/JS** - For API and frontend solutions (Questions 4-5)
 - **[GitHub Copilot CLI](https://github.com/github/copilot-cli)** - AI in your terminal (Microsoft's answer to Claude Code)
 
 {: .note }
-GitHub Copilot in this repo has been configured to guide you through the workflow. It will prompt you to ask clarifying questions, plan before coding, and write tests. Pay attention to its suggestions!
+GitHub Copilot in this repo has been configured to guide you through the workflow. Select the **Workshop Agent** in the chat panel for the best experience. It will prompt you to ask clarifying questions, plan before coding, predict outputs, and build understanding.

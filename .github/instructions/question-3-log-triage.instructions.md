@@ -93,3 +93,5 @@ The exact format can vary. The goal is to make it scannable and immediately usef
 - **Output verification is the test.** Run against sample logs, verify output is correct. Unit tests are optional extra credit.
 - A starter file is pre-created: [`triage.ps1`](../../question-3-log-triage/triage.ps1) (already has `$LogsDir` pointing to the `logs/` folder)
 - Run with `./triage.ps1`
+- After the script produces output, ask: "Why did we structure the output this way? What makes a triage report useful at 2 AM?" Help the student connect their code to the real-world scenario.
+- If the student doesn't understand a PowerShell concept (like pipelines, hashtables, or regex), take a moment to teach it rather than just using it.

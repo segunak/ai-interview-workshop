@@ -2,6 +2,8 @@
 
 **Keep this file open while working on Question 2.** It loads the AI context GitHub Copilot needs to help you effectively.
 
+**Select the Workshop Agent** in the Copilot Chat panel for guided coaching through the question.
+
 ## Starter Files
 
 - `solution.py` — Write your solution here

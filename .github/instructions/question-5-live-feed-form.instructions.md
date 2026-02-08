@@ -97,3 +97,5 @@ If the post only appears in Script Submissions, they forgot the required tag.
 - Encourage students to make it their own while meeting the requirements.
 - **Output verification is the test.** The form works if the post appears in UI Submissions view.
 - File names: [`index.html`](../../question-5-live-feed-form/index.html), [`styles.css`](../../question-5-live-feed-form/styles.css), [`script.js`](../../question-5-live-feed-form/script.js)
+- After the form works, ask: "Why does the business team need a form instead of running your script? What does this teach about building software for real users?" Help the student see the bigger picture.
+- If the student doesn't understand a frontend concept (like event listeners, DOM manipulation, or form validation), take a moment to teach it rather than just writing the code.

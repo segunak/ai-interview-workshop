@@ -32,7 +32,8 @@ If you think this approach is cheating, or that students should focus solely on 
 1. Click the **Open in GitHub Codespaces** button above
 2. Wait for the environment to load (about 2 minutes)
 3. Open the [Workshop Website](https://segunakinyemi.com/ai-interview-workshop/) in a new tab
-4. Open `QUESTION-1-START-HERE.md` in the `question-1-two-sum/` folder and keep it open while you work
+4. In GitHub Copilot Chat, select the **Workshop Agent** from the agent picker for guided coaching
+5. Open `QUESTION-1-START-HERE.md` in the `question-1-two-sum/` folder and keep it open while you work
 
 ### Option 2: Local Setup (Windows)
 
@@ -40,6 +41,7 @@ If you think this approach is cheating, or that students should focus solely on 
 2. Open PowerShell **as Administrator**
 3. Run: `.\scripts\setup-windows.ps1`
 4. Open the folder in VS Code and sign in with your GitHub account
+5. In GitHub Copilot Chat, select the **Workshop Agent** from the agent picker for guided coaching
 
 **Students:** Get [GitHub Copilot Pro for free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) by [verifying your student status](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student)!
 
@@ -64,14 +66,13 @@ This rule appears on every question. It's the core workflow for AI-assisted deve
 1. Ask clarifying questions
 2. Generate a plan with your AI tool
 3. Review and approve the plan before coding
-4. Write tests to verify the solution
-5. Be ready to explain how it works
+4. Predict what the code will do before running it
+5. Test and prove your solution works
+6. Explain your solution, time complexity, tradeoffs, and why it works
 
 ## Tools You Can Use
 
-- [VS Code with GitHub Copilot](https://code.visualstudio.com/docs/copilot/overview) (recommended)
-- [Cursor](https://cursor.com/home)
-- [Claude Code](https://code.claude.com/docs/en/overview)
+- [VS Code with GitHub Copilot](https://code.visualstudio.com/docs/copilot/overview)
 - [GitHub Copilot CLI](https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli)
 
 **Not allowed for this workshop:** Browser-based chat tools (ChatGPT web, Claude web, etc.). Practice using AI inside your development environment.

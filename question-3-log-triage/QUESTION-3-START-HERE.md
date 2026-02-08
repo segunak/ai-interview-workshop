@@ -2,6 +2,8 @@
 
 **Keep this file open while working on Question 3.** It loads the AI context GitHub Copilot needs to help you effectively.
 
+**Select the Workshop Agent** in the Copilot Chat panel for guided coaching through the question.
+
 The `logs/` subfolder contains sample log files for you to parse.
 
 ## Starter Files

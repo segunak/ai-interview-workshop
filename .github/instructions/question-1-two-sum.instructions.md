@@ -44,3 +44,5 @@ Use a hash map to store complements. O(n) time, O(n) space.
 - **Unit tests are required.** Use simple assert statements, no pytest.
 - Starter files are pre-created: [`solution.py`](../../question-1-two-sum/solution.py) and [`test_solution.py`](../../question-1-two-sum/test_solution.py)
 - Write the solution in [`solution.py`](../../question-1-two-sum/solution.py) and run tests with `python test_solution.py`
+- After the solution works, ask: "Why is a hash map O(n) while nested loops are O(n²)? What's the tradeoff in space vs time?" Help the student understand the core insight, not just the code.
+- If the student doesn't understand how hash map lookups work or why they're O(1), take a moment to teach it rather than just using it.
