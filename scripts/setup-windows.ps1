@@ -112,18 +112,31 @@ foreach ($path in $possiblePaths) {
     }
 }
 
+$extensions = @(
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "ms-python.python",
+    "ms-vscode.powershell",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-vsliveshare.vsliveshare"
+)
+
 if ($vscodePath) {
-    & $vscodePath --install-extension GitHub.copilot --force 2>$null
-    & $vscodePath --install-extension GitHub.copilot-chat --force 2>$null
-    Write-Host "  GitHub Copilot extensions installed" -ForegroundColor Gray
+    foreach ($ext in $extensions) {
+        & $vscodePath --install-extension $ext --force 2>$null
+    }
+    Write-Host "  VS Code extensions installed" -ForegroundColor Gray
 } elseif (Test-CommandExists "code") {
-    code --install-extension GitHub.copilot --force 2>$null
-    code --install-extension GitHub.copilot-chat --force 2>$null
-    Write-Host "  GitHub Copilot extensions installed" -ForegroundColor Gray
+    foreach ($ext in $extensions) {
+        code --install-extension $ext --force 2>$null
+    }
+    Write-Host "  VS Code extensions installed" -ForegroundColor Gray
 } else {
     Write-Host "  WARNING: Could not find VS Code. Please install extensions manually." -ForegroundColor Yellow
-    Write-Host "    Run: code --install-extension GitHub.copilot" -ForegroundColor Yellow
-    Write-Host "    Run: code --install-extension GitHub.copilot-chat" -ForegroundColor Yellow
+    foreach ($ext in $extensions) {
+        Write-Host "    Run: code --install-extension $ext" -ForegroundColor Yellow
+    }
 }
 
 # ============================================
@@ -252,18 +265,10 @@ Update-Path
 Write-Host "[11/11] Validating installation..." -ForegroundColor Yellow
 Write-Host ""
 
-# Run validation script if it exists
-$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$validateScript = Join-Path $scriptDir "validate-windows.ps1"
+Write-Host "Validating your environment..." -ForegroundColor Cyan
+Write-Host ""
 
-if (Test-Path $validateScript) {
-    & $validateScript
-} else {
-    # Inline validation if script doesn't exist
-    Write-Host "Validating your environment..." -ForegroundColor Cyan
-    Write-Host ""
-    
-    $failed = 0
+$failed = 0
     
     # Check Git
     if (Test-CommandExists "git") {
@@ -322,7 +327,6 @@ if (Test-Path $validateScript) {
     } else {
         Write-Host "$failed tool(s) may need attention. Try restarting PowerShell." -ForegroundColor Yellow
     }
-}
 
 # ============================================
 # SUCCESS MESSAGE
@@ -337,7 +341,8 @@ Write-Host "  1. Close and reopen PowerShell (to refresh PATH)" -ForegroundColor
 Write-Host "  2. Open VS Code" -ForegroundColor White
 Write-Host "  3. Sign in with your GitHub account (bottom left corner)" -ForegroundColor White
 Write-Host "  4. Open the ai-interview-workshop folder" -ForegroundColor White
-Write-Host "  5. Start with Question 1!" -ForegroundColor White
+Write-Host "  5. In Copilot Chat, select the Workshop Agent from the agent picker" -ForegroundColor White
+Write-Host "  6. Open QUESTION-1-START-HERE.md and start practicing!" -ForegroundColor White
 Write-Host ""
 Write-Host "Students: Get GitHub Copilot Pro FREE!" -ForegroundColor Yellow
 Write-Host "  https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student" -ForegroundColor Gray
