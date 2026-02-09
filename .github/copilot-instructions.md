@@ -14,7 +14,7 @@ This workspace requires the **Workshop Agent** custom agent. If the user is chat
 >
 > **How to switch:**
 > 1. In the Copilot Chat panel, look at the bottom left of the chat input box.
-> 2. Click the **agent picker** (it may show a name like "Agent", "Plan", "Ask" or "Edit", or an agent icon).
+> 2. Click the **agent picker** (it may show a label like "Agent", "Plan", "Ask" or "Edit", or an agent icon).
 > 3. Select **Workshop Agent** from the list.
 > 4. Once selected, re-send your message.
 >
