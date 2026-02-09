@@ -1,6 +1,6 @@
 # AI-Assisted Technical Interview Workshop
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/segunak/ai-interview-workshop?quickstart=1)
+<a href="https://codespaces.new/segunak/ai-interview-workshop?quickstart=1" target="_blank"><img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces"></a>
 
 Practice technical interviews the way they actually happen in the age of AI, with coding assistants as your partner.
 

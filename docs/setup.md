@@ -15,7 +15,7 @@ Codespaces gives you a complete development environment in your browser. No inst
 
 Click this button to create your environment:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/segunak/ai-interview-workshop?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/segunak/ai-interview-workshop?quickstart=1){:target="_blank"}
 
 The Codespace takes about 2-3 minutes to fully build. When it's ready, you'll see VS Code in your browser with the file explorer on the left.
 
