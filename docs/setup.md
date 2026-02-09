@@ -94,7 +94,9 @@ Each question folder contains a `QUESTION-X-START-HERE.md` file plus starter cod
 
 ## Ready to Practice
 
-Before starting, select the **Workshop Agent** in GitHub Copilot Chat. Click the agent picker and choose **Workshop Agent**. This activates the guided workflow that will coach you through each problem.
+Before starting, select the **Workshop Agent** in GitHub Copilot Chat. Click the agent picker at the bottom left of the chat input box and choose **Workshop Agent**. This activates the guided workflow that will coach you through each problem.
+
+![How to select the Workshop Agent in VS Code](images/Workshop-Agent-Picked-VS-Code.png)
 
 Click on Question 1 below to get started. Remember, you're encouraged to use GitHub Copilot the whole way through!
 

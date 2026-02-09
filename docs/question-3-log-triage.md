@@ -6,7 +6,9 @@ nav_order: 5
 # Question 3: Log Triage
 
 {: .important }
-**Before you start:** In your VS Code window, Open `QUESTION-3-START-HERE.md` in the `question-3-log-triage` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+**Before you start:** Make sure you've selected the **Workshop Agent** in GitHub Copilot Chat. Open `QUESTION-3-START-HERE.md` in the `question-3-log-triage` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+
+![How to select the Workshop Agent in VS Code](images/Workshop-Agent-Picked-VS-Code.png)
 
 ## Scenario
 

@@ -25,6 +25,5 @@
   },
   "forwardPorts": [3000, 5000, 8080],
   "postCreateCommand": "pip install requests && npm install -g @github/copilot || true",
-  "postStartCommand": "pwsh -File .devcontainer/validate.ps1",
   "remoteUser": "codespace"
 }

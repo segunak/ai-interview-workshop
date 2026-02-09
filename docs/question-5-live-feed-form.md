@@ -6,7 +6,9 @@ nav_order: 7
 # Question 5: Live Feed Form UI
 
 {: .important }
-**Before you start:** In your VS Code window, Open `QUESTION-5-START-HERE.md` in the `question-5-live-feed-form` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+**Before you start:** Make sure you've selected the **Workshop Agent** in GitHub Copilot Chat. Open `QUESTION-5-START-HERE.md` in the `question-5-live-feed-form` folder and keep it open while you work. This loads the AI context GitHub Copilot needs to help you effectively.
+
+![How to select the Workshop Agent in VS Code](images/Workshop-Agent-Picked-VS-Code.png)
 
 ## Why This Problem?
 
