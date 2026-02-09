@@ -62,41 +62,33 @@ The entire string s is the minimum valid window.
 
 ## Workshop Workflow
 
-### 1. Ask Clarifying Questions
+### 1. Plan
 
-Before coding, consider:
+Understand the problem before touching code. Think about edge cases and assumptions:
 
 - Are characters case-sensitive?
 - What if t has duplicate characters?
 - What if s and t are the same string?
 - Should I return the substring or its indices?
 
-### 2. Plan Your Approach
-
-This is a classic sliding window problem. Discuss with Copilot:
+This is a classic sliding window problem. Design your approach with Copilot:
 
 - How do you know when your window contains all required characters?
 - When do you expand the window? When do you contract it?
 - How do you track the minimum window found so far?
 
-### 3. Implement and Test
+### 2. Prove
 
-Create your solution in `question-2-minimum-window/`. Test with:
+Direct AI to write your solution in `question-2-minimum-window/`. Before running anything, predict what the output will be. Then run the tests and verify your solution works with the provided examples and edge cases.
 
-- The provided examples
-- Edge cases (single character, no valid window, entire string is the answer)
+### 3. Explain
 
-## Reflection Prompts
+After your solution works, reflect on:
 
-After completing your solution, reflect on these questions:
-
-1. **Why is this considered a hard problem?** What makes sliding window tricky here compared to simpler sliding window problems?
-
-2. **How do you track "all characters present"?** What data structures help you efficiently check if your window is valid?
-
+1. **Why is this considered a hard problem?** What makes sliding window tricky here?
+2. **How do you track "all characters present"?** What data structures help?
 3. **What's the time complexity?** Why is it O(n) even though you might visit some characters multiple times?
-
-4. **Could you solve this without the optimization?** What would a brute force approach look like, and why is it too slow?
+4. **Could you solve this without the optimization?** What would brute force look like?
 
 ## Deliverables
 

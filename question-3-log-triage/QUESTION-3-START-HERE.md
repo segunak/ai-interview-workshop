@@ -90,18 +90,16 @@ These files simulate a real incident with overlapping error codes across service
 
 ## Workshop Workflow
 
-### 1. Clarifying Questions
+### 1. Plan
 
-Before diving in, consider:
+Understand the problem before diving in. Think about edge cases:
 
 - Should I handle nested directories or just the top level?
 - What if a log line has multiple error codes?
 - Should I include the source file in my output?
 - What if there are no error codes found?
 
-### 2. Plan Your Approach
-
-Break this into steps:
+Then break the problem into steps:
 
 1. Find all `.log` files in the directory
 2. Read each file line by line
@@ -109,13 +107,13 @@ Break this into steps:
 4. Aggregate counts in a dictionary
 5. Sort and display results
 
-### 3. Test Your Solution
+### 2. Prove
 
-Run your script and verify:
+Direct AI to write your solution in the starter file below. Before running anything, predict what the output will look like. Then run the script and verify the output makes sense: it finds all error codes across all files, counts are accurate, and output is sorted correctly.
 
-- It finds all error codes across all files
-- Counts are accurate (you can manually spot-check a few)
-- Output is sorted correctly
+### 3. Explain
+
+Walk through your script: how it parses each line, why it filters by ERROR level, and how the output helps someone at 2 AM triage an incident.
 
 ## Where to Write Your Code
 

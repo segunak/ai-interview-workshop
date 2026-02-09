@@ -66,33 +66,26 @@ Explanation: nums[2] + nums[4] = -3 + -5 = -8
 
 ## Workshop Workflow
 
-Before you start coding, follow this workflow:
+### 1. Plan
 
-### 1. Ask Clarifying Questions
-
-Think about edge cases and assumptions. Some questions to consider:
+Understand the problem before touching code. Think about edge cases and assumptions:
 
 - Can the array contain negative numbers?
 - What if the array is empty or has only one element?
 - Can there be duplicate values?
 - Do I return indices or values?
 
-### 2. Plan Your Approach
-
-Discuss your strategy with Copilot before writing code. Consider:
+Then design your approach with Copilot:
 
 - What data structure would help you quickly check if the number you need has already appeared?
 - What's the time complexity of a brute force approach?
 - Can you do better than O(n²)?
 
-### 3. Implement and Test
+### 2. Prove
 
-Create your solution in the [`question-1-two-sum/`](../question-1-two-sum/) folder. Include tests for:
+Direct AI to write your solution in the [`question-1-two-sum/`](../question-1-two-sum/) folder. Before running anything, predict what the output will be. Then run the tests and verify your solution works.
 
-- The provided examples
-- Edge cases (duplicates, negative numbers, large arrays)
-
-### 4. Explain Your Solution
+### 3. Explain
 
 Be ready to articulate:
 

@@ -22,7 +22,7 @@ Once your Codespace is ready, open the GitHub Copilot Chat panel and select the 
 
 ![How to select the Workshop Agent in VS Code](images/Workshop-Agent-Picked-VS-Code.png)
 
-The Workshop Agent is a custom AI coach built for this workshop. It walks you through each problem using a structured workflow: clarify, plan, code, predict, test, and explain. You should use it for the entire workshop.
+The Workshop Agent is a custom AI coach built for this workshop. It walks you through each problem using a structured workflow: **Plan, Prove, Explain**. You should use it for the entire workshop.
 
 {: .important }
 The Workshop Agent will not help you unless you select it using the steps shown above. If you skip this step, Copilot will not follow the workshop workflow.

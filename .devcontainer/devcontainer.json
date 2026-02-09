@@ -19,7 +19,8 @@
         "github.copilot.chat.codeGeneration.useInstructionFiles": true,
         "editor.minimap.enabled": false,
         "terminal.integrated.defaultProfile.linux": "pwsh",
-        "git.autofetch": true
+        "git.enabled": false,
+        "chat.tools.terminal.outputLocation": "terminal"
       }
     }
   },

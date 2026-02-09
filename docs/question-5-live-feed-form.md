@@ -100,37 +100,28 @@ You're using the same API from Question 4.
 
 ## Workshop Workflow
 
-### 1. Review Requirements
+### 1. Plan
 
-Read through the requirements above carefully. All technical specifications are provided.
-
-### 2. Plan Your Approach
-
-Think through:
+Read through the requirements above carefully. All technical specifications are provided. Then think through:
 
 - Form layout and fields
 - Validation rules
 - Error message display
 - Success state and next steps
 
-### 3. Build
+### 2. Prove
 
-Create your solution in `question-5-live-feed-form/`. The form should:
-
-- Look professional (doesn't need to be fancy, just clean)
-- Validate input before submitting
-- Handle loading, success, and error states
-- Guide users through the process
-
-### 4. Test
-
-Submit a post using your form and verify:
+Direct AI to build your solution in `question-5-live-feed-form/`. Before testing, predict what should happen when you submit the form. Then submit a post and verify:
 
 1. The form validates correctly
 2. The POST succeeds
 3. Your post appears in the **UI Submissions** section of the live feed (not Script Submissions)
 
 If your post only appears in Script Submissions, you forgot the required `ui-submission` tag.
+
+### 3. Explain
+
+Walk through your code: how the form collects and validates input, how the fetch call works, and why the business team needs a form instead of running your script.
 
 ## Deliverables
 

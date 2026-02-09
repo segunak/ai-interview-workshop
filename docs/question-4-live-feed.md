@@ -232,24 +232,30 @@ Read the full API documentation above. The answer to most questions is already h
 
 ## Workshop Workflow
 
-### 1. Clarifying Questions
+### 1. Plan
+
+Understand the problem before touching code. Think about:
 
 - What does the POST response contain that I need for verification?
 - How do I pass the WorkshopKey for GET requests vs POST requests?
 - What HTTP status code indicates the post was not found?
 
-### 2. Plan Your Approach
+Then design your approach:
 
-1. Open `post.js` starter file is pre-created with constants and a function skeleton)
+1. Open `post.js` (starter file is pre-created with constants and a function skeleton)
 2. Construct the POST request with JSON payload using `fetch`
 3. Parse the response and extract the `id`
 4. Construct the GET request with `id` and `WorkshopKey` as query params
 5. Check the verification response
 6. Print confirmed success or handle failure
 
-### 3. Verify
+### 2. Prove
 
-Your script should only claim success after the GET request confirms the post exists.
+Direct AI to write your solution in the starter file. Before running anything, predict what the output will be. Then run the script: it should only claim success after the GET request confirms the post exists.
+
+### 3. Explain
+
+Walk through your code: how the POST and GET requests work, why verification matters more than trusting a 200 response, and how async/await handles the flow.
 
 ## Deliverables
 

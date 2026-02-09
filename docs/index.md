@@ -33,16 +33,13 @@ This workshop teaches you how to effectively use AI coding assistants during tec
 
 **The AI Rule:** You can use AI for everything, but you must be able to explain everything your AI produces. Plan first, then prove it with tests. **[Your job is to deliver code you have proven to work](https://simonwillison.net/2025/Dec/18/code-proven-to-work/)**.
 
-## The Workflow
+## The Workflow: Plan, Prove, Explain
 
-Every problem should follow this sequence:
+Every problem follows three steps:
 
-1. **Ask Clarifying Questions** - Understand the problem before jumping to code
-2. **Plan First** - Create a strategy before implementation
-3. **Code with Understanding** - Write code (which includes AI generated code, you're responsible for it) you can explain
-4. **Predict Before Running** - Before executing code, predict what the output will be
-5. **Test and Prove** - Verify your solution works by running tests or checking output
-6. **Explain Your Solution** - Articulate time complexity, space complexity, and tradeoffs
+1. **Plan** — Understand the problem before touching code. Ask clarifying questions about edge cases and assumptions. Design your approach: what data structures, what algorithm, what's the strategy? Don't generate a single line until you have a plan you can articulate.
+2. **Prove** — Direct AI to write code, then prove it works. The code AI produces is yours, which means you're responsible for it. Before running anything, predict what the output will be. If you can't predict it, you don't understand it yet. Run the tests or check the output and confirm your solution works.
+3. **Explain** — Walk through your solution like you're in an interview. Articulate what it does, why it works, and the tradeoffs you made. Cover time complexity, space complexity, and why you chose this approach. If you can't explain it, you don't own it yet.
 
 ## Workshop Problems
 
@@ -71,4 +68,4 @@ Head to the **[Setup](setup)** page to configure your environment, then go to [Q
 - **[GitHub Copilot CLI](https://github.com/github/copilot-cli)** - AI in your terminal (Microsoft's answer to Claude Code)
 
 {: .note }
-GitHub Copilot in this repo has been configured to guide you through the workflow. Select the **Workshop Agent** in the chat panel for the best experience. It will prompt you to ask clarifying questions, plan before coding, predict outputs, and build understanding.
+GitHub Copilot in this repo has been configured to guide you through the workflow. Select the **Workshop Agent** in the chat panel for the best experience. It will walk you through each step: Plan, Prove, Explain.
