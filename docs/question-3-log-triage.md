@@ -18,7 +18,7 @@ This is a practical file processing problem. You're an on-call engineer at 2 AM.
 
 Write a script that:
 
-1. Reads all `.log` files from the [`question-3-log-triage/logs/`](../question-3-log-triage/logs/) directory
+1. Reads all `.log` files from the `question-3-log-triage/logs/` directory
 2. Extracts all error codes matching the pattern `E` followed by 4 digits (e.g., `E1234`, `E5678`)
 3. **Only counts ERROR level entries** (not WARN or INFO)
 4. Counts occurrences of each error code across all files
@@ -83,11 +83,11 @@ The exact format can vary. Use your creativity and ask AI to help you make it sc
 
 ## Sample Files
 
-The [`question-3-log-triage/logs/`](../question-3-log-triage/logs/) directory contains sample log files:
+The `question-3-log-triage/logs/` directory contains sample log files:
 
-- [`app-server-1.log`](../question-3-log-triage/logs/app-server-1.log) - Application server logs
-- [`app-server-2.log`](../question-3-log-triage/logs/app-server-2.log) - Second application server
-- [`api-gateway.log`](../question-3-log-triage/logs/api-gateway.log) - API gateway logs
+- `app-server-1.log` - Application server logs
+- `app-server-2.log` - Second application server
+- `api-gateway.log` - API gateway logs
 
 These files simulate a real incident with overlapping error codes across services.
 
@@ -122,11 +122,11 @@ Run your script and verify:
 
 ## Deliverables
 
-Your solution goes in **[`triage.ps1`](../question-3-log-triage/triage.ps1)** in the [`question-3-log-triage/`](../question-3-log-triage/) folder. Open that file and write your code there. The variable `$LogsDir` is already set to point at the logs folder.
+Your solution goes in **`triage.ps1`** in the `question-3-log-triage/` folder. Open that file and write your code there. The variable `$LogsDir` is already set to point at the logs folder.
 
 Run with:
 
-```
+```powershell
 ./triage.ps1
 ```
 

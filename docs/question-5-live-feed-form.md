@@ -115,7 +115,7 @@ Think through:
 
 ### 3. Build
 
-Create your solution in [`question-5-live-feed-form/`](../question-5-live-feed-form/). The form should:
+Create your solution in `question-5-live-feed-form/`. The form should:
 
 - Look professional (doesn't need to be fancy, just clean)
 - Validate input before submitting
@@ -134,11 +134,11 @@ If your post only appears in Script Submissions, you forgot the required `ui-sub
 
 ## Deliverables
 
-Your code goes in three files in the [`question-5-live-feed-form/`](../question-5-live-feed-form/) folder. Open these files and write your code in them:
+Your code goes in three files in the `question-5-live-feed-form/` folder. Open these files and write your code in them:
 
-- **[`index.html`](../question-5-live-feed-form/index.html)** — Build your form structure here
-- **[`styles.css`](../question-5-live-feed-form/styles.css)** — Add your styling here
-- **[`script.js`](../question-5-live-feed-form/script.js)** — Add your JavaScript and API call logic here
+- **`index.html`** — Build your form structure here
+- **`styles.css`** — Add your styling here
+- **`script.js`** — Add your JavaScript and API call logic here
 
 **Visual verification is the test for this problem.** Your form works if you can submit a post and see it appear on the live feed.
 

@@ -240,7 +240,7 @@ Read the full API documentation above. The answer to most questions is already h
 
 ### 2. Plan Your Approach
 
-1. Open [`post.js`](../question-4-live-feed/post.js) (starter file is pre-created with constants and a function skeleton)
+1. Open `post.js` starter file is pre-created with constants and a function skeleton)
 2. Construct the POST request with JSON payload using `fetch`
 3. Parse the response and extract the `id`
 4. Construct the GET request with `id` and `WorkshopKey` as query params
@@ -253,7 +253,7 @@ Your script should only claim success after the GET request confirms the post ex
 
 ## Deliverables
 
-Your solution goes in **[`post.js`](../question-4-live-feed/post.js)** in the [`question-4-live-feed/`](../question-4-live-feed/) folder. Open that file and write your code there. It already has `BASE_URL` and `WORKSHOP_KEY` constants and a `postMessage()` function skeleton to get you started.
+Your solution goes in **`post.js`** in the `question-4-live-feed/` folder. Open that file and write your code there. It already has `BASE_URL` and `WORKSHOP_KEY` constants and a `postMessage()` function skeleton to get you started.
 
 Run with:
 

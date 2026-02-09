@@ -102,11 +102,11 @@ Be ready to articulate:
 
 ## Deliverables
 
-Your solution goes in **[`solution.py`](../question-1-two-sum/solution.py)** in the [`question-1-two-sum/`](../question-1-two-sum/) folder. Open that file and write your code there.
+Your solution goes in **`solution.py`** in the `question-1-two-sum/` folder. Open that file and write your code there.
 
-Tests are already written in [`test_solution.py`](../question-1-two-sum/test_solution.py). Once your solution is working, run them with:
+Tests are already written in `test_solution.py`. Once your solution is working, run them with:
 
-```
+```txt
 python test_solution.py
 ```
 

@@ -81,7 +81,7 @@ This is a classic sliding window problem. Discuss with Copilot:
 
 ### 3. Implement and Test
 
-Create your solution in [`question-2-minimum-window/`](../question-2-minimum-window/). Test with:
+Create your solution in `question-2-minimum-window/`. Test with:
 
 - The provided examples
 - Edge cases (single character, no valid window, entire string is the answer)
@@ -100,11 +100,11 @@ After completing your solution, reflect on these questions:
 
 ## Deliverables
 
-Your solution goes in **[`solution.py`](../question-2-minimum-window/solution.py)** in the [`question-2-minimum-window/`](../question-2-minimum-window/) folder. Open that file and write your code there.
+Your solution goes in **`solution.py`** in the `question-2-minimum-window/` folder. Open that file and write your code there.
 
-Tests are already written in [`test_solution.py`](../question-2-minimum-window/test_solution.py). Once your solution is working, run them with:
+Tests are already written in `test_solution.py`. Once your solution is working, run them with:
 
-```
+```txt
 python test_solution.py
 ```
 
