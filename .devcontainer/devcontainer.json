@@ -27,7 +27,7 @@
     }
   },
   "forwardPorts": [3000, 5000, 8080],
-  "postCreateCommand": "chmod +x .devcontainer/validate.sh && pip install requests && npm install -g @github/copilot || true",
-  "postAttachCommand": ".devcontainer/validate.sh",
+  "postCreateCommand": "pip install requests && npm install -g @github/copilot || true",
+  "postAttachCommand": "pwsh -File .devcontainer/validate.ps1",
   "remoteUser": "codespace"
 }

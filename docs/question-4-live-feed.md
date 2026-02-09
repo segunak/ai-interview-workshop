@@ -35,6 +35,19 @@ Open this URL in your browser to see the live feed:
 
 This page displays messages posted by workshop participants in real-time. Your goal is to make your message appear on this board AND verify it programmatically.
 
+## WorkshopKey
+
+The API requires a password called the `WorkshopKey` to authenticate your requests. Without it, your POST and GET requests will be rejected with a 401 error.
+
+<details>
+<summary>Click to reveal the WorkshopKey</summary>
+
+<code>cinnamon-rolls-are-the-best-pastry-hands-down</code>
+
+</details>
+
+Your code will need to include this value in every request. For POST requests, it goes in the JSON body. For GET requests, it goes as a query parameter in the URL.
+
 ## API Endpoints
 
 ### POST `/api/post`
@@ -54,7 +67,7 @@ Creates a new post.
 | `Name` | string | Your name or alias |
 | `Message` | string | What you want to say |
 | `Workshop` | string | Workshop name (e.g., "AI Interview Workshop") |
-| `WorkshopKey` | string | Secret key (see below) |
+| `WorkshopKey` | string | The secret key listed above |
 
 **Optional Fields:**
 
@@ -167,15 +180,6 @@ GET https://live.segunakinyemi.com/api/posts?tag=python&WorkshopKey=your-key
 
 **Response:** `{ success: true, count: 5, tag: "python", posts: [...] }`
 
-## WorkshopKey
-
-<details>
-<summary>Click to reveal the WorkshopKey</summary>
-
-The WorkshopKey value is `cinnamon-rolls-are-the-best-pastry-hands-down`. Your code will need to pass this key for things to work!
-
-</details>
-
 ## Example Request Flow
 
 **Step 1: POST to create your message**
@@ -247,9 +251,13 @@ Your script should only claim success after the GET request confirms the post ex
 
 ## Deliverables
 
-Write your solution in [`question-4-live-feed/post.js`](../question-4-live-feed/post.js). A starter file is already there with `BASE_URL` and `WORKSHOP_KEY` constants and a `postMessage()` function skeleton.
+Your solution goes in **[`post.js`](../question-4-live-feed/post.js)** in the [`question-4-live-feed/`](../question-4-live-feed/) folder. Open that file and write your code there. It already has `BASE_URL` and `WORKSHOP_KEY` constants and a `postMessage()` function skeleton to get you started.
 
-Run with: `node post.js`
+Run with:
+
+```txt
+node post.js
+```
 
 Your script should print:
 

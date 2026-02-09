@@ -76,7 +76,7 @@ Think about edge cases and assumptions. Some questions to consider:
 
 Discuss your strategy with Copilot before writing code. Consider:
 
-- What data structure would help you find complements quickly?
+- What data structure would help you quickly check if the number you need has already appeared?
 - What's the time complexity of a brute force approach?
 - Can you do better than O(n²)?
 
@@ -97,12 +97,13 @@ Be ready to articulate:
 
 ## Deliverables
 
-Create your solution in the [`question-1-two-sum/`](../question-1-two-sum/) folder. Starter files are already there:
+Your solution goes in **[`solution.py`](../question-1-two-sum/solution.py)** in the [`question-1-two-sum/`](../question-1-two-sum/) folder. Open that file and write your code there.
 
-- [`solution.py`](../question-1-two-sum/solution.py) - Write your solution here
-- [`test_solution.py`](../question-1-two-sum/test_solution.py) - Tests are pre-written, they'll pass when your solution works
+Tests are already written in [`test_solution.py`](../question-1-two-sum/test_solution.py). Once your solution is working, run them with:
 
-Run tests with: `python test_solution.py`
+```
+python test_solution.py
+```
 
 ## Hints
 
@@ -119,13 +120,13 @@ A hash map (dictionary in Python) can help you look up values in O(1) time.
 <details>
 <summary>Hint 2: What to Store</summary>
 
-For each number, you need to find its complement (target - num). What if you stored numbers you've seen so far?
+For each number, there's another number that would pair with it to hit the target. For example, if your target is 9 and you're looking at 2, you need a 7. That "other number" is just `target - current number`. In programming, this is called the **complement**. What if you stored numbers you've seen so far so you could instantly check whether the one you need has already shown up?
 
 </details>
 
 <details>
 <summary>Hint 3: One Pass Solution</summary>
 
-You can solve this in a single pass through the array. For each number, check if its complement is already in your hash map. If not, add the current number to the map.
+You can solve this in a single pass through the array. For each number, check if the other number you need (`target - current number`) is already in your hash map. If it's not there yet, add the current number to the map and keep going.
 
 </details>

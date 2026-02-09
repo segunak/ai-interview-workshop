@@ -120,9 +120,13 @@ Run your script and verify:
 
 ## Deliverables
 
-Write your solution in [`question-3-log-triage/triage.ps1`](../question-3-log-triage/triage.ps1). A starter file is already there with `$LogsDir` pointing to the logs folder.
+Your solution goes in **[`triage.ps1`](../question-3-log-triage/triage.ps1)** in the [`question-3-log-triage/`](../question-3-log-triage/) folder. Open that file and write your code there. The variable `$LogsDir` is already set to point at the logs folder.
 
-Run with: `./triage.ps1`
+Run with:
+
+```
+./triage.ps1
+```
 
 Run your script and verify the output makes sense. **Output verification is the test for this problem.** Unit tests are optional.
 

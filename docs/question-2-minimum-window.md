@@ -98,12 +98,13 @@ After completing your solution, reflect on these questions:
 
 ## Deliverables
 
-Create your solution in the [`question-2-minimum-window/`](../question-2-minimum-window/) folder. Starter files are already there:
+Your solution goes in **[`solution.py`](../question-2-minimum-window/solution.py)** in the [`question-2-minimum-window/`](../question-2-minimum-window/) folder. Open that file and write your code there.
 
-- [`solution.py`](../question-2-minimum-window/solution.py) - Write your solution here
-- [`test_solution.py`](../question-2-minimum-window/test_solution.py) - Tests are pre-written, they'll pass when your solution works
+Tests are already written in [`test_solution.py`](../question-2-minimum-window/test_solution.py). Once your solution is working, run them with:
 
-Run tests with: `python test_solution.py`
+```
+python test_solution.py
+```
 
 ## Hints
 

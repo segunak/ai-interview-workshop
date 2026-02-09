@@ -132,11 +132,11 @@ If your post only appears in Script Submissions, you forgot the required `ui-sub
 
 ## Deliverables
 
-Create solution files in [`question-5-live-feed-form/`](../question-5-live-feed-form/):
+Your code goes in three files in the [`question-5-live-feed-form/`](../question-5-live-feed-form/) folder. Open these files and write your code in them:
 
-- [`index.html`](../question-5-live-feed-form/index.html) - The form structure
-- [`styles.css`](../question-5-live-feed-form/styles.css) - Styling
-- [`script.js`](../question-5-live-feed-form/script.js) - Form logic and API calls
+- **[`index.html`](../question-5-live-feed-form/index.html)** — Build your form structure here
+- **[`styles.css`](../question-5-live-feed-form/styles.css)** — Add your styling here
+- **[`script.js`](../question-5-live-feed-form/script.js)** — Add your JavaScript and API call logic here
 
 **Visual verification is the test for this problem.** Your form works if you can submit a post and see it appear on the live feed.
 
