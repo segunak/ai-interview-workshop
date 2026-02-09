@@ -27,6 +27,21 @@ The Workshop Agent is a custom AI coach built for this workshop. It walks you th
 {: .important }
 The Workshop Agent will not help you unless you select it using the steps shown above. If you skip this step, Copilot will not follow the workshop workflow.
 
+### Choose a Model
+
+After selecting the Workshop Agent, pick your AI model. Click the model picker in the chat panel and choose **Claude Sonnet 4.5**. It's one of the strongest coding models available, and with Copilot Pro ([free for students](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro)) you get [300 premium requests per month](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans), which is more than enough for this workshop.
+
+If you run out of premium requests, switch to **Raptor mini** or **GPT-5 mini**. These don't consume any premium requests, so you can use them without limits. They're less powerful but still capable enough to get through the problems. For a full list of available models and their costs, see [Supported AI Models in GitHub Copilot](https://docs.github.com/en/copilot/reference/ai-models/supported-models).
+
+Want to know which models are actually best at coding? Two benchmarks track this:
+
+- [SWE-bench](https://www.swebench.com/) - The industry standard for AI coding. Tests whether models can solve real GitHub issues from open source projects by generating patches and running test suites. Originally Python-only, now has multilingual extensions covering C, C++, Go, Java, JavaScript, TypeScript, and more.
+- [Terminal Bench](https://www.tbench.ai/) - Tests AI agents on real-world terminal tasks including coding, system administration, debugging, and data processing. Measures how well models operate autonomously in CLI environments.
+
+Check these regularly to stay current on which models lead the pack for coding.
+
+![How to select a model in VS Code](images/model-selection.png)
+
 ## Step 3: Start Practicing
 
 You do all your work inside the Codespace, not on this website. This site is just for reference. Click on Question 1 below to read the instructions, then switch back to your Codespace to write code. Each question folder contains a `QUESTION-X-START-HERE.md` file plus starter code files. Keep the start file open while you work so the Workshop Agent has full context.

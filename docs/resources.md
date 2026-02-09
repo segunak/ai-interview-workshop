@@ -50,6 +50,13 @@ As AI coding tools evolve, these are concepts worth understanding:
 - [Custom Agents](https://code.visualstudio.com/docs/copilot/customization/custom-agents) - Build your own specialized AI agents in VS Code
 - [Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills) - Extend Copilot with custom capabilities via MCP
 
+## AI Model Benchmarks
+
+Not all AI models are equal at coding. These benchmarks track which models perform best at real software engineering tasks. Check them regularly to stay current.
+
+- [SWE-bench](https://www.swebench.com/) - The industry standard for AI coding. Tests whether models can solve real GitHub issues from open source projects by generating patches and running test suites. Originally Python-only, now has multilingual extensions covering C, C++, Go, Java, JavaScript, TypeScript, and more.
+- [Terminal Bench](https://www.tbench.ai/) - Tests AI agents on real-world terminal tasks including coding, system administration, debugging, and data processing. Measures how well models operate autonomously in CLI environments.
+
 ## Interview Preparation
 
 - [Tech Interview Handbook](https://www.techinterviewhandbook.org/) - Comprehensive guide to technical interviews
@@ -76,7 +83,8 @@ And here are experiences from people who've specifically been through Canva's AI
 ## AI Engineering Resources
 
 - [The AI Engineer](https://www.latent.space/p/ai-engineer) - The essay that defined the emerging role of AI Engineer
-- [We’re Not Cooked: Your Tech Career Survival Guide in the Age of AI Engineering](https://segunakinyemi.com/blog/seo-techdevcon-2025/) - Blog post on how AI is changing software development and why there's still work to do
+- [Coding Is Dead, Software Engineering Isn't](https://segunakinyemi.com/blog/coding-is-dead-software-engineering-isnt/) - Deep dive into why AI changes what developers do but doesn't replace the need for engineering judgment
+- [We're Not Cooked: Your Tech Career Survival Guide in the Age of AI Engineering](https://segunakinyemi.com/blog/seo-techdevcon-2025/) - Blog post on how AI is changing software development and why there's still work to do
 - [AI Insights for Students](https://readwise.io/reader/view/2a197170-e112-4033-83b2-288bfbf75194) - Curated collection of articles on AI engineering, prompt techniques, and industry trends
 - [Who to Follow](https://segunakinyemi.com/blog/seo-techdevcon-2025/#who-to-follow) - People and organizations to follow for the latest in AI and software development
 
