@@ -31,6 +31,8 @@ The Workshop Agent will not help you unless you select it using the steps shown 
 
 After selecting the Workshop Agent, pick your AI model. Click the model picker in the chat panel and choose **Claude Sonnet 4.5**. It's one of the strongest coding models available, and with Copilot Pro ([free for students](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro)) you get [300 premium requests per month](https://docs.github.com/en/copilot/get-started/plans#comparing-copilot-plans), which is more than enough for this workshop.
 
+![How to select a model in VS Code](images/model-selection.png)
+
 If you run out of premium requests, switch to **Raptor mini** or **GPT-5 mini**. These don't consume any premium requests, so you can use them without limits. They're less powerful but still capable enough to get through the problems. For a full list of available models and their costs, see [Supported AI Models in GitHub Copilot](https://docs.github.com/en/copilot/reference/ai-models/supported-models).
 
 Want to know which models are actually best at coding? Two benchmarks track this:
@@ -39,8 +41,6 @@ Want to know which models are actually best at coding? Two benchmarks track this
 - [Terminal Bench](https://www.tbench.ai/) - Tests AI agents on real-world terminal tasks including coding, system administration, debugging, and data processing. Measures how well models operate autonomously in CLI environments.
 
 Check these regularly to stay current on which models lead the pack for coding.
-
-![How to select a model in VS Code](images/model-selection.png)
 
 ## Step 3: Start Practicing
 

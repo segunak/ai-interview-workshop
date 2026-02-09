@@ -13,8 +13,6 @@ nav_order: 3
 {: .note }
 **Model tip:** For best results, select **Claude Sonnet 4.5** from the model picker in Copilot Chat. If you run out of premium requests, switch to **Raptor mini** or **GPT-5 mini**, which are free and unlimited.
 
-![How to select a model in VS Code](images/model-selection.png)
-
 {: .note }
 This problem is based on [LeetCode #1: Two Sum](https://leetcode.com/problems/two-sum/).
 
