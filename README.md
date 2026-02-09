@@ -1,6 +1,6 @@
 # AI-Assisted Technical Interview Workshop
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/segunak/ai-interview-workshop?quickstart=1)
+<a href="https://codespaces.new/segunak/ai-interview-workshop?quickstart=1" target="_blank"><img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces"></a>
 
 Practice technical interviews the way they actually happen in the age of AI, with coding assistants as your partner.
 
@@ -10,58 +10,35 @@ Practice technical interviews the way they actually happen in the age of AI, wit
 - **Workshop Live Feed:** <https://aka.ms/aiw/live-feed>
 - **Workshop PowerPoint Deck:** [The Link](https://1drv.ms/p/c/750d396c5cadcebd/IQBsRMeY3HSzRIBxRgHkaxD1AWZG14z_B3al7wfnPaezf4g?e=CjHD76)
 
-## What Is This?
+## Get Started
 
-This workshop teaches you how to use AI tools effectively in technical interviews. You'll work through 5 progressively challenging problems, learning to:
+Select the **Workshop Agent** in GitHub Copilot Chat (bottom left of the chat input box), then click a question below to start working. Keep the file open while you work so the AI has full context.
 
-- Plan before you code
-- Write tests to prove your solutions work
-- Communicate clearly with AI assistants
-- Explain your approach to interviewers
+| # | Question | Click to Open |
+|---|----------|---------------|
+| 1 | Two Sum (Easy) | [QUESTION-1-START-HERE.md](question-1-two-sum/QUESTION-1-START-HERE.md) |
+| 2 | Minimum Window Substring (Hard) | [QUESTION-2-START-HERE.md](question-2-minimum-window/QUESTION-2-START-HERE.md) |
+| 3 | Log File Triage | [QUESTION-3-START-HERE.md](question-3-log-triage/QUESTION-3-START-HERE.md) |
+| 4 | Post to Live Feed | [QUESTION-4-START-HERE.md](question-4-live-feed/QUESTION-4-START-HERE.md) |
+| 5 | Live Feed Form UI | [QUESTION-5-START-HERE.md](question-5-live-feed-form/QUESTION-5-START-HERE.md) |
 
-## Why AI-Assisted Interviews?
+Need help setting up? See the full [setup instructions](https://segunakinyemi.com/ai-interview-workshop/setup/) on the workshop website.
 
-If AI can write code, then the [real skill isn't typing solutions from memory](https://terriblesoftware.org/2025/12/11/ai-can-write-your-code-it-cant-do-your-job/). It's driving the software development process end to end and shipping something correct. Companies like [Meta](https://www.wired.com/story/meta-ai-job-interview-coding/) and [Canva](https://www.canva.dev/blog/engineering/yes-you-can-use-ai-in-our-interviews/) are adapting interviews to this reality. This workshop trains that skill set.
+## Full Question Instructions
 
-If you think this approach is cheating, or that students should focus solely on LeetCode, [here's why I built the workshop this way](https://segunakinyemi.com/ai-interview-workshop/why-ai-interviews/). For the full philosophy, [read the accompanying article](https://segunakinyemi.com/blog/coding-is-dead-software-engineering-isnt/).
+The links above open files directly in your Codespace. For the full written instructions, requirements, and context for each question, visit the workshop website:
 
-## Quick Start
-
-### Option 1: GitHub Codespaces (Recommended)
-
-1. Click the **Open in GitHub Codespaces** button above
-2. Wait for the environment to load (about 2 minutes)
-3. Open the [Workshop Website](https://segunakinyemi.com/ai-interview-workshop/) in a new tab
-4. In GitHub Copilot Chat, select the **Workshop Agent** from the agent picker for guided coaching
-5. Open `QUESTION-1-START-HERE.md` in the `question-1-two-sum/` folder and keep it open while you work
-
-### Option 2: Local Setup (Windows)
-
-1. Clone this repo: `git clone https://github.com/segunak/ai-interview-workshop`
-2. Open PowerShell **as Administrator**
-3. Run: `.\scripts\setup-windows.ps1`
-4. Open the folder in VS Code and sign in with your GitHub account
-5. In GitHub Copilot Chat, select the **Workshop Agent** from the agent picker for guided coaching
-
-**Students:** Get [GitHub Copilot Pro for free](https://docs.github.com/en/copilot/how-tos/manage-your-account/get-free-access-to-copilot-pro) by [verifying your student status](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student)!
-
-**Important:** When working on a question, keep the `QUESTION-X-START-HERE.md` file open in your editor. This loads the AI context GitHub Copilot needs to help you effectively.
-
-## The 5 Questions
-
-| # | Type | Challenge | Folder |
-|---|------|-----------|--------|
-| 1 | Data Structures and Algorithms (Easy) | [Two Sum](https://segunakinyemi.com/ai-interview-workshop/question-1-two-sum/) | [question-1-two-sum/](question-1-two-sum/) |
-| 2 | Data Structures and Algorithms (Hard) | [Minimum Window Substring](https://segunakinyemi.com/ai-interview-workshop/question-2-minimum-window/) | [question-2-minimum-window/](question-2-minimum-window/) |
-| 3 | Practical Software Engineering | [Log File Triage](https://segunakinyemi.com/ai-interview-workshop/question-3-log-triage/) | [question-3-log-triage/](question-3-log-triage/) |
-| 4 | Practical Software Engineering | [Post to Live Feed](https://segunakinyemi.com/ai-interview-workshop/question-4-live-feed/) | [question-4-live-feed/](question-4-live-feed/) |
-| 5 | Frontend Development | [Live Feed Form UI](https://segunakinyemi.com/ai-interview-workshop/question-5-live-feed-form/) | [question-5-live-feed-form/](question-5-live-feed-form/) |
+| # | Type | Full Instructions |
+|---|------|-------------------|
+| 1 | Data Structures and Algorithms (Easy) | [Two Sum](https://segunakinyemi.com/ai-interview-workshop/question-1-two-sum/) |
+| 2 | Data Structures and Algorithms (Hard) | [Minimum Window Substring](https://segunakinyemi.com/ai-interview-workshop/question-2-minimum-window/) |
+| 3 | Practical Software Engineering | [Log File Triage](https://segunakinyemi.com/ai-interview-workshop/question-3-log-triage/) |
+| 4 | Practical Software Engineering | [Post to Live Feed](https://segunakinyemi.com/ai-interview-workshop/question-4-live-feed/) |
+| 5 | Frontend Development | [Live Feed Form UI](https://segunakinyemi.com/ai-interview-workshop/question-5-live-feed-form/) |
 
 ## The AI Rule
 
 You can use AI for everything, but you must be able to explain everything your AI produces. Plan first, then prove it with tests. **[Your job is to deliver code you have proven to work](https://simonwillison.net/2025/Dec/18/code-proven-to-work/)**.
-
-This rule appears on every question. It's the core workflow for AI-assisted development:
 
 1. Ask clarifying questions
 2. Generate a plan with your AI tool
@@ -69,10 +46,3 @@ This rule appears on every question. It's the core workflow for AI-assisted deve
 4. Predict what the code will do before running it
 5. Test and prove your solution works
 6. Explain your solution, time complexity, tradeoffs, and why it works
-
-## Tools You Can Use
-
-- [VS Code with GitHub Copilot](https://code.visualstudio.com/docs/copilot/overview)
-- [GitHub Copilot CLI](https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli)
-
-**Not allowed for this workshop:** Browser-based chat tools (ChatGPT web, Claude web, etc.). Practice using AI inside your development environment.
