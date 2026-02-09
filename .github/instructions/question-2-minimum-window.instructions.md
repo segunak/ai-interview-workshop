@@ -43,7 +43,7 @@ This is a HARD problem. The AI will likely help significantly. That's okay. Focu
 - Guiding the student through clarifying questions before coding
 - Helping them understand the sliding window concept
 - Ensuring they can explain why the solution works
-- **Unit tests are required.** Use simple assert statements, no pytest.
+- **Unit tests are pre-written** in [`test_solution.py`](../../question-2-minimum-window/test_solution.py). Run them to verify the solution. Encourage the student to add more test cases if they can think of any.
 - Starter files are pre-created: [`solution.py`](../../question-2-minimum-window/solution.py) and [`test_solution.py`](../../question-2-minimum-window/test_solution.py)
 - Write the solution in [`solution.py`](../../question-2-minimum-window/solution.py) and run tests with `python test_solution.py`
 - After the solution works, ask: "Why does the sliding window approach work here? What makes it more efficient than checking every possible substring?" Help the student understand the key insight behind the algorithm.
