@@ -13,21 +13,18 @@
         "ms-vscode.powershell",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "ms-vsliveshare.vsliveshare",
-        "redhat.vscode-yaml",
-        "dracula-theme.theme-dracula"
+        "ms-vsliveshare.vsliveshare"
       ],
       "settings": {
         "github.copilot.chat.codeGeneration.useInstructionFiles": true,
         "editor.minimap.enabled": false,
         "terminal.integrated.defaultProfile.linux": "pwsh",
-        "git.autofetch": true,
-        "workbench.colorTheme": "Dracula Theme"
+        "git.autofetch": true
       }
     }
   },
   "forwardPorts": [3000, 5000, 8080],
   "postCreateCommand": "pip install requests && npm install -g @github/copilot || true",
-  "postAttachCommand": "pwsh -File .devcontainer/validate.ps1",
+  "postStartCommand": "pwsh -File .devcontainer/validate.ps1",
   "remoteUser": "codespace"
 }
