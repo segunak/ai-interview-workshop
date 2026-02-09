@@ -14,6 +14,8 @@ Practice technical interviews the way they actually happen in the age of AI, wit
 
 Select the **Workshop Agent** in GitHub Copilot Chat (bottom left of the chat input box), then click a question below to start working. Keep the file open while you work so the AI has full context.
 
+![How to select the Workshop Agent in VS Code](docs/images/Workshop-Agent-Picked-VS-Code.png)
+
 | # | Question | Click to Open |
 |---|----------|---------------|
 | 1 | Two Sum (Easy) | [QUESTION-1-START-HERE.md](question-1-two-sum/QUESTION-1-START-HERE.md) |
