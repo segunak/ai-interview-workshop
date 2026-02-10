@@ -27,7 +27,7 @@ This page displays messages posted by workshop participants in real-time. Your g
 
 The API requires a password called the `WorkshopKey` to authenticate your requests. Without it, your POST and GET requests will be rejected with a 401 error.
 
-**WorkshopKey:** `cinnamon-rolls-are-the-best-pastry-hands-down`
+The workshop key is stored in [`workshop-config.json`](../workshop-config.json) at the root of the repository. Your starter file (`post.js`) already reads from this config file, so you don't need to copy/paste the key anywhere.
 
 Your code will need to include this value in every request. For POST requests, it goes in the JSON body. For GET requests, it goes as a query parameter in the URL.
 
@@ -218,7 +218,7 @@ Walk through your code: how the POST and GET requests work, why verification mat
 
 ## Where to Write Your Code
 
-Your solution goes in **`post.js`** in this folder. Open that file and write your code there. It already has `BASE_URL`, `WORKSHOP_KEY` constants, and a `postMessage()` function skeleton to get you started.
+Your solution goes in **`post.js`** in this folder. Open that file and write your code there. It already reads `BASE_URL` and `WORKSHOP_KEY` from [`workshop-config.json`](../workshop-config.json) and has a `postMessage()` function skeleton to get you started.
 
 Run with:
 

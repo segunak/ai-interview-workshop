@@ -44,7 +44,7 @@ The API requires a password called the `WorkshopKey` to authenticate your reques
 <details>
 <summary>Click to reveal the WorkshopKey</summary>
 
-<code>cinnamon-rolls-are-the-best-pastry-hands-down</code>
+<code>{{ site.data.workshop.key }}</code>
 
 </details>
 
@@ -259,7 +259,7 @@ Walk through your code: how the POST and GET requests work, why verification mat
 
 ## Deliverables
 
-Your solution goes in **`post.js`** in the `question-4-live-feed/` folder. Open that file and write your code there. It already has `BASE_URL` and `WORKSHOP_KEY` constants and a `postMessage()` function skeleton to get you started.
+Your solution goes in **`post.js`** in the `question-4-live-feed/` folder. Open that file and write your code there. It already reads `BASE_URL` and `WORKSHOP_KEY` from `workshop-config.json` and has a `postMessage()` function skeleton to get you started.
 
 Run with:
 

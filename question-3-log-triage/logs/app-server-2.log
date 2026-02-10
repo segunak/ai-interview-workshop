@@ -1,0 +1,24 @@
+[2026-01-27 10:15] INFO I0001: Server startup complete
+[2026-01-27 10:16] INFO I0002: Health check passed
+[2026-01-27 10:17] DEBUG D0004: Loading user preferences user=88
+[2026-01-27 10:19] INFO I0003: Payment initiated user=88 amount=75.00
+[2026-01-27 10:20] INFO I0006: Payment succeeded user=88 transaction=TXN8815
+[2026-01-27 10:22] WARN W0004: External API slow service=shipping latency=1.8s
+[2026-01-27 10:24] DEBUG D0001: Processing request for user=102
+[2026-01-27 10:25] ERROR E9999: Auth failed user=102 reason=invalid_token
+[2026-01-27 10:26] WARN W0005: Session expired user=102
+[2026-01-27 10:27] INFO I0008: Login attempt user=102
+[2026-01-27 10:28] ERROR E9999: Auth failed user=102 reason=wrong_password
+[2026-01-27 10:29] INFO I0009: Account locked user=102 attempts=3
+[2026-01-27 10:31] INFO I0002: Health check passed
+[2026-01-27 10:33] DEBUG D0001: Processing request for user=45
+[2026-01-27 10:34] INFO I0003: Payment initiated user=45 amount=200.00
+[2026-01-27 10:35] WARN W0001: Slow database response time=2.9s
+[2026-01-27 10:36] INFO I0006: Payment succeeded user=45 transaction=TXN8816
+[2026-01-27 10:38] ERROR E1234: Payment failed user=67 reason=fraud_detected
+[2026-01-27 10:39] INFO I0010: Fraud alert triggered user=67 score=0.92
+[2026-01-27 10:41] INFO I0002: Health check passed
+[2026-01-27 10:42] DEBUG D0005: Background job started job=cleanup_sessions
+[2026-01-27 10:44] INFO I0011: Background job completed job=cleanup_sessions records=156
+[2026-01-27 10:46] WARN W0003: Memory usage high percent=82
+[2026-01-27 10:47] INFO I0002: Health check passed

@@ -1,0 +1,30 @@
+[2026-01-27 10:15] INFO I0001: Server startup complete
+[2026-01-27 10:16] INFO I0002: Health check passed
+[2026-01-27 10:18] DEBUG D0001: Processing request for user=42
+[2026-01-27 10:19] INFO I0003: Payment initiated user=42 amount=99.99
+[2026-01-27 10:20] WARN W0001: Slow database response time=2.3s
+[2026-01-27 10:21] ERROR E1234: Payment failed user=42 reason=card_declined
+[2026-01-27 10:22] INFO I0004: Retry queued user=42 attempt=1
+[2026-01-27 10:23] ERROR E1234: Payment failed user=42 reason=card_declined
+[2026-01-27 10:24] WARN W0002: Rate limit approaching threshold=80%
+[2026-01-27 10:25] INFO I0003: Payment initiated user=99 amount=149.50
+[2026-01-27 10:26] DEBUG D0002: Cache miss key=user_99_cart
+[2026-01-27 10:27] ERROR E5678: DB timeout query=get_inventory duration=30s
+[2026-01-27 10:28] WARN W0001: Slow database response time=4.1s
+[2026-01-27 10:29] ERROR E1234: Payment failed user=99 reason=insufficient_funds
+[2026-01-27 10:30] INFO I0005: User logout user=42
+[2026-01-27 10:31] INFO I0002: Health check passed
+[2026-01-27 10:32] ERROR E5678: DB timeout query=update_session duration=31s
+[2026-01-27 10:33] DEBUG D0001: Processing request for user=156
+[2026-01-27 10:34] INFO I0003: Payment initiated user=156 amount=25.00
+[2026-01-27 10:35] INFO I0006: Payment succeeded user=156 transaction=TXN8821
+[2026-01-27 10:36] WARN W0003: Memory usage high percent=78
+[2026-01-27 10:37] INFO I0002: Health check passed
+[2026-01-27 10:38] DEBUG D0003: Session refresh user=156
+[2026-01-27 10:39] ERROR E1234: Payment failed user=201 reason=expired_card
+[2026-01-27 10:40] INFO I0007: Email notification sent user=201 type=payment_failed
+[2026-01-27 10:41] WARN W0001: Slow database response time=3.8s
+[2026-01-27 10:42] INFO I0002: Health check passed
+[2026-01-27 10:43] DEBUG D0001: Processing request for user=77
+[2026-01-27 10:44] INFO I0003: Payment initiated user=77 amount=500.00
+[2026-01-27 10:45] INFO I0006: Payment succeeded user=77 transaction=TXN8822

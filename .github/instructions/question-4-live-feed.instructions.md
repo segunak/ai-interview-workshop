@@ -40,7 +40,7 @@ Creates a new post.
 | `Name` | string | The student's name (required) |
 | `Message` | string | Their message content (required) |
 | `Workshop` | string | Workshop name, e.g. "AI Interview Workshop" (required) |
-| `WorkshopKey` | string | Password: `cinnamon-rolls-are-the-best-pastry-hands-down` |
+| `WorkshopKey` | string | Read from `workshop-config.json` at the repo root |
 
 **Optional Field:**
 
@@ -65,7 +65,7 @@ Retrieves posts for verification.
 **Mode 1: Verify specific post by ID**
 
 ```txt
-GET https://live.segunakinyemi.com/api/posts?id=recXXXXXXXXX&WorkshopKey=cinnamon-rolls-are-the-best-pastry-hands-down
+GET https://live.segunakinyemi.com/api/posts?id=recXXXXXXXXX&WorkshopKey=<value-from-workshop-config.json>
 ```
 
 **Success Response (200):**
@@ -97,13 +97,13 @@ GET https://live.segunakinyemi.com/api/posts?id=recXXXXXXXXX&WorkshopKey=cinnamo
 **Mode 2: List recent posts by workshop**
 
 ```txt
-GET https://live.segunakinyemi.com/api/posts?workshop=AI%20Interview%20Workshop&WorkshopKey=cinnamon-rolls-are-the-best-pastry-hands-down
+GET https://live.segunakinyemi.com/api/posts?workshop=AI%20Interview%20Workshop&WorkshopKey=<value-from-workshop-config.json>
 ```
 
 **Mode 3: List recent posts by tag**
 
 ```txt
-GET https://live.segunakinyemi.com/api/posts?tag=python&WorkshopKey=cinnamon-rolls-are-the-best-pastry-hands-down
+GET https://live.segunakinyemi.com/api/posts?tag=python&WorkshopKey=<value-from-workshop-config.json>
 ```
 
 **Response:** `{ success: true, count: 5, tag: "python", posts: [...] }`
@@ -113,8 +113,9 @@ GET https://live.segunakinyemi.com/api/posts?tag=python&WorkshopKey=cinnamon-rol
 ### JavaScript (fetch API — built into Node.js 18+, no install needed)
 
 ```javascript
-const BASE_URL = "https://live.segunakinyemi.com";
-const WORKSHOP_KEY = "cinnamon-rolls-are-the-best-pastry-hands-down";
+const config = require("../workshop-config.json");
+const BASE_URL = config.liveFeedUrl;
+const WORKSHOP_KEY = config.workshopKey;
 
 async function postAndVerify() {
     // Step 1: POST to create the message
@@ -239,7 +240,7 @@ Verified: post exists in database
 - This is about proving your code works to stakeholders, not just trusting API responses
 - **The GET verification step IS the test.** No additional unit tests needed.
 - **Do NOT suggest the tag `ui-submission`** - that tag is reserved for Question 5 form submissions.
-- A starter file is pre-created: [`post.js`](../../question-4-live-feed/post.js) (already has `BASE_URL`, `WORKSHOP_KEY` constants, and a `postMessage()` skeleton)
+- A starter file is pre-created: [`post.js`](../../question-4-live-feed/post.js) (reads `BASE_URL` and `WORKSHOP_KEY` from [`workshop-config.json`](../../workshop-config.json) and has a `postMessage()` skeleton)
 - Run with `node post.js`
 - After verification succeeds, ask: "Why do we verify the POST with a GET instead of trusting the 200 response? When does this matter in real software?" Help the student connect this to real engineering practices.
 - If the student doesn't understand async/await, Promises, or how `fetch` works, take a moment to teach those concepts rather than just using them.

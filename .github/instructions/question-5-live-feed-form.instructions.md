@@ -18,7 +18,7 @@ This teaches: **Developers build scripts. Real value comes from making those scr
 
 ## The Setup
 
-The student already has a working POST script from Question 4 at [`question-4-live-feed/post.js`](../../question-4-live-feed/post.js). That file contains the `fetch` logic for calling the live feed API, including the `BASE_URL`, `WORKSHOP_KEY`, JSON payload structure, and the POST + GET verification flow.
+The student already has a working POST script from Question 4 at [`question-4-live-feed/post.js`](../../question-4-live-feed/post.js). That file contains the `fetch` logic for calling the live feed API, including the `BASE_URL`, `WORKSHOP_KEY` (read from [`workshop-config.json`](../../workshop-config.json)), JSON payload structure, and the POST + GET verification flow.
 
 **When helping the student start Question 5, reference their Q4 code directly.** The `fetch` call in [`post.js`](../../question-4-live-feed/post.js) is the foundation for [`script.js`](../../question-5-live-feed-form/script.js) in Question 5. Copy or adapt the Q4 `fetch` logic into the form's submit handler rather than writing it from scratch. The main differences are:
 
@@ -69,7 +69,7 @@ The form MUST always include `ui-submission` in the tags array. Show it to users
 - Message (string)
 - Workshop (string)
 - Tags (comma-separated string)
-- WorkshopKey: `cinnamon-rolls-are-the-best-pastry-hands-down`
+- WorkshopKey: Read from [`workshop-config.json`](../../workshop-config.json) at the repo root (open that file to get the current value)
 
 **Success response:** `{ success: true, id: "recXXX" }`
 

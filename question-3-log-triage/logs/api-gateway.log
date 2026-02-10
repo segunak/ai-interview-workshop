@@ -1,0 +1,21 @@
+[2026-01-27 10:15] INFO I0001: Gateway startup complete
+[2026-01-27 10:16] INFO I0002: Health check passed
+[2026-01-27 10:17] DEBUG D0010: Route resolved path=/api/v1/users method=GET
+[2026-01-27 10:18] INFO I0012: Request forwarded path=/api/v1/users target=app-server-1
+[2026-01-27 10:20] ERROR E4040: Route not found path=/api/v2/checkout method=POST
+[2026-01-27 10:21] WARN W0006: Deprecated endpoint accessed path=/api/v1/legacy/cart
+[2026-01-27 10:23] DEBUG D0010: Route resolved path=/api/v1/payments method=POST
+[2026-01-27 10:24] INFO I0012: Request forwarded path=/api/v1/payments target=app-server-1
+[2026-01-27 10:26] ERROR E4040: Route not found path=/api/v3/inventory method=GET
+[2026-01-27 10:27] INFO I0002: Health check passed
+[2026-01-27 10:29] DEBUG D0011: Rate limit check user=42 current=45 limit=100
+[2026-01-27 10:31] INFO I0012: Request forwarded path=/api/v1/orders target=app-server-2
+[2026-01-27 10:33] ERROR E5678: DB timeout query=route_cache_refresh duration=32s
+[2026-01-27 10:34] WARN W0007: Failover activated primary=db-master secondary=db-replica
+[2026-01-27 10:36] INFO I0013: Failover successful latency=450ms
+[2026-01-27 10:37] INFO I0002: Health check passed
+[2026-01-27 10:39] ERROR E4040: Route not found path=/api/v2/users/profile method=PATCH
+[2026-01-27 10:40] DEBUG D0010: Route resolved path=/api/v1/users/profile method=PATCH
+[2026-01-27 10:41] INFO I0012: Request forwarded path=/api/v1/users/profile target=app-server-2
+[2026-01-27 10:43] WARN W0006: Deprecated endpoint accessed path=/api/v1/legacy/shipping
+[2026-01-27 10:44] INFO I0002: Health check passed

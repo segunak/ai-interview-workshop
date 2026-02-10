@@ -8,8 +8,9 @@
  * Run with: node post.js
  */
 
-const BASE_URL = "https://live.segunakinyemi.com";
-const WORKSHOP_KEY = "cinnamon-rolls-are-the-best-pastry-hands-down";
+const config = require("../workshop-config.json");
+const BASE_URL = config.liveFeedUrl;
+const WORKSHOP_KEY = config.workshopKey;
 
 /**
  * Post a message to the live feed and verify it exists in the database.

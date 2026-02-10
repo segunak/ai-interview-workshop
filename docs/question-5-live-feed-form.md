@@ -86,7 +86,7 @@ You're using the same API from Question 4.
 | `Message` | string | Required |
 | `Workshop` | string | Required, suggest pre-filling |
 | `Tags` | string | Comma-separated list |
-| `WorkshopKey` | string | Same key from Question 4 |
+| `WorkshopKey` | string | Same key from Question 4 (found in `workshop-config.json` at the repo root) |
 
 **Success response:**
 
