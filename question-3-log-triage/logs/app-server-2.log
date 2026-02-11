@@ -1,24 +1,33 @@
-[2026-01-27 10:15] INFO I0001: Server startup complete
-[2026-01-27 10:16] INFO I0002: Health check passed
-[2026-01-27 10:17] DEBUG D0004: Loading user preferences user=88
-[2026-01-27 10:19] INFO I0003: Payment initiated user=88 amount=75.00
-[2026-01-27 10:20] INFO I0006: Payment succeeded user=88 transaction=TXN8815
-[2026-01-27 10:22] WARN W0004: External API slow service=shipping latency=1.8s
-[2026-01-27 10:24] DEBUG D0001: Processing request for user=102
-[2026-01-27 10:25] ERROR E9999: Auth failed user=102 reason=invalid_token
-[2026-01-27 10:26] WARN W0005: Session expired user=102
-[2026-01-27 10:27] INFO I0008: Login attempt user=102
-[2026-01-27 10:28] ERROR E9999: Auth failed user=102 reason=wrong_password
-[2026-01-27 10:29] INFO I0009: Account locked user=102 attempts=3
-[2026-01-27 10:31] INFO I0002: Health check passed
-[2026-01-27 10:33] DEBUG D0001: Processing request for user=45
-[2026-01-27 10:34] INFO I0003: Payment initiated user=45 amount=200.00
-[2026-01-27 10:35] WARN W0001: Slow database response time=2.9s
-[2026-01-27 10:36] INFO I0006: Payment succeeded user=45 transaction=TXN8816
-[2026-01-27 10:38] ERROR E1234: Payment failed user=67 reason=fraud_detected
-[2026-01-27 10:39] INFO I0010: Fraud alert triggered user=67 score=0.92
-[2026-01-27 10:41] INFO I0002: Health check passed
-[2026-01-27 10:42] DEBUG D0005: Background job started job=cleanup_sessions
-[2026-01-27 10:44] INFO I0011: Background job completed job=cleanup_sessions records=156
-[2026-01-27 10:46] WARN W0003: Memory usage high percent=82
-[2026-01-27 10:47] INFO I0002: Health check passed
+[2026-02-06 02:01] INFO I0001: Server startup complete, connected to database db-primary
+[2026-02-06 02:02] INFO I0002: Health check passed, all services operational
+[2026-02-06 02:03] DEBUG D0001: Processing incoming API request for user=301
+[2026-02-06 02:04] INFO I0003: Payment initiated for user=301 amount=45.00
+[2026-02-06 02:04] INFO I0006: Payment succeeded for user=301 transaction_id=TXN9903
+[2026-02-06 02:06] DEBUG D0001: Processing incoming API request for user=119
+[2026-02-06 02:07] INFO I0003: Payment initiated for user=119 amount=320.00
+[2026-02-06 02:07] INFO I0006: Payment succeeded for user=119 transaction_id=TXN9904
+[2026-02-06 02:09] INFO I0002: Health check passed, all services operational
+[2026-02-06 02:10] DEBUG D0001: Processing incoming API request for user=205
+[2026-02-06 02:11] INFO I0003: Payment initiated for user=205 amount=150.00
+[2026-02-06 02:11] INFO I0006: Payment succeeded for user=205 transaction_id=TXN9905
+[2026-02-06 02:13] DEBUG D0001: Processing incoming API request for user=67
+[2026-02-06 02:14] INFO I0003: Payment initiated for user=67 amount=200.00
+[2026-02-06 02:14] INFO I0006: Payment succeeded for user=67 transaction_id=TXN9906
+[2026-02-06 02:15] WARN W0040: Incoming request rate elevated to 3x normal traffic volume
+[2026-02-06 02:15] WARN W1001: Database connection pool running low on db-primary, 5 of 20 connections available
+[2026-02-06 02:16] DEBUG D0001: Processing incoming API request for user=42
+[2026-02-06 02:16] WARN W1001: Database connection pool running low on db-primary, 2 of 20 connections available
+[2026-02-06 02:17] INFO I0003: Payment initiated for user=42 amount=130.00
+[2026-02-06 02:17] ERROR E1002: Database connection pool exhausted on db-primary, cannot acquire connection (0 of 20 available)
+[2026-02-06 02:17] ERROR E2001: Database query timed out query=get_user_balance user=42 reason=no_database_connection_available duration=15s
+[2026-02-06 02:18] ERROR E2002: Payment processing failed for user=42 amount=130.00 reason=database_connection_unavailable
+[2026-02-06 02:18] ERROR E1002: Database connection pool exhausted on db-primary, cannot acquire connection (0 of 20 available)
+[2026-02-06 02:19] ERROR E2001: Database query timed out query=get_order_details order=ORD-4414 reason=no_database_connection_available duration=15s
+[2026-02-06 02:19] ERROR E2003: Order processing failed for order=ORD-4414 reason=database_connection_unavailable
+[2026-02-06 02:20] ERROR E2002: Payment processing failed for user=310 amount=75.00 reason=database_connection_unavailable
+[2026-02-06 02:20] ERROR E2002: Payment processing failed for user=88 amount=220.00 reason=database_connection_unavailable
+[2026-02-06 02:21] ERROR E1002: Database connection pool exhausted on db-primary, cannot acquire connection (0 of 20 available)
+[2026-02-06 02:21] ERROR E2002: Payment processing failed for user=415 amount=90.00 reason=database_connection_unavailable
+[2026-02-06 02:22] ERROR E2003: Order processing failed for order=ORD-4415 reason=database_connection_unavailable
+[2026-02-06 02:23] INFO I0002: Health check failed, unable to establish connection to database db-primary
+[2026-02-06 02:24] ERROR E2002: Payment processing failed for user=502 amount=175.00 reason=database_connection_unavailable

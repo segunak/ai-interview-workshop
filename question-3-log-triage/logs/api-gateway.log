@@ -1,21 +1,25 @@
-[2026-01-27 10:15] INFO I0001: Gateway startup complete
-[2026-01-27 10:16] INFO I0002: Health check passed
-[2026-01-27 10:17] DEBUG D0010: Route resolved path=/api/v1/users method=GET
-[2026-01-27 10:18] INFO I0012: Request forwarded path=/api/v1/users target=app-server-1
-[2026-01-27 10:20] ERROR E4040: Route not found path=/api/v2/checkout method=POST
-[2026-01-27 10:21] WARN W0006: Deprecated endpoint accessed path=/api/v1/legacy/cart
-[2026-01-27 10:23] DEBUG D0010: Route resolved path=/api/v1/payments method=POST
-[2026-01-27 10:24] INFO I0012: Request forwarded path=/api/v1/payments target=app-server-1
-[2026-01-27 10:26] ERROR E4040: Route not found path=/api/v3/inventory method=GET
-[2026-01-27 10:27] INFO I0002: Health check passed
-[2026-01-27 10:29] DEBUG D0011: Rate limit check user=42 current=45 limit=100
-[2026-01-27 10:31] INFO I0012: Request forwarded path=/api/v1/orders target=app-server-2
-[2026-01-27 10:33] ERROR E5678: DB timeout query=route_cache_refresh duration=32s
-[2026-01-27 10:34] WARN W0007: Failover activated primary=db-master secondary=db-replica
-[2026-01-27 10:36] INFO I0013: Failover successful latency=450ms
-[2026-01-27 10:37] INFO I0002: Health check passed
-[2026-01-27 10:39] ERROR E4040: Route not found path=/api/v2/users/profile method=PATCH
-[2026-01-27 10:40] DEBUG D0010: Route resolved path=/api/v1/users/profile method=PATCH
-[2026-01-27 10:41] INFO I0012: Request forwarded path=/api/v1/users/profile target=app-server-2
-[2026-01-27 10:43] WARN W0006: Deprecated endpoint accessed path=/api/v1/legacy/shipping
-[2026-01-27 10:44] INFO I0002: Health check passed
+[2026-02-06 02:01] INFO I0001: Gateway startup complete, all upstream servers are healthy
+[2026-02-06 02:03] INFO I0002: Health check passed for upstream server app-server-1
+[2026-02-06 02:03] INFO I0002: Health check passed for upstream server app-server-2
+[2026-02-06 02:05] DEBUG D0010: Route resolved for incoming request path=/api/v1/payments method=POST
+[2026-02-06 02:06] INFO I0012: Request forwarded to upstream server path=/api/v1/payments target=app-server-1
+[2026-02-06 02:08] DEBUG D0010: Route resolved for incoming request path=/api/v1/users method=GET
+[2026-02-06 02:09] INFO I0012: Request forwarded to upstream server path=/api/v1/users target=app-server-2
+[2026-02-06 02:12] WARN W0030: Slow response from upstream server app-server-1 path=/api/v1/payments response_time=8200ms
+[2026-02-06 02:13] WARN W0030: Slow response from upstream server app-server-1 path=/api/v1/orders response_time=9100ms
+[2026-02-06 02:14] ERROR E3001: Request to upstream server app-server-1 timed out path=/api/v1/payments waited=30000ms
+[2026-02-06 02:14] INFO I0015: Retrying failed request on alternate upstream server app-server-2 path=/api/v1/payments
+[2026-02-06 02:15] ERROR E3001: Request to upstream server app-server-1 timed out path=/api/v1/orders waited=30000ms
+[2026-02-06 02:15] WARN W0030: Slow response from upstream server app-server-2 path=/api/v1/payments response_time=7800ms
+[2026-02-06 02:16] ERROR E3001: Request to upstream server app-server-1 timed out path=/api/v1/checkout waited=30000ms
+[2026-02-06 02:17] ERROR E3001: Request to upstream server app-server-2 timed out path=/api/v1/payments waited=30000ms
+[2026-02-06 02:18] ERROR E3002: Circuit breaker tripped for upstream server app-server-1, halting all traffic to this server
+[2026-02-06 02:18] WARN W0031: All incoming traffic rerouted to app-server-2, app-server-1 marked as unavailable
+[2026-02-06 02:19] ERROR E3001: Request to upstream server app-server-2 timed out path=/api/v1/orders waited=30000ms
+[2026-02-06 02:20] ERROR E3001: Request to upstream server app-server-2 timed out path=/api/v1/checkout waited=30000ms
+[2026-02-06 02:21] ERROR E3002: Circuit breaker tripped for upstream server app-server-2, halting all traffic to this server
+[2026-02-06 02:21] ERROR E3003: No healthy upstream servers available, returning HTTP 503 Service Unavailable to all clients
+[2026-02-06 02:22] ERROR E3003: No healthy upstream servers available, returning HTTP 503 Service Unavailable to all clients
+[2026-02-06 02:23] ERROR E3003: No healthy upstream servers available, returning HTTP 503 Service Unavailable to all clients
+[2026-02-06 02:24] INFO I0002: Health check failed for upstream server app-server-1
+[2026-02-06 02:24] INFO I0002: Health check failed for upstream server app-server-2

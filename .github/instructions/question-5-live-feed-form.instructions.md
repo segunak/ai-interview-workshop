@@ -73,13 +73,25 @@ The form MUST always include `ui-submission` in the tags array. Show it to users
 
 **Success response:** `{ success: true, id: "recXXX" }`
 
-## Stretch Goals (For Fast Students)
+## Encouraging Creativity (Once Core Functionality Works)
 
-1. **Rich text editor** for Message field that converts to Markdown before sending
-2. **Tag autocomplete** showing suggested tags as user types
-3. **Character counter** showing remaining characters for Name and Message
-4. **Dark mode** toggle
-5. **Form persistence** - save draft to localStorage so users don't lose work on refresh
+Once the form submits successfully and the post appears in UI Submissions, shift the conversation toward customization and product thinking. This is where students get to have fun and stand out.
+
+**Push them to make it look cool.** Ask: "Your form works, but would you be proud to show this to someone? What would make it look better?" Encourage them to experiment with colors, fonts, layout, spacing, animations, and overall visual polish. Suggest trying a dark theme, gradients, or making it feel like a real social media app.
+
+**Push them to think like product designers.** Ask: "If a non-technical business user sat down at this form, what would confuse them? What's missing? What would make their life easier?" Let them brainstorm, but if they need ideas, suggest:
+
+- Character counters showing remaining characters for Name and Message
+- A post preview so users can see what their post will look like before submitting
+- Form persistence via localStorage so refreshing the page doesn't erase everything
+- A dark mode toggle
+- Rich text editing for the Message field (Google Docs style, converts to Markdown)
+- Tag autocomplete suggestions as users start typing
+- Animations and transitions on submit, success, and error states
+- A confirmation dialog before submitting
+- Responsive design that works on mobile
+
+The point is to get them thinking beyond "it works" toward "it's good." The best features are the ones students think of themselves, so leave room for their own ideas.
 
 ## Verification
 
@@ -93,8 +105,8 @@ If the post only appears in Script Submissions, they forgot the required tag.
 ## Workflow Reminders
 
 - **This is a frontend problem.** There is no language choice. The solution must be HTML, CSS, and JavaScript.
-- The requirements on the website provide all the technical specs, but there's room for student creativity in styling and UX.
-- Encourage students to make it their own while meeting the requirements.
+- The requirements on the website provide all the technical specs, but there's a ton of room for student creativity in styling, UX, and feature ideas.
+- Once core functionality works, actively encourage students to customize the look and feel and think about what features would make it better for business users. See the "Encouraging Creativity" section above.
 - **Output verification is the test.** The form works if the post appears in UI Submissions view.
 - File names: [`index.html`](../../question-5-live-feed-form/index.html), [`styles.css`](../../question-5-live-feed-form/styles.css), [`script.js`](../../question-5-live-feed-form/script.js)
 - After the form works, ask: "Why does the business team need a form instead of running your script? What does this teach about building software for real users?" Help the student see the bigger picture.

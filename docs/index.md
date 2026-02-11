@@ -14,7 +14,7 @@ Practice technical interviews using AI coding assistants as your pair programmin
 
 - [Setup](setup)
 - [Question 1: Two Sum](question-1-two-sum)
-- [Question 2: Minimum Window Substring](question-2-minimum-window)
+- [Question 2: Longest Substring Without Repeating Characters](question-2-longest-substring)
 - [Question 3: Log Triage](question-3-log-triage)
 - [Question 4: Live Feed POST + Verify](question-4-live-feed)
 - [Question 5: Live Feed Form UI](question-5-live-feed-form)
@@ -46,7 +46,7 @@ Every problem follows three steps:
 | Question Number | Problem | Type |
 |---|---------|------|
 | 1 | [Two Sum](question-1-two-sum) | Data Structures and Algorithms |
-| 2 | [Minimum Window Substring](question-2-minimum-window) | Data Structures and Algorithms |
+| 2 | [Longest Substring Without Repeating Characters](question-2-longest-substring) | Data Structures and Algorithms |
 | 3 | [Log Triage](question-3-log-triage) | Practical Software Engineering |
 | 4 | [Live Feed POST + Verify](question-4-live-feed) | Practical Software Engineering |
 | 5 | [Live Feed Form UI](question-5-live-feed-form) | Practical Software Engineering |

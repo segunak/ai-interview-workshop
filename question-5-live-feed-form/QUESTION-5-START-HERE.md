@@ -69,7 +69,7 @@ Tags have specific rules:
 
 ### Creativity Welcome
 
-> These requirements provide the technical specifications, but there's room for your own creativity in styling, layout, colors, and UX details. Make it your own while meeting the requirements!
+> These requirements provide the technical specifications, but there's a ton of room for your own creativity. Make it your own while meeting the requirements!
 
 ## API Reference
 
@@ -134,15 +134,25 @@ Open these files and write your code in them.
 
 **Visual verification is the test for this problem.** Your form works if you can submit a post and see it appear on the live feed.
 
-## Extension Challenges
+## Make It Your Own
 
-If you finish early:
+Once your form submits successfully and posts appear in the UI Submissions section of the live feed, the core requirements are done. Now comes the fun part.
 
-1. **Rich text editing** — Give users a Word-like editor for the message
-2. **Tag suggestions** — Autocomplete as users type tags
-3. **Character counter** — Show remaining characters
-4. **Dark mode** — Add a theme toggle
-5. **Draft saving** — Persist form state so users don't lose work on refresh
+**Customize the look and feel.** This is your chance to make something you're proud of. Change the colors, fonts, layout, spacing, whatever you want. Try a dark theme. Try a gradient background. Try making it look like a social media app. The goal is to make it look cool and feel polished, not just functional.
+
+**Think like a product designer.** Step back and ask yourself: if a non-technical business user sat down at this form, what would make their experience better? What's confusing? What's missing? Here are some ideas to get you thinking:
+
+- **Character counters** that show how many characters are left for Name and Message, so users don't hit limits by surprise
+- **A post preview** that shows users exactly what their post will look like before they submit
+- **Form persistence** using localStorage, so if someone accidentally refreshes the page they don't lose everything they typed
+- **A dark mode toggle** because every good app has one
+- **Rich text editing** for the Message field (think Google Docs style), so users can bold, italicize, and format their posts
+- **Tag autocomplete** that suggests tags as users start typing
+- **Animations and transitions** on submit, success, and error states to make the UI feel alive
+- **A confirmation dialog** before submitting so users can double check their post
+- **Responsive design** that looks great on both desktop and mobile
+
+These are just starting points. Come up with your own ideas too. The best features are the ones you think of yourself.
 
 ## The Real-World Connection
 
@@ -153,4 +163,4 @@ This is exactly what happens in software companies every day:
 3. Developer wraps it in a UI
 4. Now it's a product, not just a tool
 
-The ability to turn developer tools into user-facing products is a valuable skill.
+The ability to turn developer tools into user-facing products is a valuable skill. And the developers who care about design, usability, and the little details are the ones who stand out.

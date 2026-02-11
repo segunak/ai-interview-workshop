@@ -47,7 +47,7 @@ Check these regularly to stay current on which models lead the pack for coding.
 You do all your work inside the Codespace, not on this website. This site is just for reference. Click on Question 1 below to read the instructions, then switch back to your Codespace to write code. Each question folder contains a `QUESTION-X-START-HERE.md` file plus starter code files. Keep the start file open while you work so the Workshop Agent has full context.
 
 - [Question 1: Two Sum](./question-1-two-sum) - Classic algorithm warmup
-- [Question 2: Minimum Window Substring](./question-2-minimum-window) - Sliding window challenge
+- [Question 2: Longest Substring Without Repeating Characters](./question-2-longest-substring) - Sliding window challenge
 - [Question 3: Log Triage](./question-3-log-triage) - Real-world file parsing
 - [Question 4: Live Feed POST](./question-4-live-feed) - API integration
 - [Question 5: Live Feed Form UI](./question-5-live-feed-form) - Frontend form building
@@ -80,7 +80,7 @@ Your Codespace comes ready with:
 ```txt
 ai-interview-workshop/
 ├── question-1-two-sum/           # Two Sum problem
-├── question-2-minimum-window/    # Minimum Window Substring
+├── question-2-longest-substring/    # Longest Substring Without Repeating Characters
 ├── question-3-log-triage/        # Log parsing (includes sample logs)
 │   └── logs/                     # Sample log files
 ├── question-4-live-feed/         # HTTP POST to live feed

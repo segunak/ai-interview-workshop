@@ -19,7 +19,7 @@ Select the **Workshop Agent** in GitHub Copilot Chat (bottom left of the chat in
 | # | Question | Click to Open |
 |---|----------|---------------|
 | 1 | Two Sum (Easy) | [QUESTION-1-START-HERE.md](question-1-two-sum/QUESTION-1-START-HERE.md) |
-| 2 | Minimum Window Substring (Hard) | [QUESTION-2-START-HERE.md](question-2-minimum-window/QUESTION-2-START-HERE.md) |
+| 2 | Longest Substring Without Repeating Characters (Medium) | [QUESTION-2-START-HERE.md](question-2-longest-substring/QUESTION-2-START-HERE.md) |
 | 3 | Log File Triage | [QUESTION-3-START-HERE.md](question-3-log-triage/QUESTION-3-START-HERE.md) |
 | 4 | Post to Live Feed | [QUESTION-4-START-HERE.md](question-4-live-feed/QUESTION-4-START-HERE.md) |
 | 5 | Live Feed Form UI | [QUESTION-5-START-HERE.md](question-5-live-feed-form/QUESTION-5-START-HERE.md) |
@@ -33,7 +33,7 @@ The links above open files directly in your Codespace. For the full written inst
 | # | Type | Full Instructions |
 |---|------|-------------------|
 | 1 | Data Structures and Algorithms (Easy) | [Two Sum](https://segunakinyemi.com/ai-interview-workshop/question-1-two-sum/) |
-| 2 | Data Structures and Algorithms (Hard) | [Minimum Window Substring](https://segunakinyemi.com/ai-interview-workshop/question-2-minimum-window/) |
+| 2 | Data Structures and Algorithms (Medium) | [Longest Substring Without Repeating Characters](https://segunakinyemi.com/ai-interview-workshop/question-2-longest-substring/) |
 | 3 | Practical Software Engineering | [Log File Triage](https://segunakinyemi.com/ai-interview-workshop/question-3-log-triage/) |
 | 4 | Practical Software Engineering | [Post to Live Feed](https://segunakinyemi.com/ai-interview-workshop/question-4-live-feed/) |
 | 5 | Frontend Development | [Live Feed Form UI](https://segunakinyemi.com/ai-interview-workshop/question-5-live-feed-form/) |

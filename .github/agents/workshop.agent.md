@@ -53,7 +53,7 @@ Use these prompts naturally during the conversation:
 Each question has its own folder. Create all code files inside the appropriate question folder:
 
 - [`question-1-two-sum/`](../../question-1-two-sum/) — Two Sum problem
-- [`question-2-minimum-window/`](../../question-2-minimum-window/) — Minimum Window Substring problem
+- [`question-2-longest-substring/`](../../question-2-longest-substring/) — Longest Substring Without Repeating Characters problem
 - [`question-3-log-triage/`](../../question-3-log-triage/) — Log file parsing (sample logs are in [`question-3-log-triage/logs/`](../../question-3-log-triage/logs/))
 - [`question-4-live-feed/`](../../question-4-live-feed/) — POST to live feed API and verify the post exists
 - [`question-5-live-feed-form/`](../../question-5-live-feed-form/) — Build a form UI for the live feed (extends Question 4)
@@ -73,13 +73,15 @@ If the student hasn't specified which question they're working on, ask them.
 
 Use built-in testing only. Do NOT install pytest, jest, vitest, Pester, or any external testing framework.
 
-**Questions 1-2 (LeetCode problems):** Unit tests are pre-written in each question's `test_solution.py` ([Q1](../../question-1-two-sum/test_solution.py), [Q2](../../question-2-minimum-window/test_solution.py)). Run them to verify the solution. Encourage students to add more test cases if they can think of any.
+**Questions 1-2 (LeetCode problems):** Unit tests are pre-written in each question's `test_solution.py` ([Q1](../../question-1-two-sum/test_solution.py), [Q2](../../question-2-longest-substring/test_solution.py)). Run them to verify the solution. Encourage students to add more test cases if they can think of any.
 
-**Questions 3-5 (Practical problems):** Output verification is the test. Run the script and verify the output. Unit tests are optional extra credit.
+**Question 3 (Log Triage):** A test script is provided: [`test_triage.ps1`](../../question-3-log-triage/test_triage.ps1). It validates that the report file exists, has an executive summary, references multiple error codes, and identifies the root cause. Run with `./test_triage.ps1`.
+
+**Questions 4-5 (Practical problems):** Output verification is the test. Run the script and verify the output. Unit tests are optional extra credit.
 
 ### Python Test Pattern (for adding extra tests)
 
-The existing `test_solution.py` files ([Q1](../../question-1-two-sum/test_solution.py), [Q2](../../question-2-minimum-window/test_solution.py)) use simple assert statements. If a student wants to add more tests, they follow the same pattern:
+The existing `test_solution.py` files ([Q1](../../question-1-two-sum/test_solution.py), [Q2](../../question-2-longest-substring/test_solution.py)) use simple assert statements. If a student wants to add more tests, they follow the same pattern:
 
 ```python
 assert two_sum([1, 3, 5, 7], 8) == [1, 2], "Custom test failed"
@@ -92,8 +94,8 @@ Run with: `python test_solution.py`
 | Question | Language | Solution Files | Test Files |
 |----------|----------|---------------|------------|
 | Q1 Two Sum | Python | [`solution.py`](../../question-1-two-sum/solution.py) | [`test_solution.py`](../../question-1-two-sum/test_solution.py) |
-| Q2 Minimum Window | Python | [`solution.py`](../../question-2-minimum-window/solution.py) | [`test_solution.py`](../../question-2-minimum-window/test_solution.py) |
-| Q3 Log Triage | PowerShell | [`triage.ps1`](../../question-3-log-triage/triage.ps1) | None (output verification) |
+| Q2 Longest Substring | Python | [`solution.py`](../../question-2-longest-substring/solution.py) | [`test_solution.py`](../../question-2-longest-substring/test_solution.py) |
+| Q3 Log Triage | PowerShell | [`triage.ps1`](../../question-3-log-triage/triage.ps1) | [`test_triage.ps1`](../../question-3-log-triage/test_triage.ps1) |
 | Q4 Live Feed | JavaScript | [`post.js`](../../question-4-live-feed/post.js) | None (GET verification is test) |
 | Q5 Live Feed Form | HTML, CSS, JavaScript | [`index.html`](../../question-5-live-feed-form/index.html), [`styles.css`](../../question-5-live-feed-form/styles.css), [`script.js`](../../question-5-live-feed-form/script.js) | None (visual verification) |
 
@@ -130,7 +132,7 @@ When a student asks about a question, direct them to the full instructions on th
 | Question | Full Instructions URL |
 |----------|----------------------|
 | Question 1: Two Sum | <https://segunakinyemi.com/ai-interview-workshop/question-1-two-sum/> |
-| Question 2: Minimum Window | <https://segunakinyemi.com/ai-interview-workshop/question-2-minimum-window/> |
+| Question 2: Longest Substring | <https://segunakinyemi.com/ai-interview-workshop/question-2-longest-substring/> |
 | Question 3: Log Triage | <https://segunakinyemi.com/ai-interview-workshop/question-3-log-triage/> |
 | Question 4: Live Feed | <https://segunakinyemi.com/ai-interview-workshop/question-4-live-feed/> |
 | Question 5: Live Feed Form | <https://segunakinyemi.com/ai-interview-workshop/question-5-live-feed-form/> |
