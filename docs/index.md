@@ -20,6 +20,7 @@ Practice technical interviews using AI coding assistants as your pair programmin
 - [Question 5: Live Feed Form UI](question-5-live-feed-form)
 - [Resources](resources)
 - [Why AI Interviews?](why-ai-interviews)
+- [How This Workshop Was Built](how-this-was-built)
 
 ## Why AI-Assisted Interviews?
 
