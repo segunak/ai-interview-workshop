@@ -126,7 +126,7 @@ The instruction system enforces this by:
 
 ## What This Means for AI-Assisted Education
 
-This workshop is a proof of concept for a larger idea: **you can build structured learning experiences entirely through AI customization.** No custom platform, no LMS, no backend. Just Markdown files in a GitHub repo that shape how an AI model teaches.
+This workshop is a proof of concept for a larger idea: **you can build structured learning experiences entirely through AI customization.** No custom platform, no Learning Management System, no backend. Just Markdown files in a GitHub repo that shape how an AI model teaches.
 
 The same pattern could apply to:
 

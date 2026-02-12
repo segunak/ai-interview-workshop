@@ -9,6 +9,7 @@ Practice technical interviews the way they actually happen in the age of AI, wit
 - **Workshop Website:** <https://aka.ms/aiw>
 - **Workshop Live Feed:** <https://aka.ms/aiw/live-feed>
 - **Workshop PowerPoint Deck:** [The Link](https://1drv.ms/p/c/750d396c5cadcebd/IQBsRMeY3HSzRIBxRgHkaxD1AWZG14z_B3al7wfnPaezf4g?e=CjHD76)
+- **How This Workshop Was Built:** <https://segunakinyemi.com/ai-interview-workshop/how-this-was-built/>
 
 ## Get Started
 
@@ -42,6 +43,6 @@ The links above open files directly in your Codespace. For the full written inst
 
 You can use AI for everything, but you must be able to explain everything your AI produces. Plan first, then prove it with tests. **[Your job is to deliver code you have proven to work](https://simonwillison.net/2025/Dec/18/code-proven-to-work/)**.
 
-1. **Plan** — Understand the problem, ask clarifying questions, design your approach before touching code
-2. **Prove** — Direct AI to write code, predict the output before running, then test and verify it works
-3. **Explain** — Walk through your solution: what it does, why it works, time complexity, and tradeoffs
+1. **Plan** - Understand the problem, ask clarifying questions, design your approach before touching code
+2. **Prove** - Direct AI to write code, predict the output before running, then test and verify it works
+3. **Explain** - Walk through your solution: what it does, why it works, time complexity, and tradeoffs
