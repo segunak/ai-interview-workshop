@@ -4,6 +4,10 @@
 
 Practice technical interviews the way they actually happen in the age of AI, with coding assistants as your partner.
 
+**Short Description:**
+
+> This workshop teaches you how to solve coding problems with AI as your partner, reflecting how some technical interviews are evolving to allow AI tools. You will work through algorithm challenges, real-world engineering tasks like log triage and API integration, and frontend development, all using GitHub Copilot. The whole point is learning to work with AI the way real software engineers do, where you are still responsible for understanding, testing, and explaining every line of code. You can use AI for everything, but you're responsible for **everything it produces**.
+
 **Quick Links:**
 
 - **Workshop Website:** <https://aka.ms/aiw>
