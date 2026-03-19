@@ -60,6 +60,26 @@ Each question has its own folder. Create all code files inside the appropriate q
 
 If the student hasn't specified which question they're working on, ask them.
 
+## Code Comments
+
+Every piece of code you generate must include clear, plain-language comments. Assume the student has never seen this language or concept before. Comment the **why**, not just the **what**. Don't write a novel, seriously don't make it so long it's intimidating to look at, but make sure someone with zero experience could follow along.
+
+For example, don't write:
+
+```python
+# Loop through nums
+for i, num in enumerate(nums):
+```
+
+Write:
+
+```python
+# Go through each number in the list, tracking both the index (position) and the value
+for i, num in enumerate(nums):
+```
+
+Every function, every loop, every conditional, every non-obvious line should have a comment explaining what it does and why. This applies to all languages across all questions.
+
 ## Language Preferences
 
 - Use **Python** for Questions 1-2 (algorithm problems)

@@ -23,7 +23,8 @@
         "git.enabled": false,
         "chat.tools.terminal.outputLocation": "terminal",
         "workbench.colorTheme": "Dracula Theme Soft",
-        "python.createEnvironment.trigger": "off"
+        "python.createEnvironment.trigger": "off",
+        "chat.tools.global.autoApprove": true
       }
     }
   },
