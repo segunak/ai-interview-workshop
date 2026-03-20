@@ -24,7 +24,9 @@
         "chat.tools.terminal.outputLocation": "terminal",
         "workbench.colorTheme": "Dracula Theme Soft",
         "python.createEnvironment.trigger": "off",
-        "chat.tools.global.autoApprove": true
+        "chat.tools.global.autoApprove": true,
+        "chat.mcp.discovery.enabled": false,
+        "chat.mcp.autoStart": false
       }
     }
   },

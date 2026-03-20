@@ -93,6 +93,16 @@ Once the form submits successfully and the post appears in UI Submissions, shift
 
 The point is to get them thinking beyond "it works" toward "it's good." The best features are the ones students think of themselves, so leave room for their own ideas.
 
+## Launching the Form (Critical)
+
+Once the HTML, CSS, and JavaScript files are written, you MUST launch the form for the student so they can use it. Do not wait for them to ask. Do not just say "open index.html in a browser." Actually launch it.
+
+1. Start a local HTTP server by running `npx serve question-5-live-feed-form` in the terminal (or `python -m http.server 8080` from inside the `question-5-live-feed-form/` folder)
+2. Use the `#tool:openSimpleBrowser` tool to open the local URL (e.g., `http://localhost:3000` or `http://localhost:8080`) in the VS Code integrated browser
+3. Tell the student: "Your form is now running. Click the link above or the browser tab to interact with it. Fill out the form and submit a post to test it."
+
+The student needs to see and use their form in a browser to verify it works. This is the equivalent of running tests for Question 5. Do not consider the Prove step complete until the form is running and the student has submitted a post through it.
+
 ## Verification
 
 The student knows their solution works when:

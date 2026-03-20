@@ -54,10 +54,12 @@ If tests fail with auth errors, the key mismatch between `workshop-config.json` 
 
 Open a fresh Codespace from the repo to confirm:
 
-- Devcontainer builds
+- Devcontainer builds (Python 3.12, Node LTS, PowerShell, Copilot extensions)
 - Dracula theme loads
 - No venv gets auto-created (disabled via `python.createEnvironment.trigger: off`)
 - Tool auto-approval is on (no confirmation dialogs for terminal commands or file edits)
+- No MCP servers start or prompt for trust (disabled via `chat.mcp.discovery.enabled: false` and `chat.mcp.autoStart: false`)
+- Model picker defaults to Auto (no model is hardcoded in the agent, so students use whatever is available on their plan)
 - Workshop Agent is available in the Copilot Chat agent picker
 
 ### 6. Clean the Airtable (Optional)
@@ -92,9 +94,9 @@ If a student burns through their 300 monthly premium requests (Copilot Pro via E
 | Live feed API | `workshops-live-feed` repo on Vercel | POST/GET/DELETE endpoints at `live.segunakinyemi.com` |
 | Live feed .env | `workshops-live-feed/.env` | `ADMIN_KEY`, `AIRTABLE_API_KEY`, `AIRTABLE_BASE_ID`, `WORKSHOP_KEY` |
 | API tests | `workshops-live-feed/tools/test_all.ps1` | Auto-loads `.env`, runs Python/JS/PowerShell tests |
-| Devcontainer | `.devcontainer/devcontainer.json` | Python, Node, PowerShell, Copilot, Dracula theme, auto-approve tools, no venv |
+| Devcontainer | `.devcontainer/devcontainer.json` | Python, Node, PowerShell, Copilot, Dracula theme, auto-approve tools, no venv, no MCP |
 | Agent instructions | `.github/instructions/*.instructions.md` | Per-question coaching context for the Workshop Agent |
-| Workshop Agent | `.github/agents/workshop.agent.md` | Agent definition with teaching workflow |
+| Workshop Agent | `.github/agents/workshop.agent.md` | Agent definition with teaching workflow (no model hardcoded, uses Auto) |
 
 ## Common Issues
 
@@ -105,4 +107,6 @@ If a student burns through their 300 monthly premium requests (Copilot Pro via E
 | `test_all.ps1` says `ADMIN_KEY required` | `.env` not present or missing `ADMIN_KEY` | Confirm `.env` exists at `workshops-live-feed/` root with all four variables |
 | Codespace creates a `.venv` | Old devcontainer without `python.createEnvironment.trigger: off` | Rebuild the Codespace after pushing the updated devcontainer |
 | Students get tool approval popups | Old devcontainer without `chat.tools.global.autoApprove: true` | Rebuild the Codespace after pushing the updated devcontainer |
+| MCP servers trying to start | Old devcontainer without MCP disabled | Rebuild Codespace after pushing devcontainer with `chat.mcp.discovery.enabled: false` and `chat.mcp.autoStart: false` |
+| Student can't find a working model | They picked a model not on their plan | Remove any `model` field from agent file. Students use Auto (default) which picks available models |
 | Workshop Agent not available | Student didn't open the repo in a Codespace, or extension didn't load | Reload window, check Copilot extension is installed |
