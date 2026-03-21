@@ -69,13 +69,8 @@ Creates a new post.
 | `Name` | string | Your name or alias |
 | `Message` | string | What you want to say |
 | `Workshop` | string | Workshop name (e.g., "AI Interview Workshop") |
+| `Tags` | string | Must include `script-submission`. Can add more comma-separated (e.g. `script-submission,python`) |
 | `WorkshopKey` | string | The secret key listed above |
-
-**Optional Fields:**
-
-| Field | Type | Description |
-|-------|------|-------------|
-| `Tags` | string | Comma-separated tags for your post |
 
 **Success Response (200):**
 
@@ -280,6 +275,6 @@ Verified: post exists in database
 
 If you finish early:
 
-1. **Add Tags** - Include the `Tags` field with your school name or something fun
+1. **Add more Tags** - Include your school name or something fun alongside `script-submission`
 2. **Make it interactive** - Prompt for name and message instead of hardcoding
 3. **Add error handling** - Handle network failures, timeouts, and unexpected API responses gracefully

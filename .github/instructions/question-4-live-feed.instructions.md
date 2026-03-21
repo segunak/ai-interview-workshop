@@ -40,13 +40,8 @@ Creates a new post.
 | `Name` | string | The student's name (required) |
 | `Message` | string | Their message content (required) |
 | `Workshop` | string | Workshop name, e.g. "AI Interview Workshop" (required) |
+| `Tags` | string | Must include `script-submission`. Can add more comma-separated (e.g. `script-submission,python`) |
 | `WorkshopKey` | string | Read from `workshop-config.json` at the repo root |
-
-**Optional Field:**
-
-| Field | Type | Description |
-|-------|------|-------------|
-| `Tags` | string | Comma-separated tags like school name, date, or fun labels |
 
 **Success Response (200):**
 
@@ -123,7 +118,7 @@ async function postAndVerify() {
         Name: "Your Name Here",
         Message: "Hello from JavaScript!",
         Workshop: "AI Interview Workshop",
-        Tags: "javascript, workshop",  // optional
+        Tags: "script-submission,javascript",  // script-submission is required
         WorkshopKey: WORKSHOP_KEY
     };
 
@@ -221,7 +216,7 @@ Verified: post exists in database
 3. Failure: Wrong WorkshopKey value on POST (should get 401)
 4. Failure: Missing Name or Message on POST (should get 400)
 5. Failure: Invalid ID on GET verification (should get 404)
-6. Optional: Add Tags field after basic solution works
+6. Tags field must include `script-submission` for the post to appear in the Script Submissions feed
 
 ## Clarifying Questions to Prompt
 
@@ -236,10 +231,12 @@ Verified: post exists in database
 - Emphasize that the POST returning 200 is NOT enough. Verification is required.
 - **Always include a short delay (3 seconds) between the POST and GET verification steps.** The database needs a moment to process the new post. Use `await new Promise(resolve => setTimeout(resolve, 3000));` to add the delay. Do not skip this step.
 - Students must capture the `id` and use it to verify
-- After success, offer the Tags extra challenge to personalize their post
+- After success, offer additional Tags to personalize their post (school name, fun labels) alongside the required `script-submission` tag
 - This is about proving your code works to stakeholders, not just trusting API responses
 - **The GET verification step IS the test.** No additional unit tests needed.
+- **The `script-submission` tag is REQUIRED** - without it, the post won't appear in the Script Submissions feed on live.segunakinyemi.com. Always include it in Tags.
 - **Do NOT suggest the tag `ui-submission`** - that tag is reserved for Question 5 form submissions.
+- **Do NOT suggest the tag `agent-post`** - that tag is reserved for AI agent tool submissions.
 - A starter file is pre-created: [`post.js`](../../question-4-live-feed/post.js) (reads `BASE_URL` and `WORKSHOP_KEY` from [`workshop-config.json`](../../workshop-config.json) and has a `postMessage()` skeleton)
 - Run with `node post.js`
 - After verification succeeds, ask: "Why do we verify the POST with a GET instead of trusting the 200 response? When does this matter in real software?" Help the student connect this to real engineering practices.

@@ -18,9 +18,9 @@ const WORKSHOP_KEY = config.workshopKey;
  * @param {string} name - Your name or alias.
  * @param {string} message - The message to post.
  * @param {string} workshop - Workshop name.
- * @param {string} tags - Optional comma-separated tags for your post.
+ * @param {string} tags - Comma-separated tags. Must include "script-submission" for your post to appear in the Script Submissions feed.
  */
-async function postMessage(name, message, workshop = "AI Interview Workshop", tags = "") {
+async function postMessage(name, message, workshop = "AI Interview Workshop", tags = "script-submission") {
     // TODO: Implement your solution here
     // Step 1: POST to create the message using fetch
     // Step 2: Parse the response and extract the post ID
@@ -29,4 +29,4 @@ async function postMessage(name, message, workshop = "AI Interview Workshop", ta
     // Step 5: Only print success after verification confirms the post is in the database
 }
 
-postMessage("Your Name Here", "Hello from JavaScript!");
+postMessage("Your Name Here", "Hello from JavaScript!", "AI Interview Workshop", "script-submission");

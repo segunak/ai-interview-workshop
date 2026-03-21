@@ -239,6 +239,6 @@ Verified: post exists in database
 
 If you finish early:
 
-1. **Add Tags** — Include the `Tags` field with your school name or something fun
+1. **Add more Tags** — Include your school name or something fun alongside `script-submission`
 2. **Make it interactive** — Prompt for name and message instead of hardcoding
 3. **Add error handling** — Handle network failures, timeouts, and unexpected API responses gracefully

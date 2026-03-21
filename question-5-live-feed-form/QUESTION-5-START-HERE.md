@@ -58,7 +58,7 @@ Tags have specific rules:
 
 **Suggested tags to offer:** charlotte, hornets, panthers, naruto, attack-on-titan, legend-of-the-galactic-heroes, steinsgate, treasure-planet, computer-science, software-engineering, unc-charlotte, workshop-fun
 
-> **Important:** The `ui-submission` tag is how form submissions are identified. Posts with this tag appear in the **UI Submissions** section of the live feed. Posts without it appear in **Script Submissions**. Your form MUST always include this tag.
+> **Important:** The `ui-submission` tag is how form submissions are identified. Posts with this tag appear in the **UI Submissions** section of the live feed. Posts tagged `script-submission` appear in **Script Submissions**. Your form MUST always include `ui-submission`.
 
 ### UX Requirements
 

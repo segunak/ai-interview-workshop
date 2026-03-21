@@ -54,11 +54,11 @@ When students ask (via chat or in person), provide these answers:
 
 ## Tag Behavior - Critical Detail
 
-The `ui-submission` tag is how we identify form submissions vs script submissions:
-- Posts with `ui-submission` → appear in "UI Submissions" view on live feed
-- Posts without it → appear in "Script Submissions" view
+Tags control which feed view a post appears in on live.segunakinyemi.com:
+- Posts tagged `ui-submission` → appear in "UI Submissions" view
+- Posts tagged `script-submission` → appear in "Script Submissions" view
 
-The form MUST always include `ui-submission` in the tags array. Show it to users as a locked/required tag they cannot remove.
+The form MUST always include `ui-submission` in the tags array. Show it to users as a locked/required tag they cannot remove. Do NOT include `script-submission` or `agent-post` - those are for other submission types.
 
 ## API Details (Same as Question 4)
 
